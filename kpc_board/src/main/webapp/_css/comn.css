@@ -1,0 +1,1065 @@
+@charset "utf-8";
+/* ------------------------------------------------------------------ PC  ------------------------------------------------------------------ */
+@media only screen and (min-width: 1390px) {
+	div.left_menu						{display:block !important}
+}
+
+@media only screen and (min-width: 960px) {
+
+	/*header*/
+	header				{position:absolute; z-index:99;top:0;left:0;width:100%;display:block;box-sizing:border-box;}
+	#header_n			{background:#313851;height:41px;margin:0 auto;}
+	#header_n div		{background:#313851;height:41px;margin:0 auto;width:1370px;}
+	#header_n div > p	{position: absolute;margin-top: 5px;}
+
+	#header_w			{background:#fff; display:flex;width: 1370px;margin: 0 auto;position:relative;}
+	#header_w h1		{float:left; padding:15px 0px;}
+	#header_w h1 a		{display:inline-block;width:262px; height:46px;background:url('../_img/pc/comn/logo.png')no-repeat 0% 50%;}
+	#header_w ul.menu	{display:flex; position:absolute;right:0;padding:0 30px;}
+	#header_w ul.menu > li 				{font:400 19px/20px "Noto Sans KR", sans-serif; padding:30px 0; margin-right:60px;}
+	#header_w ul.menu > li:last-child 	{margin-right:0px;}
+	#header_w ul.menu > li:hover p.depth01 a{color:#ee2c49;}
+	#header_w ul.menu > li a				{color:#222;}
+
+	/*footer*/
+	footer							{position:absolute;z-index:99;left:0;width:100%;box-sizing:border-box; background:#404040;height:102px;}
+	footer div						{position:relative;width:1370px;margin:0 auto;display:flex;}
+	footer ul.left 					{padding:26px 0px; font:300 15px/20px "Noto Sans KR", sans-serif;}
+	footer ul.left li				{color:#a5a1a1;}
+	footer ul.left li:first-child	{color:#a5a1a1;margin-bottom: 2px;}
+	footer p.f_site					{position:absolute; right:0;width:310px;padding: 28px 0px;}
+	footer label.fs					{display: block;font-size: 0;line-height: 0;}
+	footer label.fs select			{width:100%;}
+	footer select.bk				{width:310px;border: 1px solid #a5a1a1;background: #404040 url('../_img/pc/comn/sel_down_bk.png') top 50% right 20px no-repeat;height: 45px;padding: 0 20px;font: 400 15px/24px 'Noto Sans KR', sans-serif;color: #a5a1a1;box-sizing: border-box;}
+	
+	/* 공유하기  */
+	.share_btn				{position:absolute; z-index:2; display:inline-block; margin:41px 0 0 8px;}
+	.share_btn a				{display:inline-block; font-size:0; width:35px; height:35px; background:url('../_img/pc/comn/share.png') no-repeat 50% 50%; transition:0.3s;}
+	.share_btn a:hover,
+	.share_btn a.on		{background:url('../_img/pc/comn/share_on.png') no-repeat 50% 50%;}
+	.sh_sns				{position:absolute; z-index:999; z-index:-2; visibility:hidden; opacity:0; transition:all .5s; top:11px; }
+	.sh_sns.on			{visibility:visible; opacity:1; }
+	.sh_sns a			{position:absolute; font-size:0; left:0; display:inline-block; width:35px; height:35px; margin-left:4px;}
+	.sh_sns a.facebook	{background:url('../_img/pc/comn/facebook.png') no-repeat 50% 50%; left:0; transition-duration: 0.2s}
+	.sh_sns a.twitter			{background:url('../_img/pc/comn/twitter.png') no-repeat 50% 50%; left:0; transition-duration: 0.3s}
+	.sh_sns a.kakao		{background:url('../_img/pc/comn/kakao.png') no-repeat 50% 50%; left:0; transition-duration: 0.4s}
+	.sh_sns a.embed		{background:url('../_img/pc/comn/embed.png') no-repeat 50% 50%; left:0; transition-duration: 0.5s}
+	.sh_sns.on a.facebook	{left:37px;}
+	.sh_sns.on a.twitter		{left:78px;}
+	.sh_sns.on a.kakao		{left:119px;}
+	.sh_sns.on a.embed		{left:160px;}
+
+	/* subtop */
+	div.sub_top								{margin-top:121px; width:100%; height:154px; background:url('../_img/pc/comn/sub_top04.jpg') center center;}
+	div.sub_top div.h2_bg					{max-width:1370px; margin:0 auto; position:relative; padding-left:315px; box-sizing:border-box;}
+	div.sub_top h2							{font:700 30px/30px "Mulish","Noto Sans KR", sans-serif; color:#000; padding:53px 0 12px; float:left;}
+	div.sub_top .navi						{clear:both;}
+	div.sub_top .navi li					{color:#577299; font:400 15px/24px "Mulish","Noto Sans KR", sans-serif; display:inline-block}
+	div.sub_top .navi li.home				{font-size:0; background:url('../_img/pc/comn/navi_home.png')no-repeat; padding-left: 15px;}
+	div.sub_top .navi li::after				{display:inline-block; content:''; background:url('../_img/pc/comn/navi_arrow.png')no-repeat; width:8px; height:13px; margin:0 10px;}
+	div.sub_top .navi li:last-child::after  {display:none}
+	div.sub_top h3							{width:265px; height:154px; background:url('../_img/pc/comn/left_bg.jpg')no-repeat; border-top-left-radius:20px; border-top-right-radius:20px; display:flex; align-items:center; justify-content:center; color:#fff; font:400 30px/35px "Mulish","Noto Sans KR", sans-serif;position:absolute; top:53px; left:0; box-shadow:2px -5px 16px rgba(0,0,0,0.1);}
+	div.sub_top h3.one						{border-bottom-left-radius:20px;}
+	div.sub_top h3 a						{color:#fff; cursor:default;}
+	div.sub_top h3 span						{font-weight:700; display:inline-block;}
+
+	div.sub_content				{max-width:1370px; margin:0 auto; display:flex;min-height: 760px;}
+	div.sub_content .left_menu  {display:inline-block; width:265px; margin-right:46px; margin-top:50px;}
+	div.sub_content .right		{display:inline-block; width:1055px; padding:50px 0 80px; min-height:462px;position: relative;}
+
+	/* leftmenu */
+	div.left_menu ul					{width:265px;  box-shadow:2px 1px 16px rgba(0,0,0,0.1); border-bottom-left-radius:20px;}
+	div.left_menu ul li a				{display:block; height:63px; font:400 17px/63px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; border-bottom:1px solid #ddd; padding-left:30px; transition:all 0.2s}
+	div.left_menu ul li:last-child a	{border-bottom:0; border-bottom-left-radius:20px;}
+	div.left_menu ul li:last-child		{border-bottom-left-radius:20px;}
+	div.left_menu ul li a.on			{background:#2d2c2c; color:#fff}
+	div.left_menu ul li a.on:hover		{color:#fff}
+	div.left_menu ul li a:hover			{color:#ef2c4a}
+	
+
+
+	/* content */
+	
+	/* button */
+	p.btn_area					{text-align:right; margin-top:20px}
+	p.btn_area					{text-align:right; margin-top:20px;bottom: 59px;right: 0;}
+	p.btn_area.btn_down			{}
+	p.btn_area	a				{text-align:center; min-width:120px; background:#444; color:#fff; display:inline-block;  font: 400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px;}
+	p.btn_area	a:hover			{background:#ed2c49;}	
+	p.btn_down					{}
+	p.btn_down > a				{position: relative; padding: 15px 47px 15px 22px; text-align: left; color: #333; display: inline-block; font: 400 16px/18px "Mulish","Noto Sans KR", sans-serif; transition: all 0.2s; border-radius: 3px; border: 1px solid #ddd;}
+	p.btn_down > a::after		{padding-right:21px; position:absolute; width:18px; height:14px; background: #fff url('../_img/pc/comn/download.png')no-repeat 50% 50%; content:'';}
+	p.btn_down > a:hover		{border: 1px solid #ed2c49; color:#ed2c49;}	
+	p.btn_down > a:hover::after	{background: #fff url('../_img/pc/comn/download_h.png')no-repeat 50% 50%; content:'';}	
+
+
+
+	/* tab */
+	ul.tab						{width:100%;flex-wrap:wrap;display:flex;align-items:center;justify-content: flex-start;margin-bottom:60px;}
+	ul.tab li					{width:25%;}
+	ul.tab li a					{display:inline-block; border:1px solid #ddd;width:100%;height:60px;display:flex;align-items:center;padding:0 0 0 25px;box-sizing:border-box;font:400 16px/25px "Mulish","Noto Sans KR", sans-serif;color:#2d2c2c;background:url('../_img/pc/comn/tab_basic.png')no-repeat right 25px top 50%;transition:all 0.2s;justify-content: flex-start;}
+	ul.tab li:nth-child(n+2) a  {border-left:0;}	
+	ul.tab li:nth-child(4n+1) a {border-left:solid 1px #ddd;}
+	ul.tab li:nth-child(n+5) a  {border-top:0;}
+	ul.tab li a.on				{border:3px solid #ee2c49; font-weight:500; color:#ed2c49; background:url('../_img/pc/comn/tab_on.png')no-repeat right 22px top 51%;}
+	ul.tab li a:hover			{color:#ed2c49}
+
+	/* pagination */
+	.pagination						{text-align:center; margin-top:20px; clear:both}
+	.pagination a					{display:inline-block; font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#333; width:25px; height:25px; border-radius:50%; margin:0 3px; vertical-align: middle}
+	.pagination a:hover				{color:#ee2c49}
+	.pagination a.on				{background:#ee2c49; color:#fff}	
+	.pagination a.prev				{font-size:0; background:url('../_img/pc/comn/prev.png')no-repeat 50% 50%; transition:all 0.2s}
+	.pagination a.prev:hover		{background-image:url('../_img/pc/comn/prev_on.png')}
+	.pagination a.prev.end			{background-image:url('../_img/pc/comn/prev_end.png')}
+	.pagination a.prev.end:hover	{background-image:url('../_img/pc/comn/prev_end_on.png')} 
+	.pagination a.next				{font-size:0; background:url('../_img/pc/comn/next.png')no-repeat 50% 50%; transition:all 0.2s}
+	.pagination a.next:hover		{background-image:url('../_img/pc/comn/next_on.png')}
+	.pagination a.next.end			{background-image:url('../_img/pc/comn/next_end.png')}
+	.pagination a.next.end:hover	{background-image:url('../_img/pc/comn/next_end_on.png')}
+	
+	.list .pagination				{margin-top:0}
+
+	/* 갤러리 리스트 */
+	.list .list_top				{overflow:hidden; margin-bottom:25px}
+	.list .list_top > p			{float:left; font:400 16px/16px "Mulish","Noto Sans KR", sans-serif; color:#333; padding-top: 15px;}
+	.list .list_top > p span	{font-weight:600; color:#ed2c49; display:inline-block; }
+	.list .list_top > .filter	{float:right; display:flex}
+	.list_top select				{height:45px; border:1px solid #ddd; padding:0 18px; width:132px; font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/pc/comn/sel_arrow.png')no-repeat right 18px top 50%; box-sizing:border-box;}
+	.list_top .search				{position:relative; margin-left:8px}
+	.list_top .search input			{height:45px; border:1px solid #ddd; padding:0 18px;  font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; width:310px; box-sizing:border-box;}
+	.list_top .search button		{display:inline-block; width:20px; height:15px; font-size:0; border:none; background:url('../_img/pc/comn/search_btn.png')no-repeat; position:absolute; top:50%; right:18px; transform:translateY(-50%); cursor:pointer; }
+	.list_top .search button:hover  {background:url('../_img/pc/comn/search_btn_on.png')no-repeat;}
+
+	.box_list ul				{display:flex; flex-wrap:wrap;}
+	.box_list ul li				{width:335px; border-radius:20px; overflow:hidden; margin-bottom:25px; padding-bottom:20px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out;}
+	.box_list ul li:nth-child(3n+2){margin:0 25px;}
+	.box_list ul li a			{display:block;} 
+	.box_list ul li a .img_box  {display:block; background:#b9b9b9; position:relative}
+	.box_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+	.box_list ul li a .img_box::after  {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/play.png')no-repeat center center; position:absolute; bottom:0; left:0; opacity:0.8; z-index:15; transition:all 0.3s ease-in-out}
+	.box_list ul li a .tit		{display:block; color:#222; font:500 19px/19px "Mulish","Noto Sans KR", sans-serif; padding:22px 0px 3px; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info		{font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#7c7c7c; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info b	{font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; position:relative; padding-left:12px; margin-left:7px}
+	.box_list ul li a .info b::before {display:inline-block; content:''; width:1px; height:14px; background:#a3a3a3;  position:absolute; left:0; top:50%; transform:translateY(-50%);}
+	.box_list ul li:hover		{box-shadow:5px 3px 18px rgba(0,0,0,0.12);}
+	.box_list ul li:hover .tit,	.box_list ul li:hover .info {padding-left:26px} 
+	.box_list ul li:hover .tit	{color:#4c5dc6}
+	.box_list ul li:hover .img_box::before {opacity:0.75}
+	.box_list ul li:hover .img_box::after  {opacity:1}
+
+	/* 자료 리스트 */
+	.box_list.data ul li a .img_box::after  {display:none;}
+	.box_list.data ul li:hover .img_box::after  {display:none;}
+
+	/* 게시판 리스트 */
+	.bbs_list ul					{border-top:2px solid #555}
+	.bbs_list ul li 				{display:flex; align-items:center; font:300 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#666; border-bottom:1px solid #ddd; padding:15px 0; width:100%; transition:all 0.2s;  cursor:pointer}
+	.bbs_list ul li:hover			{background:#f5f9ff}
+	.bbs_list ul li:hover .tit a	{color:#4c5dc6}
+	.bbs_list ul li.cate 			{background:#f5f5f5; font:400 17px/19px "Mulish","Noto Sans KR", sans-serif;color:#333; cursor:default}
+	.bbs_list ul li.cate:hover		{color:#333}
+	.bbs_list ul li.cate:hover .tit	{color:#333}
+	.bbs_list ul li p				{text-align:center}
+	.bbs_list ul li.cate p.tit		{text-align:center}
+	.bbs_list ul li p.num			{width:7%}
+	.bbs_list ul li p.tit			{width:52%; text-align:left;}
+	.bbs_list ul li p.tit a			{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:inline-block; max-width: 97%; text-align:left;  font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#222; padding-top:6px;  transition:all 0.2s}
+	.bbs_list ul li p.tit i			{color:#4c5dc6; font:italic 800 16px/16px "Mulish","Noto Sans KR", sans-serif; padding-left:5px; letter-spacing:-0.5px} 
+	.bbs_list ul li p.tit.lock a	{background:url('../_img/pc/comn/lock.png')no-repeat 0 6px; padding-left:20px}
+	.bbs_list ul li p.state			{width:8%; padding-right:20px;}
+	.bbs_list ul li p.name			{width:10%;}	
+	.bbs_list ul li p.date			{width:12%;}
+	.bbs_list ul li p.views			{width:9%;}
+	.bbs_list ul li p span.st01		{display:inline-block; border:1px solid #ccc; width:70px; padding:5px 0px; border-radius:3px; color:#888; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif;}
+	.bbs_list ul li p span.st02		{display:inline-block; width:70px; padding:5px 0px; border-radius:3px; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; border:1px solid #ed2c49; color:#ed2c49 }
+
+
+	/* 게시판상세뷰 */
+	.board_top p				{font:500 26px/35px "Mulish","Noto Sans KR", sans-serif; width:100%; padding:0px 20px 20px 0px; color:#333; border-bottom: 2px solid #555;     box-sizing: border-box;}
+	.board_top p.lock			{background:url('../_img/pc/comn/tit_lock.png')no-repeat 0 5px; padding-left:30px}
+    .board_top ul				{border-bottom:1px solid #ddd; color:#555; display:flex; padding:18px 10px; width:100%;     box-sizing: border-box;}
+	.board_top ul li::after		{display:inline-block; content:''; width:1px; height:15px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.board_top ul li:last-child::after {display:none}
+    .board_top ul li		{font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; margin-right:15px; padding-right:15px; position:relative}
+	.board_top ul li span	{font-weight:400; display:inline-block; margin-left:3px}
+	.board_file				{padding:15px 15px; display:table; width:100%; background:#f5f5f5; box-sizing:border-box}
+	.board_file strong		{display:table-cell; font:400 16px/19px "Mulish","Noto Sans KR", sans-serif;  width:70px; vertical-align:middle; color:#555}
+	.board_file p			{display:table-cell}
+	.board_file p a			{display:inline-block; background: url('../_img/pc/comn/file_down.png')no-repeat 0 7px; margin-left:18px; padding-left:20px; font:300 16px/28px "Mulish","Noto Sans KR", sans-serif; color:#666; text-decoration:underline; text-decoration-color:#888; transition:all 0.2s}
+	.board_file p a:hover	{color:#ed2c49; text-decoration-color:#ed2c49; background-image:url('../_img/pc/comn/file_down_on.png')}
+	.board_cont				{padding:30px 20px 60px 20px; font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333; border-bottom:1px solid #ddd;}
+
+	.prev_next_box						{width:100%; border-top:1px solid #222; border-bottom:1px solid #222;}
+	.prev_next_box p					{width:auto; padding:18px 20px; border-bottom:1px solid #ddd; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font: 300 16px/24px 'Noto Sans KR', sans-serif; color: #999;}
+	.prev_next_box p a					{font:300 16px/24px 'Noto Sans KR', sans-serif; color:#666;}
+	.prev_next_box p a:hover,
+	.prev_next_box p a:focus			{color: #222;}
+	.prev_next_box p:last-child			{border-bottom: none;}
+	.prev_next_box p span				{font: 400 16px/24px 'Noto Sans KR', sans-serif; color: #222;}
+	.prev_next_box p.prev span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/pc/comn/board_prev.png') no-repeat; display: inline-block; margin: 0 30px 0 16px;}
+	.prev_next_box p.next span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/pc/comn/board_next.png') no-repeat; display: inline-block; margin: 0 30px 0 16px;}
+	
+	.comment				{background:#f5f9ff; padding:30px 24px 45px; box-sizing:border-box;}
+	.comment .tit			{font:500 18px/24px 'Noto Sans KR', sans-serif; color:#4c5dc6; margin-bottom:10px; background:url('../_img/pc/comn/comment_arrow.png') no-repeat 0% 47%; padding:0px 18px}
+	.comment .cont			{font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333;  padding:0px 18px}
+	.comment .board_file	{background:#fff; margin-top:20px; padding:15px 24px}
+
+	/* 게시판상세뷰 */
+	.qna_write p.guide						{font:400 17px/27px "Mulish","Noto Sans KR", sans-serif; margin-bottom: 25px; background:#f5f5f5; padding:20px 35px; border-radius:5px; text-align:center}
+	.qna_write p.guide span					{font:500 17px/27px "Mulish","Noto Sans KR", sans-serif; color:#ed2c49}
+	.qna_write ul.bbs_write02				{margin-top:40px}
+	.qna_write p.guide02					{font:300 17px/25px "Mulish","Noto Sans KR", sans-serif; color: #777;margin-bottom: 10px;}
+	.qna_write p.guide02 span				{color: #ee2c49;}
+	.qna_write ul li div span.star_write	{color:#ed2c49; padding-left:3px;}
+
+	ul.bbs_write							{width:100%; margin:0 auto; border-top:2px solid #555; max-width: 1400px;}
+	ul.bbs_write li							{display:table; table-layout:fixed; width:100%;}
+	ul.bbs_write li > div					{display:table-cell;padding:9px 12px; border-bottom:1px solid #ddd; font:300 16px/25px 'Noto Sans KR', sans-serif; color: #222;}
+	ul.bbs_write li > div.tit				{width:80px; padding:9px 20px; min-height:30px; border-bottom:1px solid #f3e4e2; background:#fdf7f6; vertical-align:middle; text-align:left; font:500 16px/22px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+	ul.bbs_write li div input				{height:45px; border:1px solid #ddd; padding:0 12px;  font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box; transition:all 0.2s}
+	ul.bbs_write li div input[type="text"]:focus	{border:1px solid #ed2c49}
+	ul.bbs_write select								{height:45px; border:1px solid #ddd; padding:0 18px; width:132px; font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/pc/comn/sel_arrow.png')no-repeat right 18px top 50%; box-sizing:border-box;}
+	ul.bbs_write li div								{position: relative; vertical-align: middle; word-break:keep-all;}
+	ul.bbs_write .call_wrap							{display:flex; justify-content:space-between; align-items:center;}
+	ul.bbs_write .call_wrap input, ul.bbs_write .call_wrap select {width:30%}
+
+	ul.bbs_write02 li					{margin-bottom:20px; margin-bottom:25px; border-bottom:1px solid #ededed; padding-bottom:15px;}
+	ul.bbs_write02 li > div.tit			{font:500 18px/23px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:10px;}
+	ul.bbs_write02 li > div.tit::before {display:inline-block; content:''; width:5px; height:5px; background:#ee2c49; border-radius:50%; margin-right:8px; vertical-align: top; margin-top:9px;}
+	ul.bbs_write02 .basic_ck											{padding-left:13px}
+	ul.bbs_write02 li div input[type="checkbox"]						{position:absolute; width:0px; height:0px; border:none;}
+	ul.bbs_write02 li div input[type="checkbox"] + label				{position: relative; display:inline-block; font:400 16px/27px 'Noto Sans KR', sans-serif; color: #666; cursor:pointer; margin-right:20px;}
+	ul.bbs_write02 li div input[type="checkbox"] + label:last-child		{margin-right: 0;}
+	ul.bbs_write02 li div input[type="checkbox"] + label:before			{content: ''; display:inline-block; width:16px; height:16px; cursor:pointer; border:1px solid #ccc; background:#f8f8f8; vertical-align:sub; margin-right:7px; }
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:before	{background:#fff; border:1px solid #4c5dc6;}
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:after	{position:absolute; content: ''; display:inline-block; width:10px; height:10px; cursor:pointer; background:#fff url('../_img/pc/comn/check_on.png')no-repeat 50% 50%; left:4px; top:10px; border-radius:10px;}
+	ul.bbs_write02 li div textarea		{margin-bottom:5px; width:100%; padding:10px; min-height:200px; overflow-y:scroll; border:1px solid #ddd; box-sizing:border-box; font:300 16px/27px 'Noto Sans KR', sans-serif; color:#666;}
+	ul.bbs_write02 li div .counter		{text-align:right; font:300 16px/23px "Mulish","Noto Sans KR", sans-serif; color:#666;}
+	
+
+	/* 게시글이 없습니다 */
+	.no_cont			{cursor:default !important;font: 400 17px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;background:  url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24%;float: inherit !important;display: block !important;width: 100% !important;padding: 150px 0 24px !important;text-align: center !important;}
+	.no_cont:hover		{box-shadow:0 0 0 0 !important;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24% !important;}
+	.no_cont::before	{content:''; display:none !important;}
+	.no_cont02			{cursor: default !important;font: 400 17px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important; width:1260px !important; padding: 125px 0 0px !important;text-align: center !important;}
+	.no_cont03			{cursor: default !important;font: 400 17px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important;width: 1370px !important;padding: 136px 0 0px !important;text-align: center !important;height: 71px !important;box-shadow: 0 0 0 0 !important;}
+	.no_cont03:hover	{background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2% !important;}
+	}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1390px){
+
+	header.web				{display:none;}
+	header.tablet			{display:block !important;}
+	header.tablet #header_w {background: #fff;display: flex;height: 80px;padding:0px 20px; margin: 0 auto;overflow: hidden;position: relative;width:unset !important; border-bottom:1px solid #ddd; justify-content: space-between;}
+
+	#header_w h1		 {padding:15px 0px;}
+	#header_w h1 a		 {display:inline-block;width:262px; height:46px;background:url('../_img/pc/comn/logo.png')no-repeat 0% 50%}
+	#header_w button	 {display:inline-block; line-height:0;text-indent:-10000px;padding:0px;z-index:1; border:none; background:none; cursor:pointer}
+	#header_w button span{display:block; width:25px; margin:5px 0; height:2px; background:#333; }
+
+	#header_w button{transition:all .3s ease; -ms-transition:all .3s ease; -webkit-transition:all .3s ease; }
+
+	/*footer*/
+	footer							{position:absolute;z-index:99;left:0;width:100%;box-sizing:border-box;background:#404040;height:102px; padding:0 20px}
+	footer div						{position:relative;width:100%;margin:0 auto;display:flex;}
+	footer ul.left 					{padding:26px 0px; font:300 15px/20px "Noto Sans KR", sans-serif;}
+	footer ul.left li				{color:#a5a1a1;}
+	footer ul.left li:first-child	{color:#a5a1a1;margin-bottom: 2px;}
+	footer p.f_site					{position:absolute; right:0;width:310px;padding: 28px 0px;}
+	footer label.fs					{display: block;font-size: 0;line-height: 0;}
+	footer label.fs select			{width:100%;}
+	footer select.bk				{width:310px;border: 1px solid #a5a1a1;background: #404040 url('../_img/pc/comn/sel_down_bk.png') top 50% right 20px no-repeat;height: 45px;padding: 0 20px;font: 400 15px/24px 'Noto Sans KR', sans-serif;color: #a5a1a1;box-sizing: border-box;}
+
+	div.sub_content .right {padding:30px 20px 90px; width:100%}
+	
+	/* 공유하기  */
+	.share_btn				{margin-top:33px;}
+
+	/* 전체메뉴 */
+	.nav_m				{display:none}
+	.nav_m.show			{display:block; visibility:visible; opacity:1; right:0; transition:all 0.3s;}
+	.nav_m + div.modal	{display:none; position:fixed; z-index:500; left:0; top:0; width:100vw; height:100vh; background:#000; opacity:0.65;}
+	.nav_m				{position:fixed; display:block; visibility:hidden; opacity:0; width:250px; height:100vh; padding-top:60px; top:0; bottom:0; right:-250px; background:#fff; overflow:hidden; z-index:600; transition:all 0.4s linear;}
+	.nav_m.show					{display:block;visibility:visible;opacity:1;right:0;transition:all 0.3s;}
+	.nav_m.show ul.m_menu		{height:100vh;overflow-y:auto}
+	ul.m_menu > li				{position:relative; border-bottom:1px solid #ddd; padding:0 25px; overflow:hidden}
+	ul.m_menu > li > a			{position:relative; display:block; padding:12px 0; font:500 18px/30px 'Noto Sans KR','맑은 고딕', sans-serif; color:#333; letter-spacing:-0.3px;}
+	ul.m_menu > li > a.more::before		{position:absolute; content:""; display:block; width:16px; height:2px; background:#aaa; top:50%; right:1px; transition:all .3s;}
+	ul.m_menu > li > a.more::after		{position:absolute; content:""; display:block; width:2px; height:16px; background:#aaa; top:20px; right:8px; opacity:1; transition:all .3s;}
+	ul.m_menu > li > a.open				{color:#ed2c49;}
+	ul.m_menu > li > a.open::before		{transform:rotate(90deg); opacity:0}
+	ul.m_menu > li > a.open::after		{transform:rotate(90deg);}
+	ul.m_menu > li .ms_menu				{display:none; margin-bottom:12px;}
+	ul.m_menu > li .ms_menu	li					{padding:0 0 0px}
+	ul.m_menu > li .ms_menu li a				{position:relative; display:block; padding:7px 0 7px 15px; font:400 16px/25px 'Noto Sans KR','맑은 고딕', sans-serif; color:#888;}
+	ul.m_menu > li .ms_menu li a:focus			{color:#000}
+	ul.m_menu > li .ms_menu li:first-child a	{padding-top:0;}
+
+	#header_w .btn_close				  {position:fixed; top:40px; right:20px}
+	#header_w .btn_close:hover span			{background-color:#ef2c4a}
+	#header_w .btn_close span			  {margin:0; width:30px; transition:0.3s ease; background:#1b1b1b; height:2px; display:block; transform:rotate(45deg); transform-origin: center; margin-bottom: -1px;}
+	#header_w .btn_close span:last-child  {transform: rotate(-45deg); transform-origin: center; margin-top: -2px;}
+
+	/* subtop */
+	div.sub_top								{margin-bottom:60px; width:100%; height:154px; background:url('../_img/pc/comn/sub_top04.jpg') 68% center; margin-top:80px}
+	div.sub_top div.h2_bg					{max-width:1370px; margin:0 auto; position:relative; padding-left:20px; box-sizing:border-box;}
+	div.sub_top h2							{font:700 30px/30px "Mulish","Noto Sans KR", sans-serif; color:#000; padding:44px 0 12px; float:left;}
+	div.sub_top .navi						{clear:both;}
+	div.sub_top .navi li					{color:#577299; font:400 15px/24px "Mulish","Noto Sans KR", sans-serif; display:inline-block}
+	div.sub_top .navi li.home				{font-size:0; background:url('../_img/pc/comn/navi_home.png')no-repeat; padding-left: 15px;}
+	div.sub_top .navi li::after				{display:inline-block; content:''; background:url('../_img/pc/comn/navi_arrow.png')no-repeat; width:8px; height:13px; margin:0 10px;}
+	div.sub_top .navi li:last-child::after  {display:none}
+	div.sub_top h3							{width:100%; height:60px;display:flex; align-items:center; padding-left:20px; color:#fff; font:400 18px/18px "Mulish","Noto Sans KR", sans-serif;position:absolute; bottom:-93px; left:0;  background:#ef2c4a url('../_img/mo/comn/lm_arrow.png')no-repeat right 20px top 50% / 15px; box-sizing:border-box; border-radius:0; top:auto; box-shadow:none; justify-content:initial; border-radius:0 !important}
+	div.sub_top h3.one						{background-image:none}
+	div.sub_top h3.on.one					{background-image:none}
+	div.sub_top h3.on						{background:#ef2c4a url('../_img/mo/comn/lm_arrow_on.png')no-repeat right 20px top 46% / 15px;}
+	div.sub_top h3 a						{color:#fff}
+	div.sub_top h3 span						{font-weight:700; display:inline-block; padding-left:0px}
+
+
+	/* leftmenu */
+	div.sub_content						{position:relative}
+	div.sub_content div.left_menu						{position:absolute; z-index:40; top:-3px;background:#fff;width:100%; display:none; margin:0}
+	div.sub_content div.left_menu ul					{width:100%;  box-shadow:2px 1px 16px rgba(0,0,0,0.1%);}
+	div.sub_content div.left_menu ul li a				{display:block; height:55px; font:400 17px/55px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; border-bottom:1px solid #ddd; padding-left:30px; transition:all 0.2s;}
+	div.sub_content div.left_menu ul li:last-child a	{border-bottom:0;}
+	div.sub_content div.left_menu ul li a.on			{background:#2d2c2c; color:#fff; border-radius:0}
+	div.sub_content div.left_menu ul li a.on:hover		{color:#fff}
+	div.sub_content div.left_menu ul li a:hover			{color:#ef2c4a}
+
+	/*	quickmenu */
+	.quick							{position:fixed; top:59%; right:0px; z-index:12; transform:translateY(-45%); width:183px; box-sizing:border-box; transition:1s}
+	.quick p.close					{position:absolute; top: 33px; right:0px; z-index:5;}
+	.quick p.close a				{display:inline-block; width: 87px; height: 114px; background: url('../_img/pc/comn/q_close.png')no-repeat 0 0;;}
+	.quick p.open					{position:absolute; top:24%; left:-41px; z-index:-5; transform:translateY(-55%); width:45px; height:80px; border-radius:8px 0 0 8px; transition:0.8s}
+	.quick p.open a					{display:inline-block; width:100%; height:113px;  background:url('../_img/pc/comn/q_open.png')no-repeat 50% 50%;}
+	.quick ul.list					{box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1); border-radius: 20px 0 0 20px;width:100%; padding:30px 15px 107px 30px; box-sizing:border-box; background:#ffff url('../_img/pc/comn/q_logo.png')no-repeat 50% 94%;}
+	.quick ul.list li				{width:100%; margin:0 0 20px 0; text-align:left;}
+	.quick ul.list li:last-child	{margin:0;}
+	.quick ul.list li a				{font:500 13px/15px "Noto Sans KR", sans-serif; color:#444;display: flex;}
+	.quick ul.list li a p			{margin: 0 0 0 45px;position: absolute;}
+	.quick p.top					{width:100%;}
+	.quick p.top a					{display:inline-block; width:100%; background:#3f276d; padding:3px 0 8px 0; text-align:initial; font:400 15px/18px "Noto Sans KR", sans-serif; color:#fff}
+	.quick p.top a img				{margin:-2px 5px 0 0;}
+
+	.quick ul.list li:nth-child(3) a img{height:29px;}
+	.quick ul.list li:nth-child(4) a img{height:30px;}
+	.quick ul.list li:last-child::after	{content:''; background:#ddd; position:absolute;width: 130px;height: 1px;bottom: 70px;left: 31px;}
+
+	/* content */
+
+	/* button */
+	p.btn_area					{text-align:right; margin-top:30px}
+	p.btn_area	a				{text-align:center; min-width:120px; background:#444; color:#fff; display:inline-block;  font: 400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s;  border-radius:3px;}
+	p.btn_area	a:hover			{background:#ed2c49;}
+	p.btn_down					{}
+	p.btn_down > a				{position: relative; padding: 15px 47px 15px 22px; text-align: left; color: #333; display: inline-block; font: 400 16px/18px "Mulish","Noto Sans KR", sans-serif; transition: all 0.2s; border-radius: 3px; border: 1px solid #ddd;}
+	p.btn_down > a::after		{padding-right:21px; position:absolute; width:18px; height:14px; background: #fff url('../_img/pc/comn/download.png')no-repeat 50% 50%; content:'';}
+	p.btn_down > a:hover		{border: 1px solid #ed2c49; color:#ed2c49;}	
+	p.btn_down > a:hover::after	{background: #fff url('../_img/pc/comn/download_h.png')no-repeat 50% 50%; content:'';}	
+
+	
+	/* tab */
+	ul.tab						{width:100%; flex-wrap:wrap; display:flex; align-items:center; justify-content:space-between; margin-bottom:40px}
+	ul.tab li					{width:25%}
+	ul.tab li a					{display:block; border:1px solid #ddd; width:100%; height:60px; display:flex; align-items:center; padding:0 0 0 25px; box-sizing:border-box;  font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; background:url('../_img/pc/comn/tab_basic.png')no-repeat right 25px top 50%;  transition:all 0.2s}
+	ul.tab li:nth-child(n+2) a  {border-left:0;}	
+	ul.tab li:nth-child(4n+1) a {border-left:solid 1px #ddd;}
+	ul.tab li:nth-child(n+5) a  {border-top:0;}
+	ul.tab li a.on				{border:3px solid #ee2c49; font-weight:500; color:#ed2c49; background:url('../_img/pc/comn/tab_on.png')no-repeat right 22px top 51%;}
+	ul.tab li a:hover			{color:#ed2c49}
+
+	/* pagination */
+	.pagination						{text-align:center; margin-top:20px}
+	.pagination a					{display:inline-block; font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#333; width:25px; height:25px; border-radius:50%; margin:0 3px; vertical-align: middle}
+	.pagination a:hover				{color:#ee2c49}
+	.pagination a.on				{background:#ee2c49; color:#fff}	
+	.pagination a.prev				{font-size:0; background:url('../_img/pc/comn/prev.png')no-repeat 50% 50%; transition:all 0.2s}
+	.pagination a.prev:hover		{background-image:url('../_img/pc/comn/prev_on.png')}
+	.pagination a.prev.end			{background-image:url('../_img/pc/comn/prev_end.png')}
+	.pagination a.prev.end:hover	{background-image:url('../_img/pc/comn/prev_end_on.png')} 
+	.pagination a.next				{font-size:0; background:url('../_img/pc/comn/next.png')no-repeat 50% 50%; transition:all 0.2s}
+	.pagination a.next:hover		{background-image:url('../_img/pc/comn/next_on.png')}
+	.pagination a.next.end			{background-image:url('../_img/pc/comn/next_end.png')}
+	.pagination a.next.end:hover	{background-image:url('../_img/pc/comn/next_end_on.png')}
+
+	.list .pagination				{margin-top:0}
+
+	/* 갤러리 리스트 */
+	.list .list_top				{overflow:hidden; margin-bottom:25px}
+	.list .list_top > p			{float:left; font:400 16px/16px "Mulish","Noto Sans KR", sans-serif; color:#333; padding-top: 15px;}
+	.list .list_top > p span	{font-weight:600; color:#ed2c49; display:inline-block; }
+	.list .list_top > .filter	{float:right; display:flex}
+	.list_top select				{height:45px; border:1px solid #ddd; padding:0 18px; width:132px; font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/pc/comn/sel_arrow.png')no-repeat right 18px top 50%; box-sizing:border-box;}
+	.list_top .search				{position:relative; margin-left:8px}
+	.list_top .search input			{height:45px; border:1px solid #ddd; padding:0 18px;  font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; width:310px; box-sizing:border-box;}
+	.list_top .search button		{display:inline-block; width:20px; height:15px; font-size:0; border:none; background:url('../_img/pc/comn/search_btn.png')no-repeat; position:absolute; top:50%; right:18px; transform:translateY(-50%); cursor:pointer; }
+	.list_top .search button:hover  {background:url('../_img/pc/comn/search_btn_on.png')no-repeat;}
+
+	.box_list ul					{display:flex; flex-wrap:wrap;}
+	.box_list ul li					{width:32%; border-radius:20px; overflow:hidden; margin-bottom:25px; padding-bottom:20px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out}
+	.box_list ul li:nth-child(3n+2)	{margin:0 2%;}
+	.box_list ul li a				{display:block;}
+	.box_list ul li a img			{width:100%; height:230px}
+	.box_list ul li a .img_box			{display:block; background:#b9b9b9; position:relative}
+	.box_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100% /cover; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+	.box_list ul li a .img_box::after  {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/play.png')no-repeat center center; position:absolute; bottom:0; left:0; opacity:0.8; z-index:15; transition:all 0.3s ease-in-out}
+	.box_list ul li a .tit		{display:block; color:#222; font:700 19px/19px "Mulish","Noto Sans KR", sans-serif; padding:22px 0px 3px; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info		{font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#7c7c7c; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info b	{font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; position:relative; padding-left:12px; margin-left:7px}
+	.box_list ul li a .info b::before   {display:inline-block; content:''; width:1px; height:14px; background:#a3a3a3;  position:absolute; left:0; top:50%; transform:translateY(-50%);}
+	.box_list ul li:hover				{box-shadow:5px 3px 18px rgba(0,0,0,0.12);}
+	.box_list ul li:hover .tit,	.box_list ul li:hover .info {padding-left:26px} 
+	.box_list ul li:hover .tit								{color:#4c5dc6}
+	.box_list ul li:hover .img_box::before					{opacity:0.75}
+	.box_list ul li:hover .img_box::after					{opacity:1}
+
+	/* 게시판 리스트 */
+	.bbs_list ul					{border-top:2px solid #555}
+	.bbs_list ul li 				{display:flex; align-items:center; font:300 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#666; border-bottom:1px solid #ddd; padding:16px 0; width:100%; transition:all 0.2s}
+	.bbs_list ul li:hover			{background:#f5f9ff}
+	.bbs_list ul li:hover .tit a	{color:#4c5dc6}
+	.bbs_list ul li.cate 			{background:#f5f5f5; font:400 17px/19px "Mulish","Noto Sans KR", sans-serif;color:#333; cursor:default}
+	.bbs_list ul li.cate:hover		{color:#333}
+	.bbs_list ul li.cate:hover .tit	{color:#333}
+	.bbs_list ul li p				{text-align:center}
+	.bbs_list ul li.cate  p.tit	{text-align:center}
+	.bbs_list ul li p.num			{width:7%}
+	.bbs_list ul li p.tit			{width:54%; text-align:left;}
+	.bbs_list ul li p.tit a			{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:inline-block; max-width: 97%; text-align:left;  font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#222; padding-top:6px;  transition:all 0.2s}
+	.bbs_list ul li p.tit i			{color:#4c5dc6; font:italic 800 16px/16px "Mulish","Noto Sans KR", sans-serif; padding-left:5px; letter-spacing:-0.5px} 
+	.bbs_list ul li p.tit.lock a	{background:url('../_img/pc/comn/lock.png')no-repeat 0 6px; padding-left:20px}
+	.bbs_list ul li p.state			{width:8%; padding-right:20px;}
+	.bbs_list ul li p.name			{width:10%;}	
+	.bbs_list ul li p.date			{width:12%;}
+	.bbs_list ul li p.views			{width:9%;}
+	.bbs_list ul li p span.st01		{display:inline-block; border:1px solid #ccc; width:70px; padding:5px 0px; border-radius:3px; color:#888; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif;}
+	.bbs_list ul li p span.st02		{display:inline-block; width:70px; padding:5px 0px; border-radius:3px; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; border:1px solid #ed2c49; color:#ed2c49 }
+
+
+	/* 게시판상세뷰 */
+	.board_top p				{font:500 26px/35px "Mulish","Noto Sans KR", sans-serif; width:100%; padding:0px 20px 20px 0px; color:#333; border-bottom: 2px solid #555;     box-sizing: border-box;}
+	.board_top p.lock			{background:url('../_img/pc/comn/tit_lock.png')no-repeat 0 5px; padding-left:30px}
+    .board_top ul				{border-bottom:1px solid #ddd; color:#555; display:flex; padding:18px 10px; width:100%;     box-sizing: border-box;}
+	.board_top ul li::after		{display:inline-block; content:''; width:1px; height:15px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.board_top ul li:last-child::after {display:none}
+    .board_top ul li		{font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; margin-right:15px; padding-right:15px; position:relative}
+	.board_top ul li span	{font-weight:400; display:inline-block; margin-left:3px}
+	.board_file				{padding:15px 15px; display:table; width:100%; background:#f5f5f5; box-sizing:border-box}
+	.board_file strong		{display:table-cell; font:400 16px/19px "Mulish","Noto Sans KR", sans-serif;  width:70px; vertical-align:middle; color:#555}
+	.board_file p			{display:table-cell}
+	.board_file p a			{display:inline-block; background: url('../_img/pc/comn/file_down.png')no-repeat 0 7px; margin-left:18px; padding-left:20px; font:300 16px/28px "Mulish","Noto Sans KR", sans-serif; color:#666; text-decoration:underline; text-decoration-color:#888; transition:all 0.2s}
+	.board_file p a:hover	{color:#ed2c49; text-decoration-color:#ed2c49; background-image:url('../_img/pc/comn/file_down_on.png')}
+	.board_cont				{padding:30px 20px 60px 20px; font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333; border-bottom:1px solid #ddd;}
+
+	.prev_next_box						{width:100%; border-top:1px solid #222; border-bottom:1px solid #222;}
+	.prev_next_box p					{width:auto; padding:18px 20px; border-bottom:1px solid #ddd; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font: 300 16px/24px 'Noto Sans KR', sans-serif; color: #999;}
+	.prev_next_box p a					{font:300 16px/24px 'Noto Sans KR', sans-serif; color:#666;}
+	.prev_next_box p a:hover,
+	.prev_next_box p a:focus			{color: #222;}
+	.prev_next_box p:last-child			{border-bottom: none;}
+	.prev_next_box p span				{font: 400 16px/24px 'Noto Sans KR', sans-serif; color: #222;}
+	.prev_next_box p.prev span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/pc/comn/board_prev.png') no-repeat; display: inline-block; margin: 0 30px 0 16px;}
+	.prev_next_box p.next span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/pc/comn/board_next.png') no-repeat; display: inline-block; margin: 0 30px 0 16px;}
+	
+	.comment				{background:#f5f9ff; padding:30px 24px 45px; box-sizing:border-box;}
+	.comment .tit			{font:500 18px/24px 'Noto Sans KR', sans-serif; color:#4c5dc6; margin-bottom:10px; background:url('../_img/pc/comn/comment_arrow.png') no-repeat 0% 47%; padding:0px 18px}
+	.comment .cont			{font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333;  padding:0px 18px}
+	.comment .board_file	{background:#fff; margin-top:20px; padding:15px 24px}
+
+	/* 게시판상세뷰 */
+	.qna_write p.guide			{font:400 17px/27px "Mulish","Noto Sans KR", sans-serif; margin-bottom: 25px; background:#f5f5f5; padding:20px 35px; border-radius:5px; text-align:center}
+	.qna_write p.guide span		{font:500 17px/27px "Mulish","Noto Sans KR", sans-serif; color:#ed2c49}
+	.qna_write ul.bbs_write02	{margin-top:40px}
+
+	ul.bbs_write							{width:100%; margin:0 auto; border-top:2px solid #555; max-width: 1400px;}
+	ul.bbs_write li							{display:table; table-layout:fixed; width:100%;}
+	ul.bbs_write li > div					{display:table-cell;padding:9px 12px; border-bottom:1px solid #ddd; font:300 16px/25px 'Noto Sans KR', sans-serif; color: #222;}
+	ul.bbs_write li > div.tit				{width:80px; padding:9px 20px; min-height:30px; border-bottom:1px solid #f3e4e2; background:#fdf7f6; vertical-align:middle; text-align:left; font:500 16px/22px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+	ul.bbs_write li div input				{height:45px; border:1px solid #ddd; padding:0 12px;  font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box; transition:all 0.2s}
+	ul.bbs_write li div input[type="text"]:focus	{border:1px solid #ed2c49}
+	ul.bbs_write select								{height:45px; border:1px solid #ddd; padding:0 18px; width:132px; font:400 16px/45px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/pc/comn/sel_arrow.png')no-repeat right 18px top 50%; box-sizing:border-box;}
+	ul.bbs_write li div								{position: relative; vertical-align: middle; word-break:keep-all;}
+	ul.bbs_write .call_wrap							{display:flex; justify-content:space-between; align-items:center;}
+	ul.bbs_write .call_wrap input, ul.bbs_write .call_wrap select {width:30%}
+	ul.bbs_write02 li {margin-bottom:20px; margin-bottom:25px; border-bottom:1px solid #ededed; padding-bottom:15px;}
+	ul.bbs_write02 li > div.tit::before {display:inline-block; content:''; width:5px; height:5px; background:#ee2c49; border-radius:50%; margin-right:8px; vertical-align: top; margin-top:9px;}
+	ul.bbs_write02 li > div.tit {font:500 18px/23px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:10px}
+	ul.bbs_write02 .basic_ck											{padding-left:13px}
+	ul.bbs_write02 li div input[type="radio"]							{position:absolute; width:0px; height:0px; border:none;}
+	ul.bbs_write02 li div input[type="radio"] + label					{position: relative; display:inline-block; font:400 16px/27px 'Noto Sans KR', sans-serif; color: #666; cursor:pointer; margin-right: 20px;}
+	ul.bbs_write02 li div input[type="radio"] + label:last-child		{margin-right: 0;}
+	ul.bbs_write02 li div input[type="radio"] + label:before			{border-radius: 20px; content: ''; display:inline-block; width:16px; height:16px; cursor:pointer; border:1px solid #ccc; background:#f8f8f8; vertical-align:sub; margin-right:8px; }
+	ul.bbs_write02 li div input[type="radio"]:checked + label:before	{background:#fff; border:1px solid #4c5dc6;}
+	ul.bbs_write02 li div input[type="radio"]:checked + label:after		{position:absolute; content: ''; display:inline-block; width:10px; height:10px; cursor:pointer; background:#4c5dc6; left:4px; top:10px; border-radius:10px;}
+	ul.bbs_write02 li div textarea		{margin-bottom:5px; width:100%; padding:10px; min-height:200px; overflow-y:scroll; border:1px solid #ddd; box-sizing:border-box; font:300 16px/27px 'Noto Sans KR', sans-serif; color:#666;}
+	ul.bbs_write02 li div .counter		{text-align:right; font:300 16px/23px "Mulish","Noto Sans KR", sans-serif; color:#666;}
+
+	
+	/* 게시글이 없습니다 */
+	.no_cont02			{cursor: default !important;font: 400 16px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important; width:20% !important; padding: 125px 0 0px !important;text-align: center !important;}
+	.no_cont03			{cursor: default !important;font: 400 16px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important;width: 20% !important;padding: 136px 0 0px !important;text-align: center !important;height: 71px !important;box-shadow: 0 0 0 0 !important;}
+	.no_cont03:hover	{background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2% !important;}
+
+	
+}
+
+/* @media only screen and (min-width: 960px) and (max-width: 1120px) {
+
+	header.web	{display:none;}
+	header.tablet {display:block !important;}
+	header.tablet #header_w {background: #fff;display: flex;height: 80px;padding: 0px 40px;min-width: 960px !important;margin: 0 auto;overflow: hidden;position: relative;}
+
+
+} */
+
+/* ------------------------------------------------------------------ PC 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ TA  ------------------------------------------------------------------ */
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+
+	header.web					{display:none;}
+	header.tablet				{display:block !important;}
+	header.tablet #header_w		{background:#fff;display: flex;height:70px;padding:0px 20px; margin 0 auto;overflow:hidden; position:relative; width:unset !important; border-bottom:1px solid #ddd; justify-content: space-between;}
+
+	#header_w h1 a			{display:inline-block;width:200px; height:70px;background:url('../_img/mo/comn/logo.png')no-repeat 0% 50% / 200px; box-sizing:border-box}
+	#header_w button		{display:inline-block; line-height:0;text-indent:-10000px;padding:0px;z-index:1; border:none; background:none; cursor:pointer; position:absolute; top:23px; right:20px }
+	#header_w button span	{display:block; width:25px; margin:5px 0; height:2px; background:#333;}
+
+	#header_w button		{transition:all .3s ease; -ms-transition:all .3s ease; -webkit-transition:all .3s ease; }
+
+	/*footer*/
+	footer							{position:absolute;z-index:99;left:0;width:100%;box-sizing:border-box;background:#404040;/* height:102px; */ padding:0 20px; text-align:center}
+	footer div						{position:relative;width:100%;margin:0 auto;}
+	footer ul.left 					{padding:26px 0px 15px; font:300 15px/20px "Noto Sans KR", sans-serif;}
+	footer ul.left li				{color:#a5a1a1;}
+	footer ul.left li:first-child	{color:#a5a1a1;margin-bottom: 2px;}
+	footer p.f_site					{padding:0px 0px 28px;}
+	footer label.fs					{display: block;font-size: 0;line-height: 0;}
+	footer label.fs select			{width:100%;}
+	footer select.bk				{width:310px;border: 1px solid #a5a1a1;background: #404040 url('../_img/mo/comn/sel_down_bk.png') no-repeat  top 50% right 20px / 20px;height: 45px;padding: 0 20px;font: 400 15px/24px 'Noto Sans KR', sans-serif;color: #a5a1a1;box-sizing: border-box;}
+
+	.right							{padding:35px 20px 90px;}
+	
+	/* 공유하기  */
+	.share_btn				{position:absolute; z-index:2; display:inline-block; margin:33px 0 0 8px;}
+	.share_btn a				{display:inline-block; font-size:0; width:40px; height:40px; background:url('../_img/mo/comn/share.png') no-repeat 50% 50% / 40px; transition:0.3s;}
+	.share_btn a:hover,
+	.share_btn a.on			{background:url('../_img/mo/comn/share_on.png') no-repeat 50% 50% / 40px;}
+	.sh_sns					{position:absolute; z-index:-2; visibility:hidden; opacity:0; transition:all .5s; top:11px; }
+	.sh_sns.on				{visibility:visible; opacity:1;}
+	.sh_sns a					{position:absolute; font-size:0; left:0; display:inline-block; width:40px; height:40px; margin-left:4px;}
+	.sh_sns a.facebook	{background:url('../_img/mo/comn/facebook.png') no-repeat 50% 50% / 40px; left:0; transition-duration: 0.2s}
+	.sh_sns a.twitter			{background:url('../_img/mo/comn/twitter.png') no-repeat 50% 50% / 40px; left:0; transition-duration: 0.3s}
+	.sh_sns a.kakao		{background:url('../_img/mo/comn/kakao.png') no-repeat 50% 50% / 40px; left:0; transition-duration: 0.4s}
+	.sh_sns a.embed		{background:url('../_img/mo/comn/embed.png') no-repeat 50% 50% / 40px; left:0; transition-duration: 0.5s}
+	.sh_sns.on a.facebook	{left:42px;}
+	.sh_sns.on a.twitter		{left:88px;}
+	.sh_sns.on a.kakao		{left:134px;}
+	.sh_sns.on a.embed		{left:180px;}
+
+	/* subtop */
+	div.sub_top								{margin-bottom:54px; width:100%; height:154px; background:url('../_img/pc/comn/sub_top04.jpg') 68% 50% / cover;}
+	div.sub_top div.h2_bg					{width:100%; margin:0 auto; position:relative; padding-left:20px; box-sizing:border-box;}
+	div.sub_top h2							{font:700 28px/30px "Mulish","Noto Sans KR", sans-serif; color:#000; padding:46px 0 12px; float:left}
+	div.sub_top .navi						{clear:both}
+	div.sub_top .navi li					{color:#577299; font:400 15px/24px "Mulish","Noto Sans KR", sans-serif; display:inline-block}
+	div.sub_top .navi li.home				{font-size:0; background:url('../_img/mo/comn/navi_home.png')no-repeat 0 0 /15px; padding-left: 15px;}
+	div.sub_top .navi li::after				{display:inline-block; content:''; background:url('../_img/mo/comn/navi_arrow.png')no-repeat 0 0 /7px; width:8px; height:13px; margin:0 10px;}
+	div.sub_top .navi li:last-child::after  {display:none}
+	div.sub_top h3							{width:100%; height:55px;display:flex; align-items:center; padding:0 20px; color:#fff; font:400 17px/18px "Mulish","Noto Sans KR", sans-serif;position:absolute; bottom:-88px; left:0; background:#ef2c4a url('../_img/mo/comn/lm_arrow.png')no-repeat right 20px top 50% / 15px; box-sizing:border-box}
+	div.sub_top h3.one						{background-image:none}
+	div.sub_top h3.on.one					{background-image:none}
+	div.sub_top h3.on						{background:#ef2c4a url('../_img/mo/comn/lm_arrow_on.png')no-repeat right 20px top 46% / 15px;}
+	div.sub_top h3 a						{color:#fff}
+	div.sub_top h3 span						{font-weight:700; display:inline-block; padding-left:0px}
+
+	/* 전체메뉴 */
+	.nav_m				{display:none}
+	.nav_m.show			{display:block; visibility:visible; opacity:1; right:0; transition:all 0.3s;}
+	.nav_m + div.modal	{display:none; position:fixed; z-index:500; left:0; top:0; width:100vw; height:100vh; background:#000; opacity:0.65;}
+	.nav_m				{position:fixed; display:block; visibility:hidden; opacity:0; width:250px; height:100vh; padding-top:60px; top:0; bottom:0; right:-250px; background:#fff; overflow:hidden; z-index:600; transition:all 0.4s linear; }
+	.nav_m.show					{display:block;visibility:visible;opacity:1;right:0;transition:all 0.3s;}
+	.nav_m.show ul.m_menu		{height:100vh;overflow-y:auto}
+	ul.m_menu > li				{position:relative; border-bottom:1px solid #ddd; padding:0 25px; overflow:hidden}
+	ul.m_menu > li > a			{position:relative; display:block; padding:12px 0; font:500 18px/30px 'Noto Sans KR','맑은 고딕', sans-serif; color:#333; letter-spacing:-0.3px;}
+	ul.m_menu > li > a.more::before		{position:absolute; content:""; display:block; width:16px; height:2px; background:#aaa; top:50%; right:1px; transition:all .3s;}
+	ul.m_menu > li > a.more::after		{position:absolute; content:""; display:block; width:2px; height:16px; background:#aaa; top:20px; right:8px; opacity:1; transition:all .3s;}
+	ul.m_menu > li > a.open				{color:#ed2c49;}
+	ul.m_menu > li > a.open::before		{transform:rotate(90deg); opacity:0}
+	ul.m_menu > li > a.open::after		{transform:rotate(90deg);}
+	ul.m_menu > li .ms_menu				{display:none; margin-bottom:12px;}
+	ul.m_menu > li .ms_menu	li					{padding:0 0 0px}
+	ul.m_menu > li .ms_menu li a				{position:relative; display:block; padding:7px 0 7px 15px; font:400 16px/25px 'Noto Sans KR','맑은 고딕', sans-serif; color:#888;}
+	ul.m_menu > li .ms_menu li a:focus			{color:#000}
+	ul.m_menu > li .ms_menu li:first-child a	{padding-top:0;}
+
+	#header_w .btn_close				  {position:fixed; top:40px; right:20px; width:27px; height:27px}
+	#header_w .btn_close:hover span			{background-color:#ef2c4a}
+	#header_w .btn_close span			  {margin:0; width:30px; transition:0.3s ease; background:#1b1b1b; height:2px; display:block; transform:rotate(45deg); transform-origin: center; margin-bottom: -1px;}
+	#header_w .btn_close span:last-child  {transform: rotate(-45deg); transform-origin: center; margin-top: -2px;}
+
+
+	/* leftmenu */
+	div.sub_content						{position:relative}
+	div.left_menu						{position: absolute; z-index:40; top:0px;background:#fff;width:100%;    display:none}
+	div.left_menu ul					{width:100%;  box-shadow:2px 1px 16px rgba(0,0,0,0.1);}
+	div.left_menu ul li a				{display:block; height:50px; font:400 16px/50px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; border-bottom:1px solid #ddd; padding-left:25px; transition:all 0.2s;}
+	div.left_menu ul li:last-child a	{border-bottom:0;}
+	div.left_menu ul li a.on			{background:#2d2c2c; color:#fff}
+	div.left_menu ul li a.on:hover		{color:#fff}
+	div.left_menu ul li a:hover			{color:#ef2c4a}
+
+	/*	quickmenu */
+	.quick							{position:fixed; top:59%; right:0px; z-index:12; transform:translateY(-45%); width:183px; box-sizing:border-box; transition:1s}
+	.quick p.close					{position:absolute; top: 33px; right:0px; z-index:5;}
+	.quick p.close a				{display:inline-block; width: 87px; height: 114px; background: url('../_img/pc/comn/q_close.png')no-repeat 0 0;;}
+	.quick p.open					{position:absolute; top:24%; left:-41px; z-index:-5; transform:translateY(-55%); width:45px; height:80px; border-radius:8px 0 0 8px; transition:0.8s}
+	.quick p.open a					{display:inline-block; width:100%; height:113px;  background:url('../_img/pc/comn/q_open.png')no-repeat 50% 50%;}
+	.quick ul.list					{box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1); border-radius: 20px 0 0 20px;width:100%; padding:30px 15px 107px 30px; box-sizing:border-box; background:#ffff url('../_img/pc/comn/q_logo.png')no-repeat 50% 94%;}
+	.quick ul.list li				{width:100%; margin:0 0 20px 0; text-align:left;}
+	.quick ul.list li:last-child	{margin:0;}
+	.quick ul.list li a				{font:500 13px/15px "Noto Sans KR", sans-serif; color:#444;display: flex;}
+	.quick ul.list li a p			{margin: 0 0 0 45px;position: absolute;}
+	.quick p.top					{width:100%;}
+	.quick p.top a					{display:inline-block; width:100%; background:#3f276d; padding:3px 0 8px 0; text-align:initial; font:400 15px/18px "Noto Sans KR", sans-serif; color:#fff}
+	.quick p.top a img				{margin:-2px 5px 0 0;}
+
+	.quick ul.list li:nth-child(3) a img{height:29px;}
+	.quick ul.list li:nth-child(4) a img{height:30px;}
+	.quick ul.list li:last-child::after	{content:''; background:#ddd; position:absolute;width: 130px;height: 1px;bottom: 70px;left: 31px;}
+
+	/* content */
+
+	/* button */
+	p.btn_area					{text-align:right; margin-top:20px}
+	p.btn_area	a				{text-align:center; min-width:120px; background:#444; color:#fff; display:inline-block;  font: 400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px;}
+	p.btn_area	a:hover			{background:#ed2c49;}
+	p.btn_down					{}
+	p.btn_down > a				{position: relative; padding: 15px 47px 15px 22px; text-align: left; color: #333; display: inline-block; font: 400 16px/18px "Mulish","Noto Sans KR", sans-serif; transition: all 0.2s; border-radius: 3px; border: 1px solid #ddd;}
+	p.btn_down > a::after		{padding-right:21px; position:absolute; width:18px; height:14px; background: #fff url('../_img/pc/comn/download.png')no-repeat 50% 50%; content:'';}
+	p.btn_down > a:hover		{border: 1px solid #ed2c49; color:#ed2c49;}	
+	p.btn_down > a:hover::after	{background: #fff url('../_img/pc/comn/download_h.png')no-repeat 50% 50%; content:'';}	
+
+
+	
+	/* tab */
+	ul.tab						{width:100%; flex-wrap:wrap; display:flex; align-items:center; margin-bottom:45px;}
+	ul.tab li					{width:33.3%}
+	ul.tab li a					{display:block; border:1px solid #ddd; width:100%; height:52px; display:flex; align-items:center; padding:0 15px 0 15px; box-sizing:border-box;  font:400 15px/25px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; background:url('../_img/pc/comn/tab_basic.png')no-repeat right 15px top 50% / 13px; transition:all 0.2s; letter-spacing:-0.5px; box-sizing:border-box}
+	ul.tab li:nth-child(n+3) a  {border-left:0;}	
+	ul.tab li:nth-child(3n+1) a {border-left:solid 1px #ddd;}
+	ul.tab li:nth-child(n+4) a  {border-top:0;}
+	ul.tab li a.on				{border:2px solid #ee2c49; font-weight:500; color:#ed2c49; background:url('../_img/mo/comn/tab_on.png')no-repeat right 12px top 51% / 15px;}
+	ul.tab li a:hover			{color:#ed2c49}
+
+	/* pagination */
+	.pagination						{text-align:center; margin-top:20px;}
+	.pagination a					{display:inline-block; font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#333; width:25px; height:25px; border-radius:50%; margin:0 3px; vertical-align: middle}
+	.pagination a:hover				{color:#ee2c49}
+	.pagination a.on				{background:#ee2c49; color:#fff}	
+	.pagination a.prev				{font-size:0; background:url('../_img/mo/comn/prev.png')no-repeat 50% 50% / 8px; transition:all 0.2s}
+/* 	.pagination a.prev:hover		{background-image:url('../_img/pc/comn/prev_on.png')} */
+	.pagination a.prev.end			{background:url('../_img/mo/comn/prev_end.png')no-repeat 50% 50% / 12px;}
+/* 	.pagination a.prev.end:hover	{background-image:url('../_img/pc/comn/prev_end_on.png')}  */
+	.pagination a.next				{font-size:0; background:url('../_img/mo/comn/next.png')no-repeat 50% 50% / 8px; transition:all 0.2s}
+/* 	.pagination a.next:hover		{background-image:url('../_img/pc/comn/next_on.png')} */
+	.pagination a.next.end			{background:url('../_img/mo/comn/next_end.png')no-repeat 50% 50% / 12px;}
+/* 	.pagination a.next.end:hover	{background-image:url('../_img/pc/comn/next_end_on.png')} */
+
+	/* 갤러리 리스트 */
+	.list .list_top				{overflow:hidden; margin-bottom:30px}
+	.list .list_top > p			{float:left; font:400 15px/15px "Mulish","Noto Sans KR", sans-serif; color:#333; padding-top: 15px; width:180px}
+	.list .list_top > p span	{font-weight:600; color:#ed2c49; display:inline-block; }
+	.list .list_top > .filter	{float:right; display:flex; width:calc(100% - 180px)}
+	.list_top select				{height:40px; border:1px solid #ddd; padding:0 15px; width:30%; font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/mo/comn/sel_arrow.png')no-repeat right 15px top 50% / 12px; box-sizing:border-box;}
+	.list_top .search				{position:relative; margin-left:8px; width:70%}
+	.list_top .search input			{height:40px; border:1px solid #ddd; padding:0 15px;  font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box;}
+	.list_top .search button		{display:inline-block; width:20px; height:15px; font-size:0; border:none; background:url('../_img/mo/comn/search_btn.png')no-repeat 0 0 / 20px; position:absolute; top:50%; right:15px; transform:translateY(-50%); cursor:pointer; }
+/* 	.list_top .search button:hover  {background:url('../_img/pc/comn/search_btn_on.png')no-repeat;} */
+
+	.box_list ul				{display:flex; flex-wrap:wrap; justify-content:space-between;}
+	.box_list ul li				{width:48%; border-radius:20px; overflow:hidden; margin-bottom:20px; padding-bottom:18px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out}
+	.box_list ul li a			{display:block;}
+	.box_list ul li a img			{width:100%; height:230px}
+	.box_list ul li a .img_box			{display:block; background:#b9b9b9; position:relative}
+	.box_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/mo/comn/list_black.png')no-repeat 0 100% /cover; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+	.box_list ul li a .img_box::after  {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/mo/comn/play.png')no-repeat center center / 55px; position:absolute; bottom:0; left:0; opacity:0.8; z-index:15; transition:all 0.3s ease-in-out}
+	.box_list ul li a .tit		{display:block; color:#222; font:500 18px/19px "Mulish","Noto Sans KR", sans-serif; padding:18px 0px 2px; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info		{font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; color:#7c7c7c; transition:all 0.3s ease-in-out}
+	.box_list ul li a .info b	{font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; position:relative; padding-left:10px; margin-left:6px}
+	.box_list ul li a .info b::before {display:inline-block; content:''; width:1px; height:14px; background:#a3a3a3;  position:absolute; left:0; top:50%; transform:translateY(-50%);}
+/* 	.box_list ul li:hover									{box-shadow: 5px 3px 18px rgb(0 0 0 / 12%);}
+	.box_list ul li:hover .tit,	.box_list ul li:hover .info {padding-left:24px} 
+	.box_list ul li:hover .tit								{color:#4c5dc6}
+	.box_list ul li:hover .img_box::before					{opacity:0.75}
+	.box_list ul li:hover .img_box::after					{opacity:1} */
+
+	/* 게시판 리스트 */
+	.bbs_list ul					{border-top:2px solid #555}
+	.bbs_list ul li 				{display:flex; align-items:center; font:300 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#666; border-bottom:1px solid #ddd; padding:15px 0; width:100%; transition:all 0.2s}
+	.bbs_list ul li .tit:hover a	{color:#4c5dc6}
+	.bbs_list ul li.cate 			{background:#f5f5f5; font:400 16px/19px "Mulish","Noto Sans KR", sans-serif;color:#333; cursor:default}
+	.bbs_list ul li.cate:hover		{color:#333}
+	.bbs_list ul li.cate:hover .tit	{color:#333}
+	.bbs_list ul li p				{text-align:center}
+	.bbs_list ul li.cate  p.tit	{text-align:center}
+	.bbs_list ul li p.tit			{width:52%; text-align:left;}
+	.bbs_list ul li p.tit a			{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:inline-block; max-width: 97%; text-align:left;  font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#222; padding-top:6px; transition:all 0.2s}
+	.bbs_list ul li p.tit i			{color:#4c5dc6; font:italic 800 16px/16px "Mulish","Noto Sans KR", sans-serif; padding-left:5px; letter-spacing:-0.5px} 
+	.bbs_list ul li p.tit.lock a	{background:url('../_img/mo/comn/tit_lock.png')no-repeat 0 6px / 13px; padding-left:20px}
+	.bbs_list ul li p.state			{width:11%; padding-right:15px;}
+	.bbs_list ul li p.name			{width:11%;}	
+	.bbs_list ul li p.date			{width:13%;}
+	.bbs_list ul li p.views			{width:10%;}
+	.bbs_list ul li p span.st01		{display:inline-block; border:1px solid #ccc; width:70px; padding:5px 0px; border-radius:3px; color:#888; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif;}
+	.bbs_list ul li p span.st02		{display:inline-block; width:70px; padding:5px 0px; border-radius:3px; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; border:1px solid #ed2c49; color:#ed2c49 }
+	.bbs_list ul li p.num			{display:none}
+
+	/* 게시판상세뷰 */
+	.board_top p				{font:500 22px/32px "Mulish","Noto Sans KR", sans-serif; width:100%; padding:0px 20px 15px 0px; margin-top:10px; color:#333; border-bottom: 2px solid #555;     box-sizing: border-box;}
+	.board_top p.lock			{background:url('../_img/mo/comn/tit_lock.png')no-repeat 0 4px / 17px; padding-left:25px}
+    .board_top ul				{border-bottom:1px solid #ddd; color:#555; display:flex; padding:18px 10px; width:100%;     box-sizing: border-box;}
+	.board_top ul li::after		{display:inline-block; content:''; width:1px; height:15px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.board_top ul li:last-child::after {display:none}
+    .board_top ul li		{font:500 15px/19px "Mulish","Noto Sans KR", sans-serif; margin-right:15px; padding-right:15px; position:relative}
+	.board_top ul li span	{font-weight:400; display:inline-block; margin-left:3px}
+	.board_file				{padding:15px 15px; display:table; width:100%; background:#f5f5f5; box-sizing:border-box}
+	.board_file strong		{display:table-cell; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif;  width:60px; vertical-align:middle; color:#555}
+	.board_file p			{display:table-cell}
+	.board_file p a			{display:inline-block; background: url('../_img/mo/comn/file_down.png')no-repeat 0 7px / 13px; margin-left:18px; padding-left:18px; font:300 15px/28px "Mulish","Noto Sans KR", sans-serif; color:#666; text-decoration:underline; text-decoration-color:#888; transition:all 0.2s}
+	.board_file p a:hover	{color:#ed2c49; text-decoration-color:#ed2c49; background-image:url('../_img/pc/comn/file_down_on.png')}
+	.board_cont				{padding:30px 20px 60px 20px; font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333; border-bottom:1px solid #ddd;}
+
+	.prev_next_box						{width:100%; border-top:1px solid #222; border-bottom:1px solid #222;}
+	.prev_next_box p					{width:auto; padding:18px 20px; border-bottom:1px solid #ddd; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font: 300 16px/24px 'Noto Sans KR', sans-serif; color: #999;}
+	.prev_next_box p a					{font:300 16px/24px 'Noto Sans KR', sans-serif; color:#666;}
+	.prev_next_box p a:hover,
+	.prev_next_box p a:focus			{color: #222;}
+	.prev_next_box p:last-child			{border-bottom: none;}
+	.prev_next_box p span				{font: 400 16px/24px 'Noto Sans KR', sans-serif; color: #222;}
+	.prev_next_box p.prev span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/mo/comn/board_prev.png') no-repeat 0 0 / 12px; display:inline-block; margin: 0 30px 0 16px;}
+	.prev_next_box p.next span::after	{content: ''; width: 12px; height: 8px; background: url('../_img/mo/comn/board_next.png') no-repeat 0 0 / 12px; display:inline-block; margin: 0 30px 0 16px;}
+	
+	.comment				{background:#f5f9ff; padding:30px 24px 45px; box-sizing:border-box;}
+	.comment .tit			{font:500 18px/24px 'Noto Sans KR', sans-serif; color:#4c5dc6; margin-bottom:10px; background:url('../_img/mo/comn/comment_arrow.png') no-repeat 0% 47% / 10px; padding:0px 18px}
+	.comment .cont			{font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333;  padding:0px 18px}
+	.comment .board_file	{background:#fff; margin-top:20px; padding:15px 24px}
+
+	/* 게시판상세뷰 */
+	.qna_write p.guide			{font:400 16px/27px "Mulish","Noto Sans KR", sans-serif; margin-bottom: 25px; background:#f5f5f5; padding:20px 35px; border-radius:5px; text-align:center; word-break:keep-all}
+	.qna_write p.guide span		{font:500 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#ed2c49}
+	.qna_write ul.bbs_write02	{margin-top:40px}
+	.qna_write p.guide02					{font:300 16px/25px "Mulish","Noto Sans KR", sans-serif; color: #777;margin-bottom: 5px;}
+	.qna_write p.guide02 span				{color: #ee2c49;}
+	.qna_write ul li div span.star_write	{color:#ed2c49; padding-left:3px;}
+
+	ul.bbs_write							{width:100%; margin:0 auto; border-top:2px solid #555; max-width: 1400px;}
+	ul.bbs_write li							{display:table; table-layout:fixed; width:100%;}
+	ul.bbs_write li > div					{height:42px; display:table-cell;padding:9px 9px; border-bottom:1px solid #ddd; font:300 16px/25px 'Noto Sans KR', sans-serif; color: #222;}
+	ul.bbs_write li > div.tit				{height:42px; width:75px; padding:9px 15px; min-height:30px; border-bottom:1px solid #f3e4e2; background:#fdf7f6; vertical-align:middle; text-align:left; font:500 15px/21px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+	ul.bbs_write li div input				{height:40px; border:1px solid #ddd; padding:0 10px;  font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box; transition:all 0.2s}
+	ul.bbs_write li div input[type="text"]:focus	{border:1px solid #ed2c49}
+	ul.bbs_write select								{height:40px; border:1px solid #ddd; padding:0 10px; width:132px; font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/mo/comn/sel_arrow.png')no-repeat right 8px top 50% / 12px; box-sizing:border-box;}
+	ul.bbs_write li div								{position: relative; vertical-align: middle; word-break:keep-all;}
+	ul.bbs_write .call_wrap							{display:flex; justify-content:space-between; align-items:center;}
+	ul.bbs_write .call_wrap input, ul.bbs_write .call_wrap select {width:30%}
+
+	ul.bbs_write02 li {margin-bottom:20px; margin-bottom:25px; border-bottom:1px solid #ededed; padding-bottom:7px;}
+	ul.bbs_write02 li > div.tit {font:500 18px/23px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:10px}
+	ul.bbs_write02 li > div.tit::before {display:inline-block; content:''; width:5px; height:5px; background:#ee2c49; border-radius:50%; margin-right:8px; vertical-align: top; margin-top:9px;}
+	ul.bbs_write02 .basic_ck												{padding-left:13px}
+	ul.bbs_write02 li div input[type="checkbox"]							{position:absolute; width:0px; height:0px; border:none;}
+	ul.bbs_write02 li div input[type="checkbox"] + label					{position: relative; display:inline-block; font:400 15px/27px 'Noto Sans KR', sans-serif; color: #666; cursor:pointer; margin-right: 25px; margin-bottom:8px}
+	ul.bbs_write02 li div input[type="checkbox"] + label:last-child			{margin-right: 0;}
+	ul.bbs_write02 li div input[type="checkbox"] + label:before				{content: ''; display:inline-block; width:16px; height:16px; cursor:pointer; border:1px solid #ccc; background:#f8f8f8; vertical-align:sub; margin-right:5px; }
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:before		{background:#fff; border:1px solid #4c5dc6;}
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:after		{position:absolute; content: ''; display:inline-block; width:10px; height:10px; cursor:pointer; background:#fff url('../_img/pc/comn/check_on.png')no-repeat 50% 50%; left:4px; top:9.5px; border-radius:10px;}
+	ul.bbs_write02 li div textarea		{margin-bottom:5px; width:100%; padding:10px; min-height:200px; overflow-y:scroll; border:1px solid #ddd; box-sizing:border-box; font:300 15px/25px 'Noto Sans KR', sans-serif; color:#666;}
+	ul.bbs_write02 li div .counter		{text-align:right; font:300 15px/22px "Mulish","Noto Sans KR", sans-serif; color:#666;}
+
+
+	/* 게시글이 없습니다 */
+	.no_cont			{font: 400 16px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;background: #fcfcfc url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24%;float: inherit !important;display: block !important;width: 100% !important;padding: 150px 0 24px !important;text-align: center !important;}
+	.no_cont:hover		{box-shadow:0 0 0 0 !important;background: #fcfcfc url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24% !important;}
+	.no_cont::before	{content:''; display:none !important;}
+	.no_cont02			{cursor: default !important;font: 400 16px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important; width:15% !important; padding: 125px 0 0px !important;text-align: center !important;}
+	.no_cont03			{cursor: default !important;font: 400 16px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;float: inherit !important;display: block !important;width: 15% !important;padding: 136px 0 0px !important;text-align: center !important;height: 71px !important;box-shadow: 0 0 0 0 !important;}
+	.no_cont03:hover	{background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2% !important;}
+}
+/* ------------------------------------------------------------------ TA 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ MO  ------------------------------------------------------------------ */
+@media only screen and (max-width: 639px) {
+
+	/* 메인  */
+
+	header.web				{display:none;}
+	header.tablet			{display:none;}
+	header.mobile			{display:block !important;}
+	header.mobile #header_w {background:#fff;display: flex;height:65px;padding:0px 15px; margin 0 auto;overflow:hidden; position:relative; width:unset !important; border-bottom:1px solid #ddd; justify-content: space-between;}
+
+	#header_w h1 a			{display:inline-block;width:190px; height:65px;background:url('../_img/mo/comn/logo.png')no-repeat 0% 50% / 190px; box-sizing:border-box}
+	#header_w button		{display:inline-block; line-height:0;text-indent:-10000px;padding:0px;z-index:1; border:none; background:none; cursor:pointer; position:absolute; right:15px; top:18px}
+	#header_w button span	{display:block; width:25px; margin:5px 0; height:2px; background:#333; }
+	#header_w button		{transition:all .3s ease; -ms-transition:all .3s ease; -webkit-transition:all .3s ease; }
+
+	/*footer*/
+	footer							{position:absolute;z-index:99;left:0;width:100%;box-sizing:border-box;background:#404040;/* height:102px; */ padding:0 15px; text-align:center}
+	footer div						{position:relative;width:100%;margin:0 auto;}
+	footer ul.left 					{padding:26px 0px 15px; font:300 13px/20px "Noto Sans KR", sans-serif;}
+	footer ul.left li				{color:#a5a1a1;}
+	footer ul.left li:first-child	{color:#a5a1a1;margin-bottom: 2px;}
+	footer ul.left li span			{display:block}
+	footer p.f_site					{padding:0px 0px 30px;}
+	footer label.fs					{display: block;font-size: 0;line-height: 0;}
+	footer label.fs select			{width:100%;}
+	footer select.bk				{width:100%;border: 1px solid #a5a1a1;background: #404040 url('../_img/mo/comn/sel_down_bk.png') no-repeat  top 50% right 20px / 15px;height: 45px;padding: 0 20px;font: 400 15px/24px 'Noto Sans KR', sans-serif;color: #a5a1a1;box-sizing: border-box;}
+
+	.right							{padding:25px 15px 80px;min-height: 327px;}
+	
+	/* 공유하기  */
+	.share_btn				{position:absolute; display:inline-block; z-index:2; top:3px; right:10px;}
+	.share_btn a			{display:inline-block; font-size:0; width:35px; height:35px; background:url('../_img/mo/comn/share.png') no-repeat 50% 50% /100%; transition:0.3s;}
+	.share_btn a:hover,
+	.share_btn a.on			{background:url('../_img/mo/comn/share_on.png') no-repeat 50% 50% / 100%;}
+	.sh_sns					{position:absolute;  z-index:-2; visibility:hidden; opacity:0; transition:all .5s; top:11px; }
+	.sh_sns.on				{visibility:visible; opacity:1; }
+	.sh_sns a				{position:absolute; font-size:0; right:0; display:inline-block; width:35px; height:35px; margin-left:4px;}
+	.sh_sns a.facebook		{background:url('../_img/mo/comn/facebook.png') no-repeat 50% 50% / 100%; right:0; transition-duration: 0.5s}
+	.sh_sns a.twitter			{background:url('../_img/mo/comn/twitter.png') no-repeat 50% 50% / 100%; right:0; transition-duration: 0.4s}
+	.sh_sns a.kakao			{background:url('../_img/mo/comn/kakao.png') no-repeat 50% 50% / 100%; right:0; transition-duration: 0.3s}
+	.sh_sns a.embed			{background:url('../_img/mo/comn/embed.png') no-repeat 50% 50% / 100%; right:0; transition-duration: 0.2s}
+	.sh_sns.on a.facebook	{right:125px;}
+	.sh_sns.on a.twitter		{right:85px;}
+	.sh_sns.on a.kakao		{right:45px;}
+	.sh_sns.on a.embed		{right:5px;}
+
+	/* subtop */
+	div.sub_top								{margin-bottom:53px; width:100%; height:140px; background:url('../_img/mo/comn/sub_top04.jpg') 75% 50% / cover;}
+	div.sub_top div.h2_bg					{width:100%; margin:0 auto; position:relative; padding-left:15px; box-sizing:border-box;}
+	div.sub_top h2							{font:700 25px/30px "Mulish","Noto Sans KR", sans-serif; color:#000; padding:42px 0 3px;}
+	div.sub_top .navi li					{color:#577299; font:400 13px/24px "Mulish","Noto Sans KR", sans-serif; display:inline-block; vertical-align:middle}
+	div.sub_top .navi li.home				{font-size:0; background:url('../_img/mo/comn/navi_home.png')no-repeat 0 50% /15px; padding-left: 15px;}
+	div.sub_top .navi li.home::after		{background:url('../_img/mo/comn/navi_arrow.png')no-repeat 0 0 /7px; vertical-align: middle;}
+	div.sub_top .navi li::after				{display:inline-block; content:''; background:url('../_img/mo/comn/navi_arrow.png')no-repeat 0 50% /7px; width:8px; height:13px; margin:0 3px 0 6px;}
+	div.sub_top .navi li:last-child::after  {display:none}
+	div.sub_top h3							{width:100%; height:53px;display:flex; align-items:center; padding:0 15px; color:#fff; font:400 16px/18px "Mulish","Noto Sans KR", sans-serif;position:absolute; bottom:-90px; left:0; background:#ef2c4a url('../_img/mo/comn/lm_arrow.png')no-repeat right 15px top 50% / 15px; box-sizing:border-box}
+	div.sub_top h3.one						{background-image:none}
+	div.sub_top h3.on.one					{background-image:none}
+	div.sub_top h3.on						{background:#ef2c4a url('../_img/mo/comn/lm_arrow_on.png')no-repeat right 15px top 46% / 15px;}
+	div.sub_top h3 a						{color:#fff}
+	div.sub_top h3 span						{font-weight:700; display:inline-block; padding-left:3px}
+
+	/* 전체메뉴 */
+	.nav_m				{display:none}
+	.nav_m.show			{display:block; visibility:visible; opacity:1; right:0; transition:all 0.3s;}
+	.nav_m + div.modal	{display:none; position:fixed; z-index:500; left:0; top:0; width:100vw; height:100vh; background:#000; opacity:0.65;}
+	.nav_m				{position:fixed; display:block; visibility:hidden; opacity:0; width:250px; height:100vh; padding-top:80px; top:0; bottom:0; right:-250px; background:#fff; overflow:hidden; z-index:600; transition:all 0.4s linear;}
+	.nav_m.show					{display:block;visibility:visible;opacity:1;right:0;transition:all 0.3s;}
+	.nav_m.show ul.m_menu		{height:100vh;overflow-y:auto}
+	ul.m_menu > li				{position:relative; border-bottom:1px solid #ddd; padding:0 25px; overflow:hidden}
+	ul.m_menu > li > a			{position:relative; display:block; padding:12px 0; font:500 18px/30px 'Noto Sans KR','맑은 고딕', sans-serif; color:#333; letter-spacing:-0.3px;}
+	ul.m_menu > li > a.more::before		{position:absolute; content:""; display:block; width:16px; height:2px; background:#aaa; top:50%; right:1px; transition:all .3s;}
+	ul.m_menu > li > a.more::after		{position:absolute; content:""; display:block; width:2px; height:16px; background:#aaa; top:20px; right:8px; opacity:1; transition:all .3s;}
+	ul.m_menu > li > a.open				{color:#ed2c49;}
+	ul.m_menu > li > a.open::before		{transform:rotate(90deg); opacity:0}
+	ul.m_menu > li > a.open::after		{transform:rotate(90deg);}
+	ul.m_menu > li .ms_menu				{display:none; margin-bottom:12px;}
+	ul.m_menu > li .ms_menu	li					{padding:0 0 0px}
+	ul.m_menu > li .ms_menu li a				{position:relative; display:block; padding:7px 0 5px 15px; font:400 16px/18px 'Noto Sans KR','맑은 고딕', sans-serif; color:#888;}
+	ul.m_menu > li .ms_menu li a:focus			{color:#000}
+	ul.m_menu > li .ms_menu li:first-child a	{padding-top:0;}
+
+	#header_w .btn_close				  {position:fixed; top:40px; right:20px; width:27px; height:27px}
+	#header_w .btn_close:hover span			{background-color:#ef2c4a}
+	#header_w .btn_close span			  {margin:0; width:30px; transition:0.3s ease; background:#1b1b1b; height:2px; display:block; transform:rotate(45deg); transform-origin: center; margin-bottom: -1px;}
+	#header_w .btn_close span:last-child  {transform: rotate(-45deg); transform-origin: center; margin-top: -2px;}
+
+
+	/* leftmenu */
+	div.sub_content						{position:relative}
+	div.left_menu						{position: absolute; z-index: 40;top:0px;background:#fff;width:100%;    display:none}
+	div.left_menu ul					{width:100%;  box-shadow:2px 1px 16px rgba(0,0,0,0.1);}
+	div.left_menu ul li a				{display:block; height:50px; font:400 16px/50px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; border-bottom:1px solid #ddd; padding-left:25px; transition:all 0.2s;}
+	div.left_menu ul li:last-child a	{border-bottom:0;}
+	div.left_menu ul li a.on			{background:#2d2c2c; color:#fff}
+	div.left_menu ul li a.on:hover		{color:#fff}
+	div.left_menu ul li a:hover			{color:#ef2c4a}
+
+	/*	quickmenu */
+	.quick							{position:fixed; top:59%; right:0px; z-index:12; transform:translateY(-45%); width:183px; box-sizing:border-box; transition:1s}
+	.quick p.close					{position:absolute; top: 33px; right:0px; z-index:5;}
+	.quick p.close a				{display:inline-block; width:86px; height:113px; background:url('../_img/pc/comn/q_close.png')no-repeat 0 0;}
+	.quick p.open					{position:absolute; top:24%; left:-41px; z-index:-5; transform:translateY(-55%); width:45px; height:80px; border-radius:8px 0 0 8px; transition:0.8s}
+	.quick p.open a					{display:inline-block; width:100%; height:113px;  background:url('../_img/pc/comn/q_open.png')no-repeat 50% 50%;}
+	.quick ul.list					{box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1); border-radius: 20px 0 0 20px;width:100%; padding:30px 15px 107px 30px; box-sizing:border-box; background:#ffff url('../_img/pc/comn/q_logo.png')no-repeat 50% 94%;}
+	.quick ul.list li				{width:100%; margin:0 0 20px 0; text-align:left;}
+	.quick ul.list li:last-child	{margin:0;}
+	.quick ul.list li a				{font:500 13px/15px "Noto Sans KR", sans-serif; color:#444;display: flex;}
+	.quick ul.list li a p			{margin: 0 0 0 45px;position: absolute;}
+	.quick p.top					{width:100%;}
+	.quick p.top a					{display:inline-block; width:100%; background:#3f276d; padding:3px 0 8px 0; text-align:initial; font:400 15px/18px "Noto Sans KR", sans-serif; color:#fff}
+	.quick p.top a img				{margin:-2px 5px 0 0;}
+
+	.quick ul.list li:nth-child(3) a img{height:29px;}
+	.quick ul.list li:nth-child(4) a img{height:30px;}
+	.quick ul.list li:last-child::after	{content:''; background:#ddd; position:absolute;width: 130px;height: 1px;bottom: 70px;left: 31px;}
+
+	/* content */
+
+	/* button */
+	p.btn_area					{text-align:right; margin-top:20px}
+	p.btn_area	a				{text-align:center; width:100%; background:#444; color:#fff; display:inline-block;  font: 400 15px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px;}
+	p.btn_area	a:hover			{background:#ed2c49;}
+	p.btn_down					{}
+	p.btn_down > a				{width:-webkit-fill-available; min-width:99%; position: relative; padding: 15px 0px; text-align: center; color: #333; display: inline-block; font: 400 16px/18px "Mulish","Noto Sans KR", sans-serif; transition: all 0.2s; border-radius: 3px; border: 1px solid #ddd;}
+	p.btn_down > a::after		{padding-right:18px; position:absolute; width:18px; height:14px; background: #fff url('../_img/pc/comn/download.png')no-repeat 50% 50%; content:'';}
+	p.btn_down > a:hover		{border: 1px solid #ed2c49; color:#ed2c49;}	
+	p.btn_down > a:hover::after	{background: #fff url('../_img/pc/comn/download_h.png')no-repeat 50% 50%; content:'';}	
+
+
+	/* tab */
+	ul.tab						{width:100%; flex-wrap:wrap; display:flex; align-items:center; margin-bottom:30px;}
+	ul.tab li					{width:50%}
+	ul.tab li a					{display:block; border:1px solid #ddd; width:100%; height:50px; display:flex; align-items:center; padding:0 12px 0 12px; box-sizing:border-box;  font:400 15px/25px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; background:url('../_img/pc/comn/tab_basic.png')no-repeat right 12px top 50% / 8px; transition:all 0.2s; letter-spacing:-0.9px; box-sizing:border-box}
+	ul.tab li:nth-child(n+2) a  {border-left:0;}	
+	ul.tab li:nth-child(2n+1) a {border-left:solid 1px #ddd;}
+	ul.tab li:nth-child(n+3) a  {border-top:0;}
+	ul.tab li a.on				{border:2px solid #ee2c49; font-weight:500; color:#ed2c49; background:url('../_img/mo/comn/tab_on.png')no-repeat right 12px top 51% / 11px;}
+	ul.tab li a:hover			{color:#ed2c49}
+
+	/* pagination */
+	.pagination						{text-align:center; margin-top:20px}
+	.pagination a					{display:inline-block; font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#333; width:25px; height:25px; border-radius:50%; margin:0 3px; vertical-align: middle}
+	.pagination a:hover				{color:#ee2c49}
+	.pagination a.on				{background:#ee2c49; color:#fff}	
+	.pagination a.prev				{font-size:0; background:url('../_img/mo/comn/prev.png')no-repeat 50% 50% / 8px; transition:all 0.2s}
+/* 	.pagination a.prev:hover		{background-image:url('../_img/pc/comn/prev_on.png')} */
+	.pagination a.prev.end			{background:url('../_img/mo/comn/prev_end.png')no-repeat 50% 50% / 12px;}
+/* 	.pagination a.prev.end:hover	{background-image:url('../_img/pc/comn/prev_end_on.png')}  */
+	.pagination a.next				{font-size:0; background:url('../_img/mo/comn/next.png')no-repeat 50% 50% / 8px; transition:all 0.2s}
+/* 	.pagination a.next:hover		{background-image:url('../_img/pc/comn/next_on.png')} */
+	.pagination a.next.end			{background:url('../_img/mo/comn/next_end.png')no-repeat 50% 50% / 12px;}
+/* 	.pagination a.next.end:hover	{background-image:url('../_img/pc/comn/next_end_on.png')} */
+
+	/* 갤러리 리스트 */
+	.list .list_top				{ margin-bottom:30px}
+	.list .list_top > p			{ font:400 15px/15px "Mulish","Noto Sans KR", sans-serif; color:#333;}
+	.list .list_top > p span	{font-weight:600; color:#ed2c49; display:inline-block; }
+	.list .list_top > .filter	{display:flex; margin-top:13px; width:100%; justify-content:space-between;}
+	.list_top select				{height:40px; border:1px solid #ddd; padding:0 12px; width:30%; font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/mo/comn/sel_arrow.png')no-repeat right 12px top 50% / 12px; box-sizing:border-box;}
+	.list_top .search				{position:relative; margin-left:5px; width:70%}
+	.list_top .search input			{height:40px; border:1px solid #ddd; padding:0 12px;  font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box;}
+	.list_top .search button		{display:inline-block; width:20px; height:15px; font-size:0; border:none; background:url('../_img/mo/comn/search_btn.png')no-repeat 0 0 / 20px; position:absolute; top:50%; right:12px; transform:translateY(-50%); cursor:pointer; }
+/* 	.list_top .search button:hover  {background:url('../_img/pc/comn/search_btn_on.png')no-repeat;} */
+
+	.box_list ul				{display:flex; flex-wrap:wrap; justify-content:space-between;}
+	.box_list ul li				{width:100%; border-radius:20px; overflow:hidden; margin-bottom:25px; padding-bottom:15px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out;}
+	.box_list ul li a			{display:block;}
+	.box_list ul li a img			{width:100%; height:200px}
+	.box_list ul li a .img_box			{display:block; background:#b9b9b9; position:relative}
+	.box_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/mo/comn/list_black.png')no-repeat 0 100% /cover; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+	.box_list ul li a .img_box::after  {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/mo/comn/play.png')no-repeat center center / 55px; position:absolute; bottom:0; left:0; opacity:0.8; z-index:15; transition:all 0.3s ease-in-out}
+	.box_list ul li a .tit		{display:block; color:#222; font:500 17px/19px "Mulish","Noto Sans KR", sans-serif; padding:15px 0px 0px; transition:all 0.3s ease-in-out; padding-left:12px}
+	.box_list ul li a .info		{font:400 14px/19px "Mulish","Noto Sans KR", sans-serif; color:#7c7c7c; transition:all 0.3s ease-in-out; padding-left:12px}
+	.box_list ul li a .info b	{font:400 14px/19px "Mulish","Noto Sans KR", sans-serif; position:relative; padding-left:10px; margin-left:6px; }
+	.box_list ul li a .info b::before {display:inline-block; content:''; width:1px; height:14px; background:#a3a3a3;  position:absolute; left:0; top:50%; transform:translateY(-50%);}
+/* 	.box_list ul li:hover									{box-shadow: 5px 3px 18px rgb(0 0 0 / 12%);}
+	.box_list ul li:hover .tit,	.box_list ul li:hover .info {padding-left:24px} 
+	.box_list ul li:hover .tit								{color:#4c5dc6}
+	.box_list ul li:hover .img_box::before					{opacity:0.75}
+	.box_list ul li:hover .img_box::after					{opacity:1} */
+
+	/* 게시판 리스트 */
+	.bbs_list ul					{border-top:2px solid #555}
+	.bbs_list ul li 				{font:300 14px/19px "Mulish","Noto Sans KR", sans-serif; color:#666; border-bottom:1px solid #ddd; padding:15px 5px; width:100%; transition:all 0.2s}
+/* 	.bbs_list ul li .tit:hover a	{color:#4c5dc6} */
+	.bbs_list ul li.cate 			{display:none}
+	.bbs_list ul li p				{position:relative}
+	.bbs_list ul li p.tit a			{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; display:inline-block; max-width: 92%; text-align:left;  font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#222; padding-top:6px;  transition:all 0.2s; margin:0px 0 12px}
+	.bbs_list ul li p.tit i			{color:#4c5dc6; font:italic 800 15px/15px "Mulish","Noto Sans KR", sans-serif; padding-left:5px; letter-spacing:-0.5px} 
+	.bbs_list ul li p.tit.lock a	{background:url('../_img/mo/comn/tit_lock.png')no-repeat 0 6px / 12px; padding-left:18px}
+	.bbs_list ul li p span.st01		{display:inline-block; text-align:center; border:1px solid #ccc; width:60px; padding:2px 0px; border-radius:3px; color:#888; font:300 13px/19px "Mulish","Noto Sans KR", sans-serif; margin-bottom:3px}
+	.bbs_list ul li p span.st02		{display:inline-block; text-align:center; width:60px; padding:2px 0px; border-radius:3px; font:400 13px/19px "Mulish","Noto Sans KR", sans-serif; border:1px solid #ed2c49; color:#ed2c49; margin-bottom:3px}
+	.bbs_list ul li p.num			{display:none}
+	.bbs_list ul li p.name			{display:inline-block; margin-right:7px; padding-right:10px;}
+	.bbs_list ul li p.name::after	{display:inline-block; content: ''; width:1px; height:10px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.bbs_list ul li p.date			{display:inline-block; margin-right:7px; padding-right:10px;}
+	.bbs_list ul li p.date::after	{display:inline-block; content: ''; width:1px; height:10px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.bbs_list ul li p.views			{display:inline-block; background:url('../_img/mo/comn/views.png')no-repeat 0 5px / 17px; padding-left:21px}
+
+	/* 게시판상세뷰 */
+	.board_top p				{font:500 18px/24px "Mulish","Noto Sans KR", sans-serif; width:100%; padding:0px 20px 10px 0px; color:#333; border-bottom: 2px solid #555;     box-sizing: border-box; word-break:keep-all}
+	.board_top p.lock			{background:url('../_img/mo/comn/tit_lock.png')no-repeat 0 2px / 12px; padding-left:18px}
+    .board_top ul				{border-bottom:1px solid #ddd; color:#555; padding:10px 10px; width:100%; display:flex;  box-sizing: border-box; flex-wrap:wrap;}
+	.board_top ul li:first-child::after		{display:inline-block; content:''; width:1px; height:10px; background:#ccc; position:absolute; right:0; top:50%; transform:translateY(-50%);}
+	.board_top ul li:last-child {width:100%}
+    .board_top ul li		{font:500 14px/22px "Mulish","Noto Sans KR", sans-serif; margin-right:8px; padding-right:8px; position:relative}
+	.board_top ul li span	{font-weight:400; display:inline-block; margin-left:1px}
+	.board_file				{padding:10px; display:table; width:100%; background:#f5f5f5; box-sizing:border-box}
+	.board_file strong		{display:table-cell; font:400 14px/19px "Mulish","Noto Sans KR", sans-serif;  width:55px; vertical-align:middle; color:#555}
+	.board_file p			{display:table-cell}
+	.board_file p a			{display:block; background: url('../_img/mo/comn/file_down.png')no-repeat 0 6px / 13px; margin-left:15px; padding-left:20px; font:300 14px/22px "Mulish","Noto Sans KR", sans-serif; color:#666; text-decoration:underline; text-decoration-color:#888; transition:all 0.2s; margin-bottom:2px;}
+	.board_file p a::last-child {margin-bottom:0}
+	.board_file p a:hover	{color:#ed2c49; text-decoration-color:#ed2c49; background-image:url('../_img/mo/comn/file_down_on.png')}
+	.board_cont				{padding:20px 10px 40px 10px; font:300 15px/25px "Mulish","Noto Sans KR", sans-serif; color:#333; border-bottom:1px solid #ddd;}
+
+	.prev_next_box						{width:100%; border-top:1px solid #222; border-bottom:1px solid #222;}
+	.prev_next_box p					{width:auto; padding:10px 15px; border-bottom:1px solid #ddd; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font: 300 15px/24px 'Noto Sans KR', sans-serif; color: #999;}
+	.prev_next_box p a					{font:300 15px/25px 'Noto Sans KR', sans-serif; color:#666;}
+	.prev_next_box p a:hover,
+	.prev_next_box p a:focus			{color: #222;}
+	.prev_next_box p:last-child			{border-bottom: none;}
+	.prev_next_box p span				{font: 400 15px/25px 'Noto Sans KR', sans-serif; color: #222;}
+	.prev_next_box p.prev span::after	{content: ''; width: 10px; height: 8px; background: url('../_img/mo/comn/board_prev.png') no-repeat 0 0 /10px; display: inline-block; margin: 0 14px 0 15px;}
+	.prev_next_box p.next span::after	{content: ''; width: 10px; height: 8px; background: url('../_img/mo/comn/board_next.png') no-repeat 0 0 /10px; display: inline-block; margin: 0 14px 0 15px;}
+	
+	.comment				{background:#f5f9ff; padding:20px 15px 25px; box-sizing:border-box;}
+	.comment .tit			{font:500 16px/24px 'Noto Sans KR', sans-serif; color:#4c5dc6; margin-bottom:5px; background:url('../_img/pc/comn/comment_arrow.png') no-repeat 0% 47% / 8px; padding:0px 12px}
+	.comment .cont			{font:300 15px/25px "Mulish","Noto Sans KR", sans-serif; color:#333;  padding:0px 12px}
+	.comment .board_file	{background:#fff; margin-top:10px; padding:10px 20px}
+
+	/* 게시판상세뷰 */
+	.qna_write p.guide			{font:400 14px/22px "Mulish","Noto Sans KR", sans-serif; margin-bottom: 25px; background:#f5f5f5; padding:20px 18px; border-radius:5px; text-align:center; word-break:keep-all}
+	.qna_write p.guide span		{font:500 14px/22px "Mulish","Noto Sans KR", sans-serif; color:#ed2c49}
+	.qna_write p.guide02					{font:300 14px/22px "Mulish","Noto Sans KR", sans-serif; color: #777;margin-bottom: 5px;}
+	.qna_write p.guide02 span				{color: #ee2c49;}
+	.qna_write ul li div span.star_write	{color:#ed2c49; padding-left:1px;}
+
+	ul.bbs_write							{width:100%; margin:0 auto; border-top:2px solid #555; max-width: 1400px;}
+	ul.bbs_write li							{width:100%; }
+	ul.bbs_write li > div					{font:300 16px/25px 'Noto Sans KR', sans-serif; color: #222; border-bottom:1px solid #ededed; padding:7px 5px 12px}
+	ul.bbs_write li > div.tit				{border-bottom:none; padding:12px 5px 0; vertical-align:middle; text-align:left; font:500 16px/21px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+	ul.bbs_write li div input				{border:1px solid #ddd; padding:0;  font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; width:100%; box-sizing:border-box; transition:all 0.2s}
+	ul.bbs_write li div input[type="text"]:focus	{border:1px solid #ed2c49}
+	ul.bbs_write select								{height:40px; border:1px solid #ddd; padding:0 10px; width:132px; font:400 15px/40px "Mulish","Noto Sans KR", sans-serif; color:#666; background:url('../_img/mo/comn/sel_arrow.png')no-repeat right 8px top 50% / 12px; box-sizing:border-box;}
+	ul.bbs_write li div								{position: relative; vertical-align: middle; word-break:keep-all;}
+	ul.bbs_write .call_wrap							{display:flex; justify-content:space-between; align-items:center;}
+	ul.bbs_write .call_wrap input, ul.bbs_write .call_wrap select {width:30%}
+
+	ul.bbs_write02 li {border-bottom:1px solid #ededed; padding-bottom:7px; padding:12px 5px}
+	ul.bbs_write02 li > div.tit {font: 500 16px/21px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:7px}
+	ul.bbs_write02 li div input[type="checkbox"]							{position:absolute; width:0px; height:0px; border:none;}
+	ul.bbs_write02 li div input[type="checkbox"] + label					{position: relative; display:inline-block; font:400 14px/26px 'Noto Sans KR', sans-serif; color: #666; cursor:pointer; margin-bottom:3px; width:100%;}
+	ul.bbs_write02 li div input[type="checkbox"] + label:last-child			{margin-right: 0;}
+	ul.bbs_write02 li div input[type="checkbox"] + label:before				{content: ''; display:inline-block; width:16px; height:16px; cursor:pointer; border:1px solid #ccc; background:#f8f8f8; vertical-align:sub; margin-right:5px; }
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:before		{background:#fff; border:1px solid #4c5dc6;}
+	ul.bbs_write02 li div input[type="checkbox"]:checked + label:after		{position:absolute; content: ''; display:inline-block; width:12px; height:10px; cursor:pointer; background:#fff url('../_img/mo/comn/check_on_m.png')no-repeat 50% 50%/12px; left:3px; top:8px; border-radius:10px;}
+	ul.bbs_write02 li div textarea		{margin-bottom:5px; width:100%; padding:10px; min-height:250px; overflow-y:scroll; border:1px solid #ddd; box-sizing:border-box; font:300 15px/25px 'Noto Sans KR', sans-serif; color:#666;}
+	ul.bbs_write02 li div .counter		{text-align:right; font:300 15px/22px "Mulish","Noto Sans KR", sans-serif; color:#666;}
+
+	
+	/* 게시글이 없습니다 */
+	.no_cont			{font: 400 14px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24%;float: inherit !important;display: block !important;width: 100% !important;padding: 150px 0 24px !important;text-align: center !important;}
+	.no_cont:hover		{box-shadow:0 0 0 0 !important; background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 24% !important;}
+	.no_cont::before	{content:''; display:none !important;}
+	.no_cont02			{font: 400 14px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% -2%;width:9% !important; padding: 117px 0 0px !important;text-align: center !important; margin: 0px 1%;}
+	.no_cont03			{font: 400 14px/25px "Mulish", "Noto Sans KR", sans-serif;color: #777;background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 6%;width:9% !important;padding: 136px 0 0px !important;text-align: center !important;height: 40px !important;box-shadow: 0 0 0 0 !important;}
+	.no_cont03:hover	{background: url('../_img/pc/comn/blank_div_i.png')no-repeat 50% 6% !important;}
+}
+
+/* ------------------------------------------------------------------ MO 끝  ------------------------------------------------------------------ */

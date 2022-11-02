@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Sample">
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="ArchivecardVO" type="egovframework.example.sample.service.ArchivecardVO"/>
+	<typeAlias  alias="ArchiveesgVO" type="egovframework.example.sample.service.ArchiveesgVO"/>
+	<typeAlias  alias="ProgramqnawriteVO" type="egovframework.example.sample.service.ProgramqnawriteVO"/>
+	
+
+	<select id="ArchivecardDAO.list" resultClass="egovMap">
+		SELECT
+			card_idx,title,img
+		from
+			archive_card
+		order by
+			card_idx DESC	
+	</select>
+	
+	<select id="ArchivecardDAO.select" resultClass="egovMap">
+		SELECT
+			card_idx,title,img
+		from
+			archive_card
+		where
+			card_idx=#card_idx#	
+	</select>
+	
+	<select id="ArchiveesgDAO.list" resultClass="egovMap">
+		SELECT
+			esg_idx,title,img
+		from
+			archive_esg
+		order by
+			esg_idx DESC	
+	</select>
+	
+	<select id="ArchiveesgDAO.select" resultClass="egovMap">
+		SELECT
+			esg_idx,title,img
+		from
+			archive_esg
+		where
+			esg_idx=#esg_idx#	
+	</select>
+	
+	<select id="ArchivevideoDAO.list" resultClass="egovMap">
+		SELECT
+			video_idx,title,img,created_date
+		from
+			archive_video
+		order by
+			video_idx DESC	
+	</select>
+	
+	<select id="ArchivevideoDAO.select" resultClass="egovMap">
+		SELECT
+			video_idx,title,img,created_date
+		from
+			archive_video
+		where
+			video_idx=#video_idx#	
+	</select>	
+	
+	<select id="DayslistDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			news_day
+		order by
+			day_idx DESC	
+	</select>
+	
+	<select id="DayslistDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			news_day
+		where
+			day_idx=#day_idx#	
+	</select>	
+	
+	<select id="TodaylistDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			news_today
+		order by
+			today_idx DESC	
+	</select>
+	
+	<select id="TodaylistDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			news_today
+		where
+			today_idx=#today_idx#	
+	</select>	
+	
+	<select id="NoticeDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			notice_notice
+		order by
+			notice_idx DESC	
+	</select>
+	
+	<select id="NoticeDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			notice_notice
+		where
+			notice_idx=#notice_idx#	
+	</select>	
+	
+	<select id="ProgramcourseDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			program_course
+		order by
+			program_idx DESC	
+	</select>
+	
+	<select id="ProgramcourseDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			program_course
+		where
+			program_idx=#program_idx#	
+	</select>	
+	
+	<select id="ProgramqnalistDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			program_qnalist
+		order by
+			qnalist_idx DESC	
+	</select>
+	
+	<select id="ProgramqnalistDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			program_qnalist
+		where
+			qnalist_idx=#qnalistIdx#	
+	</select>
+	
+	<insert id="ProgramqnawriteDAO.insertQna">
+		INSERT program_qnawrite
+			(name,position,company,department,phone1,phone2,phone3,email,request,content,created_date)
+		VALUES
+			(#name#, #position#, #company#,#department#,#phone1#,#phone2#,#phone3#,#email#,#request#,#content#,NOW())
+	</insert>
+	
+	<select id="AdmineduDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			admin_edu
+		order by
+			eduidx DESC
+	</select>
+	
+	<select id="AdmineduDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			admin_edu
+		where
+			eduidx = #eduidx#
+	</select>
+	
+	<insert id="AdmineduDAO.insert">
+		INSERT INTO admin_edu
+			(edutype, title, image, url, statedate1, statedate2, useyn, createddate)
+		values
+			(#edutype#, #title#, #image#, #url#, #statedate1#, #statedate2#, #useyn#,NOW())
+	</insert>
+	
+	<update id="AdmineduDAO.update">
+		update
+			admin_edu
+		set
+			edutype=#edutype#, title=#title#, image=#image#, url=#url#, statedate1=#statedate1#, statedate2=#statedate2#, useyn=#useyn#
+		where
+			eduidx=#eduidx#
+	</update>
+	
+	<select id="AdminmaterialDAO.list" resultClass="egovMap">
+		SELECT
+			*
+		from
+			admin_material
+		order by
+			materialidx DESC
+	</select>
+	
+	<select id="AdminmaterialDAO.select" resultClass="egovMap">
+		SELECT
+			*
+		from
+			admin_material
+		where
+			materialidx = #materialidx#
+	</select>
+	
+	<insert id="AdminmaterialDAO.insert">
+		INSERT INTO admin_material
+			(title, contents, img, file, useyn, createddate)
+		values
+			(#title#, #contents#, #img#, #file#, #useyn#, NOW())
+	</insert>
+	
+	<update id="AdminmaterialDAO.update">
+		update
+			admin_material
+		set
+			title=#title#, contents=#contents#, img=#img#, file=#file#, useyn=#useyn#
+		where
+			materialidx=#materialidx#
+	</update>
+	
+	<delete id="AdminmaterialDAO.delete">
+		delete from admin_material
+		where materialidx=#materialidx#
+	</delete>
+
+</sqlMap>

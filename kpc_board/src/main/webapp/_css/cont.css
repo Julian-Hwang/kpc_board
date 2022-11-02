@@ -1,0 +1,652 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------ PC  ------------------------------------------------------------------ */
+@media only screen and (min-width: 960px) {
+.pc	{display:block;}
+.ta {display:none;}
+.mo {display:none;}
+
+
+/* 카드뉴스 리스트 */
+.card_list ul				{}
+.card_list ul li				{width:245px; float:left; margin-left:25px; border-radius:20px; overflow:hidden; margin-bottom:25px; padding-bottom:20px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out}
+.card_list ul li:nth-child(4n+1) {margin-left:0;}
+.card_list ul li a			{display:block;} 
+.card_list ul li a .img_box  {display:block; background:#f5f5f5; position:relative}
+.card_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+.card_list ul li a .img_box img  {height:245px; width:245px}
+
+.card_list ul li a .tit			{color:#222; font:500 18px/19px "Mulish","Noto Sans KR", sans-serif; padding:20px 0px 3px; transition:all 0.3s ease-in-out}
+.card_list ul li a span		{display:block; color:#222; transition:all 0.3s ease-in-out; }
+.card_list ul li a span.cate		{font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; margin-bottom:5px;}
+.card_list ul li a span.t01		{font:500 18px/19px "Mulish","Noto Sans KR", sans-serif;}
+.card_list ul li:hover		{box-shadow: 5px 3px 18px rgba(0, 0, 0, 0.12);}
+.card_list ul li:hover .tit {padding-left:20px;}
+.card_list ul li:hover .tit, .card_list ul li:hover .tit span	{color:#4c5dc6}
+.card_list ul li:hover .img_box::before {opacity:0.75}
+
+/* 카드뉴스 뷰페이지 */
+div.cardnews_vtop							{margin-top:-20px; padding-bottom:30px; box-sizing:border-box; border-bottom: 2px solid #555; text-align:Center; position:relative;}
+
+div.cardnews_vtop h4.v_t01					{font:500 26px/35px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:7px;}
+div.cardnews_vtop p.v_t02					{text-align:center; font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+div.cardnews_vtop p.v_t02 span			{font-weight:400; display:inline-block;}
+
+div.cardnews_vcont								{max-width:1055px; margin:20px auto 50px; text-align:center; overflow:hidden}
+div.cardnews_vcont ul.cardnews_slick						{width:100%; max-width:700px; margin:0 auto;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow								{border:solid 1px #ddd; border-radius:50%; width:60px; height:60px; position:absolute; top:50%; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev				{left:0%; margin-left:-80px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next				{right:0%; margin-right:-80px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev::before	{content:url('../_img/pc/cont/cardnews_prev.png'); margin-right:3px; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next::before	{content:url('../_img/pc/cont/cardnews_next.png'); margin-left:5px; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow:hover								{border:solid 1px #ed2c49;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev:hover::before	{content:url('../_img/pc/cont/cardnews_prev_r.png');}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next:hover::before	{content:url('../_img/pc/cont/cardnews_next_r.png');}
+
+div.cardnews_vcont p.slideCount										{text-align:center; background:rgba(0,0,0,0.8); width:700px; margin:0 auto ; padding:15px 0 17px; font:300 17px/24px "Noto Sans KR", sans-serif; color:#aaa; }
+div.cardnews_vcont p.slideCount span.slideCountItem		{font-weight:400; color:#fff;}
+
+div.cardnews_vcont .btn_area	{text-align:center;}
+
+/* 자료 리스트 */
+.box_list.data ul li a .img_box::after  {display:none;}
+.box_list.data ul li:hover .img_box::after  {display:none;}
+
+/* 교육영상 뷰페이지 */
+div.video_vtop						{margin-bottom:60px; overflow:hidden;}
+div.video_vtop .movie		{position:relative; float:left; cursor:pointer; width:45%; max-width:520px; border-radius:20px; position:relative; box-shadow:2px 3px 7px #bbb; overflow:hidden;}
+div.video_vtop .movie p		{position:relative;}
+div.video_vtop .movie img	{width:100%;}
+div.video_vtop .movie span.play	{content:""; opacity:0.6; position:absolute; width:100px; height:100px; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:50px; z-index:1; background:url('../_img/pc/comn/play.png') no-repeat 50% 50% ; overflow:hidden; transition:all 0.3s; }
+div.video_vtop .movie:hover span.play	{opacity:1;}
+
+div.video_vtop div.detail		{float:right; width:52%;}
+div.video_vtop div.detail h3	{font:500 26px/35px "Mulish","Noto Sans KR", sans-serif }
+
+table.video_info					{margin:20px 0 0 0;}
+table.video_info .vtable_width		{width:110px;}
+table.video_info th					{width:110px; text-align:left; padding:10px 0; font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+table.video_info td					{width:auto; padding:5px 0; font:400 16px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;  }
+table.video_info td a.hash			{display:inline-block; padding:6px 8px; background:#e8ecf8; margin:0 0 3px 0; border-radius:3px; font:300 14px/15px "Mulish","Noto Sans KR", sans-serif; color:#6c6e78}
+table.video_info td a.hash:hover	{background:#d7ddef; color:#494f65}
+
+div.video_vtop .btn_area				{float:right;}
+
+div.video_vcont {}
+div.video_vcont ul.v_list01							{margin:10px 0 0 0; display:flex; flex-wrap:wrap;}
+div.video_vcont ul.v_list01 li						{width:24%; margin:0px 1.3% 50px 0; position:relative; border-radius:10px 10px 0 10px; overflow:hidden;}
+div.video_vcont ul.v_list01 li:nth-child(4n){margin-right:0;}
+div.video_vcont ul.v_list01 li .time				{display:block; width:45px; text-align:center; padding:5px 0; border-radius:3px;  background:rgba(0,0,0,0.6); color:#fff;  position:absolute; bottom:10px; left:10px; z-index:10; font:200 14px/14px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li div.movie		{width:100%; cursor:pointer; position:relative;}
+div.video_vcont ul.v_list01 li div.movie img	{width:100%; position:relative;}
+div.video_vcont ul.v_list01 li div.movie::before			{display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%/100%; position:absolute; bottom:0; left:0; z-index:9; opacity:0.5; transition:all 0.3s ease-in-out} 
+div.video_vcont ul.v_list01 li div.movie:hover::before	{opacity:0.8;}
+div.video_vcont ul.v_list01 li div.movie::after				{content:""; opacity:0.8; position:absolute; width:60px; height:60px; top:50%; left:50%; margin:-30px 0 0 -30px; border-radius:50px; z-index:10; background:url('../_img/pc/comn/play.png') no-repeat 50% 50%; transition:all 0.3s}
+div.video_vcont ul.v_list01 li div.movie:hover::after	{opacity:1;}
+
+div.video_vcont ul.v_list01 li .t01 					{width:100%; padding:20px 0px 0 0; box-sizing:border-box; font:300 16px/17px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li .t02					{margin-top:5px;}
+div.video_vcont ul.v_list01 li .t02 a				{display:block; width:100%; box-sizing:border-box; font:500 19px/28px "Mulish", "Noto Sans KR", sans-serif; color:#333;}
+div.video_vcont ul.v_list01 .v_cont					{transition:all 0.3s ease-in-out}
+div.video_vcont ul.v_list01 li .hash					{margin-top:7px;}
+div.video_vcont ul.v_list01 li .hash p				{display:inline-block; margin-bottom:3px;}
+div.video_vcont ul.v_list01 li .hash p span		{display:inline-block; padding:6px 8px; background:#e8ecf8; border-radius:3px; font:300 14px/15px "Mulish", "Noto Sans KR", sans-serif; color:#6c6e78}
+
+
+div.video_vcont ul.v_list01 li:hover .t02 a		{color:#4c5dc6}
+
+div.video_vcont ul.v_list01#tab02	{}
+div.video_vcont ul.v_list01#tab02 li div.movie::after	{display:none;}
+div.video_vcont ul.v_list01#tab02 li .t02	{margin-top:18px;}
+
+/* 레이어팝업 */
+div.layer					{display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100000;}
+div.layer .bg				{position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+div.layer .pop-layer			{position:absolute; top:50%; left:50%; width:1300px; height:600px; margin:0; background:#fff; z-index: 10;}
+div.layer p.close					{position:absolute; top:-50px; right:0; }
+div.layer p.close a.cbtn		{display:inline-block; font-size:0; width:30px; height:30px;  background:url('../_img/pc/comn/pop_cbtn.png')no-repeat 50% 50%}
+.pop_cont							{width:100%;}
+div.pop-layer iframe 			{min-height:600px}
+
+/* tab01 */
+ul.tab01							{width:100%;flex-wrap:wrap;display:flex;align-items:center;justify-content: flex-start;margin-bottom:30px; position:relative;}
+ul.tab01::before				{width:100%; height:1px; position:absolute; z-index:-1;content:''; background:#ddd; bottom:0;}
+ul.tab01 li a						{text-align:center; display:inline-block; border:1px solid #ddd; padding:17px 40px; box-sizing:border-box; font:400 16px/17px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; transition:all 0.2s;}
+ul.tab01 li:nth-child(n+2) a  {border-left:0;}	
+ul.tab01 li.on a					{background:#ee2c49; color:#fff; border-color:#ed2c49 }
+ul.tab01 li.on a:hover		{color:#fff;}
+ul.tab01 li a:hover				{color:#ed2c49; border-color:#ed2c49}
+
+/* 공지사항 리스트 */
+.notice .bbs_list ul li p.tit		{width:62%;}  
+.notice .bbs_list ul li.n_top		{background:#fff6f7}
+.notice .bbs_list ul li.n_top .num  {font-size:0; background:url('../_img/pc/cont/notice_icon.png')no-repeat 50% 50%; height:18px;}
+.notice .pagination					{margin-top:20px}
+
+
+/* 뉴스스크랩 */
+.news .news_tit							{font: 600 24px/29px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; border-bottom:2px solid #555; padding-bottom: 15px;}
+.news .news_tit span					{color:#fa4a78}
+.news .card_list .news_tit span			{color:#4c5dc6}
+.news .news_tit .more					{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/news_more.png')no-repeat 50% 60%; height:30px}
+.news .news_tit .more:hover				{background-image:url('../_img/pc/main/news_more_h.png')}
+.news .card_list .news_tit .more		{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/course_more.png')no-repeat 50% 60%; height:30px}
+.news .card_list .news_tit .more:hover  {background-image:url('../_img/pc/main/course_more_h.png')}
+.news .bbs_list ul						{border-top:none}
+.news .bbs_list ul li p.tit				{width:81%;}  
+.news .card_list.list					{margin:40px 0 0px}
+.news .card_list.list ul				{margin-top:30px}
+.news .card_list ul li					{padding-bottom:0}
+.news .card_list.list ul li a			{position:relative; overflow:hidden;}
+.news .card_list ul li a .tit			{position:absolute; bottom:20px; left:23px; z-index:55; color:#023c26;}
+.news .card_list ul li a .img_box::before {opacity:0; bottom:-50px;}
+.news .card_list ul li:hover a .img_box::before  {opacity:0.7; }
+.news .card_list ul li:hover a .tit				{color:#fff}
+
+/* 뉴스스크랩 오늘의 스크랩 */
+.news_list .news_tit					{font: 600 28px/29px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; margin-bottom:10px; border-bottom:none; padding-bottom:0;}
+.news_list .news_tit.blue span			{color:#333}					
+.news_list .news_tit span				{color:#ee2c49}
+.news_list .bbs_list ul li p.tit		{width:81%;}
+.news_list .pagination					{margin-top:20px}
+.news_list .card_list.list				{margin-top:0}
+
+
+/*esg자료 list*/
+.expl_div		{background: #fcfcfc url('../_img/pc/cont/expl_div_i.png')no-repeat 3% 50%;padding: 58px 32px 58px 165px;margin-bottom: 35px;border-top: 3px solid #ee2c49;border-bottom: 1px solid #ddd;}
+.expl_div p		{font: 300 17px/25px "Mulish","Noto Sans KR", sans-serif;color: #555;}
+.expl_div h4	{font: 600 19px/25px "Mulish","Noto Sans KR", sans-serif;color: #ef2c4a;margin-bottom: 8px;}
+
+/*esg자료 view*/
+div.databoard.board_top								{position:relative;}
+div.databoard.board_top .edview_snsbox				{position:absolute; right:0; bottom:72px;height: 41px;}
+div.databoard.board_top .edview_snsbox a			{display:inline-block; float: left; margin-left:7px; width: 35px; height: 36px; overflow: hidden; text-indent: -9999px;}
+div.databoard.board_top .edview_snsbox .kakao		{background: url('../_img/pc/cont/kakao.png')no-repeat 50% 50%;}
+div.databoard.board_top .edview_snsbox .embed		{background: url('../_img/pc/cont/embed.png')no-repeat 50% 50%;}
+div.databoard.board_top .edview_snsbox .facebook	{background:url('../_img/pc/cont/facebook.png') no-repeat 50% 50%; }
+div.databoard.board_top .edview_snsbox .twitter		{background:url('../_img/pc/cont/twitter.png') no-repeat 50% 50%; }
+
+/*슬라이드메뉴 불릿*/
+ul.m_menu > li .ms_menu li								{position: relative;}
+ul.m_menu > li .ms_menu li:before						{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 20px;left: 2px;}
+ul.m_menu > li .ms_menu li:hover::before				{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 20px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:before			{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 13px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:hover::before	{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 13px;left: 2px;}
+
+/* 문의완료 */
+.qna_ok				{background: #fcfcfc url('../_img/pc/cont/qna_ok.png')no-repeat 50% 20%; padding: 155px 0px 40px; border-top:3px solid #ee2c49; border-bottom:1px solid #ddd; text-align:center }
+.qna_ok p			{font:400 19px/25px "Mulish","Noto Sans KR", sans-serif; color:#333;}
+.qna_ok p span		{color: #ef2c4a;}
+.qna_ok p.ok_btn a  {text-align:center; min-width:120px; background:#444; color:#fff; display:inline-block; font:400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px; margin-top:35px}
+.qna_ok p.ok_btn a.home			{color:#fff; background:#ed2c49; margin-right:5px}
+.qna_ok p.ok_btn a:hover		{background:#ed2c49}
+.qna_ok p.ok_btn a.home:hover	{background:#d4243f}
+
+/* faq */
+ul.faq_list			 {border-top:2px solid #555}
+ul.faq_list li		 {border-bottom:1px solid #ddd; padding:0px 0px}
+ul.faq_list li > a   {display:block}
+ul.faq_list .faq_tit {padding:13px 15px; overflow:hidden; display:flex; align-items: center;}
+ul.faq_list span.eng {display:inline-block; width:30px;height:30px; background:#444 ; color:#fff; border-radius:50%; text-align:center;font:500 17px/30px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s}
+ul.faq_list span.tit {margin-left:10px; font:500 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333; display:inline-block; width:calc(100% - 127px); word-break:keep-all; vertical-align:middle;}
+ul.faq_list .faq_tit span.r_btn			 {display:inline-block; float:right; font:400 15px/27px "Mulish","Noto Sans KR", sans-serif; color:#555; border:1px solid #888; padding:4px 25px 4px 8px; background:url('../_img/pc/cont/faq_arrow.png')no-repeat right 8px top 52%; letter-spacing:-0.8px; transition:all 0.2s}
+ul.faq_list .faq_tit.on span.r_btn {border:1px solid #444; color:#fff; background:#444 url('../_img/pc/cont/faq_arrow_on.png')no-repeat right 8px top 51%; }
+ul.faq_list .faq_tit.on span.eng {background:#ee2c49}
+ul.faq_list .faq_con			 {display:none; background:#f6f6f6; padding:20px 15px 20px 15px; border-top:1px solid #ededed;}
+ul.faq_list .faq_con .eng		 {background:#888}
+ul.faq_list .faq_con > p		 {display: inline-block; width:calc(100% - 40px); word-break:keep-all; vertical-align:top; padding:0 10px; box-sizing:border-box; font:300 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+
+
+/* 교육체계도 */
+.system_right p.guide	{display:none;}
+.table_scroll.pctamo	{display:block;}
+.table_scroll.pc_ta		{display:none;}
+
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1390px){
+
+/* 카드뉴스 리스트 */
+.card_list ul li				{width:24%; margin-left:1.3%;}
+.card_list ul li a .img_box img  {height:100%; width:100%}
+
+/* 카드뉴스 뷰페이지 */
+div.cardnews_vtop							{margin-top:0px; }
+div.cardnews_vtop h4.v_t01					{font:500 24px/34px "Mulish","Noto Sans KR", sans-serif;}
+
+/* 레이어팝업 */
+div.layer .pop-layer			{width:95%;}
+
+/* 교육체계도 */
+.table_scroll			{overflow:scroll; width:100%;}
+.table_scroll.pctamo	{display:block;}
+.table_scroll.pc_ta		{display:none;}
+.system_right p.guide	{display:block;font: 300 15px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;margin-bottom: 10px;float: right;}
+.right.system_right		{min-width: 900px;}
+}
+@media only screen and (min-width: 1112px) and (max-width: 1383px) {
+
+/* 교육체계도 */
+.table_scroll.pctamo	{display:none;}
+.table_scroll.pc_ta		{display:block;}
+.table_scroll			{overflow:unset !important; width:100%; text-align:center !important; margin:0 auto;}
+.table_scroll p img		{width:100%;}
+.system_right p.guide	{display:none;}
+.right.system_right		{min-width: 900px;}	
+
+}
+/* ------------------------------------------------------------------ PC 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ TA  ------------------------------------------------------------------ */
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+.pc	{display:none;}
+.ta {display:block;}
+.mo {display:none;}
+
+
+/* 카드뉴스 리스트 */
+.card_list ul				{display:flex; flex-wrap:wrap;}
+.card_list ul li				{width:32%; margin-left:2%; border-radius:20px; overflow:hidden; margin-bottom:25px; padding-bottom:20px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out}
+.card_list ul li:nth-child(3n+1) {margin-left:0;}
+.card_list ul li a			{display:block;} 
+.card_list ul li a .img_box  {display:block; background:#f5f5f5; position:relative}
+.card_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+.card_list ul li a .img_box img  {height:100%; width:100%}
+
+.card_list ul li a .tit			{color:#222; font:500 18px/19px "Mulish","Noto Sans KR", sans-serif; padding:20px 0px 3px; transition:all 0.3s ease-in-out}
+.card_list ul li a span		{display:block; color:#222; transition:all 0.3s ease-in-out; }
+.card_list ul li a span.cate		{font:500 16px/19px "Mulish","Noto Sans KR", sans-serif; margin-bottom:5px;}
+.card_list ul li a span.t01		{font:500 18px/19px "Mulish","Noto Sans KR", sans-serif;}
+.card_list ul li:hover		{box-shadow: 5px 3px 18px rgba(0, 0, 0, 0.12);}
+.card_list ul li:hover .tit {padding-left:15px} 
+.card_list ul li:hover .tit span	{color:#4c5dc6}
+.card_list ul li:hover .img_box::before {opacity:0.75}
+
+/* 카드뉴스 뷰페이지 */
+div.cardnews_vtop				{margin-top:-5px; padding-bottom:30px; box-sizing:border-box; border-bottom: 2px solid #555; text-align:Center; position:relative;}
+div.cardnews_vtop h4.v_t01		{font:500 22px/35px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:5px;}
+div.cardnews_vtop p.v_t02		{text-align:center; font:500 15px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+div.cardnews_vtop p.v_t02 span	{font-weight:400; display:inline-block;}
+
+
+div.cardnews_vcont								{width:100%; margin:20px 0px; text-align:center; overflow:hidden}
+div.cardnews_vcont ul.cardnews_slick						{width:calc(100% - 160px); max-width:700px; margin:0 auto;}
+div.cardnews_vcont ul.cardnews_slick li						{}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow								{position:absolute; top:50%; margin-top:-25px;transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev				{left:0%; margin-left:-85px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next				{right:0%; margin-right:-25px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev::before	{position:absolute; content:''; width:50px; height:50px; border:solid 1px #ddd; border-radius:50%; background:url('../_img/mo/cont/cardnews_prev.png') no-repeat 16px 50%/15px; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next::before	{position:absolute; content:''; width:50px; height:50px; border:solid 1px #ddd; border-radius:50%; background:url('../_img/mo/cont/cardnews_next.png') no-repeat 19px 50%/15px; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev:hover::before	{border:solid 1px #ed2c49; background:url('../_img/mo/cont/cardnews_prev_r.png') no-repeat 16px 50%/15px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next:hover::before	{border:solid 1px #ed2c49; background:url('../_img/mo/cont/cardnews_next_r.png') no-repeat 19px 50%/15px;}
+
+div.cardnews_vcont p.slideCount							{text-align:center; background:rgba(0,0,0,0.8); width:calc(100% - 160px);  max-width:700px; margin:0 auto ; padding:10px 0 12px; font:300 15px/24px "Noto Sans KR", sans-serif; color:#aaa; }
+div.cardnews_vcont p.slideCount span.slideCountItem		{font-weight:400; color:#fff;}
+
+
+div.cardnews_vcont .btn_area	{text-align:center;}
+
+/* 교육영상 뷰페이지 */
+div.video_vtop							{margin-bottom:50px; overflow:hidden;}
+div.video_vtop div.movie			{position:relative; float:left; cursor:pointer; width:45%; max-width:520px; border-radius:20px; position:relative; box-shadow:2px 3px 7px #bbb; overflow:hidden;}
+div.video_vtop div.movie p		{position:relative;}
+div.video_vtop div.movie img		{width:100%;}
+div.video_vtop div.movie span.play	{content:""; opacity:0.6; position:absolute; width:100px; height:100px; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:50px; z-index:1; background:url('../_img/mo/comn/play.png')no-repeat center center / 55px; overflow:hidden; transition:all 0.3s; }
+div.video_vtop div.movie:hover span.play	{opacity:1;}
+
+div.video_vtop div.detail		{float:right; width:52%;}
+div.video_vtop div.detail h3	{font:500 22px/32px "Mulish","Noto Sans KR", sans-serif }
+
+table.video_info						{margin:20px 0 0 0;}
+table.video_info .vtable_width			{width:110px;}
+table.video_info th						{width:110px; text-align:left; padding:10px 0; font:500 15px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+table.video_info th:last-child			{padding-bottom: 0;}
+table.video_info td						{width:auto; padding:5px 0; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;  }
+table.video_info td a.hash				{display:inline-block; padding:6px 8px; background:#e8ecf8; margin:0 0 3px 0; border-radius:3px; font:300 14px/15px "Mulish","Noto Sans KR", sans-serif; color:#6c6e78}
+table.video_info td a.hash:hover		{background:#d7ddef; color:#494f65}
+div.video_vtop .btn_area				{float:right;}
+
+div.video_vcont {}
+div.video_vcont ul.v_list01							{margin:10px 0 0 0; display:flex; flex-wrap:wrap;}
+div.video_vcont ul.v_list01 li						{width:32%; margin:0px 2% 50px 0; position:relative; border-radius:10px 10px 0 10px; overflow:hidden;}
+div.video_vcont ul.v_list01 li:nth-child(3n){margin-right:0;}
+div.video_vcont ul.v_list01 li .time				{display:block; width:45px; text-align:center; padding:5px 0; border-radius:3px;  background:rgba(0,0,0,0.6); color:#fff;  position:absolute; bottom:10px; left:10px; z-index:10; font:200 14px/14px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li div.movie		{width:100%; cursor:pointer; position:relative;}
+div.video_vcont ul.v_list01 li div.movie img	{width:100%; position:relative;}
+div.video_vcont ul.v_list01 li div.movie::before			{display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%/100%; position:absolute; bottom:0; left:0; z-index:9; opacity:0.5; transition:all 0.3s ease-in-out} 
+div.video_vcont ul.v_list01 li div.movie:hover::before	{opacity:0.8;}
+div.video_vcont ul.v_list01 li div.movie::after				{content:""; opacity:0.8; position:absolute; width:55px; height:55px; top:50%; left:50%; margin:-27px 0 0 -27px; border-radius:50px; z-index:10; background:url('../_img/mo/comn/play.png')no-repeat center center / 55px; transition:all 0.3s}
+div.video_vcont ul.v_list01 li div.movie:hover::after	{opacity:1;}
+
+div.video_vcont ul.v_list01 li .t01 					{width:100%; padding:20px 0px 0 0; box-sizing:border-box; font:300 15px/16px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li .t02					{margin-top:5px;}
+div.video_vcont ul.v_list01 li .t02 a				{display:block; width:100%; box-sizing:border-box; font:500 18px/28px "Mulish", "Noto Sans KR", sans-serif; color:#333;}
+div.video_vcont ul.v_list01 .v_cont					{transition:all 0.3s ease-in-out}
+div.video_vcont ul.v_list01 li .hash					{margin-top:7px;}
+div.video_vcont ul.v_list01 li .hash p				{display:inline-block; margin-bottom:3px;}
+div.video_vcont ul.v_list01 li .hash p span		{display:inline-block; padding:6px 8px; background:#e8ecf8; border-radius:3px; font:300 14px/15px "Mulish", "Noto Sans KR", sans-serif; color:#6c6e78}
+
+div.video_vcont ul.v_list01 li:hover .t02 a		{color:#4c5dc6}
+
+div.video_vcont ul.v_list01#tab02	{}
+div.video_vcont ul.v_list01#tab02 li div.movie::after	{display:none;}
+div.video_vcont ul.v_list01#tab02 li .t02	{margin-top:18px;}
+
+
+
+/* 레이어팝업 */
+div.layer					{display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100000;}
+div.layer .bg				{position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+div.layer .pop-layer			{position:absolute; top:50%; left:50%; width:calc(100% - 50px); height:450px; margin:0; background:#fff; z-index: 10;}
+div.layer p.close					{position:absolute; top:-50px; right:0; }
+div.layer p.close a.cbtn		{display:inline-block; font-size:0; width:30px; height:30px;  background:url('../_img/mo/comn/pop_cbtn.png')no-repeat 50% 50%/30px}
+.pop_cont							{width:100%;}
+div.pop-layer iframe 			{min-height:450px}
+
+/* tab01 */
+ul.tab01							{width:100%;flex-wrap:wrap;display:flex;align-items:center;justify-content: flex-start;margin-bottom:25px;}
+ul.tab01 li							{width:50%;}
+ul.tab01 li a						{text-align:center; display:inline-block; border:1px solid #ddd; width:100%; padding:16px 0px; box-sizing:border-box; font:400 15px/16px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; transition:all 0.2s;}
+ul.tab01 li:nth-child(n+2) a  {border-left:0;}	
+ul.tab01 li.on a					{background:#ee2c49; color:#fff; border-color:#ed2c49 }
+ul.tab01 li.on a:hover		{color:#fff;}
+ul.tab01 li a:hover				{color:#ed2c49; border-color:#ed2c49}
+
+/* 공지사항 리스트 */
+.notice .bbs_list ul li p.tit		{width:66%; padding-left:15px;}  
+.notice .bbs_list ul li.n_top		{background:#fff6f7}
+.notice .bbs_list ul li.n_top .num  {font-size:0; background:url('../_img/pc/cont/notice_icon.png')no-repeat 50% 50%}
+.notice .pagination					{margin-top:20px}
+
+/* 뉴스스크랩 */
+.news .news_tit							{font: 600 22px/29px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; border-bottom:2px solid #555; padding-bottom: 15px;}
+.news .news_tit span					{color:#fa4a78}
+.news .card_list .news_tit span			{color:#4c5dc6}
+.news .news_tit .more					{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/news_more.png')no-repeat 50% 65% / 20px; height:30px}
+.news .news_tit .more:hover				{background-image:url('../_img/pc/main/news_more_h.png')}
+.news .card_list .news_tit .more		{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/course_more.png')no-repeat 50% 65% / 20px; height:30px}
+.news .card_list .news_tit .more:hover  {background-image:url('../_img/pc/main/course_more_h.png')}
+.news .bbs_list ul						{border-top:none}
+.news .bbs_list ul li p.tit				{width:81%; padding-left:18px;}  
+.news .card_list.list					{margin:50px 0 0px}
+.news .card_list.list ul				{margin-top:30px}
+.news .card_list ul li					{padding-bottom:0}
+.news .card_list.list ul li a			{position:relative; overflow:hidden;}
+.news .card_list ul li a .tit			{position:absolute; bottom:20px; left:15px; z-index:55; color:#023c26;}
+.news .card_list ul li a .img_box::before {opacity:0; bottom:-50px;}
+.news .card_list ul li:hover a .img_box::before  {opacity:0.7; }
+.news .card_list ul li:hover a .tit				{color:#fff}
+
+
+/* 뉴스스크랩 오늘의 스크랩 */
+.news_list .news_tit					{font:600 25px/29px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; margin-bottom:20px}
+.news_list .news_tit.blue span			{color:#333}	
+.news_list .news_tit span				{color:#ee2c49}
+
+.news_list .bbs_list ul li p.tit		{width:81%; padding-left:24px;}  
+.news_list .pagination					{margin-top:20px}
+
+/*esg자료 list*/
+.expl_div		{background: #fcfcfc url('../_img/pc/cont/expl_div_i.png')no-repeat 3% 50%;padding: 58px 34px 58px 165px;margin-bottom: 35px;border-top: 3px solid #ee2c49;border-bottom: 1px solid #ddd;}
+.expl_div p		{font: 300 17px/25px "Mulish","Noto Sans KR", sans-serif;color: #555;}
+.expl_div h4	{font: 600 19px/25px "Mulish","Noto Sans KR", sans-serif;color: #ef2c4a;margin-bottom: 8px;}
+
+/*esg자료 view*/
+div.databoard.board_top								{position:relative;}
+div.databoard.board_top .edview_snsbox				{position:absolute; right:0; bottom:72px;height: 41px;}
+div.databoard.board_top .edview_snsbox a			{display:inline-block; float: left; margin-left:7px; width: 35px; height: 36px; overflow: hidden; text-indent: -9999px;}
+div.databoard.board_top .edview_snsbox .kakao		{background: url('../_img/pc/cont/kakao.png')no-repeat 50% 50%;}
+div.databoard.board_top .edview_snsbox .embed		{background: url('../_img/pc/cont/embed.png')no-repeat 50% 50%;}
+div.databoard.board_top .edview_snsbox .facebook	{background:url('../_img/pc/cont/facebook.png') no-repeat 50% 50%; }
+div.databoard.board_top .edview_snsbox .twitter		{background:url('../_img/pc/cont/twitter.png') no-repeat 50% 50%; }
+
+/*슬라이드메뉴 불릿*/
+ul.m_menu > li .ms_menu li								{position: relative;}
+ul.m_menu > li .ms_menu li:before						{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 20px;left: 2px;}
+ul.m_menu > li .ms_menu li:hover::before				{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 20px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:before			{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 13px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:hover::before	{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 13px;left: 2px;}
+
+
+/* 문의완료 */
+.sub_content.ok		{background:#f6f6f6;  box-sizing:border-box;  height:calc(100% - 435px);}
+.qna_ok				{background: #f6f6f6 url('../_img/mo/cont/qna_ok.png')no-repeat 50% 10% / 110px; padding: 130px 0px 120px; text-align:center; border-radius:5px ; box-sizing:border-box}
+.qna_ok p			{font:400 18px/25px "Mulish","Noto Sans KR", sans-serif; color:#333;}
+.qna_ok p span		{color: #ef2c4a;}
+.qna_ok p.ok_btn a  {text-align:center; min-width:160px; background:#444; color:#fff; display:inline-block; font:400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px; margin-top:40px}
+.qna_ok p.ok_btn a.home			{color:#fff; background:#ed2c49; margin-right:5px}
+.qna_ok p.ok_btn a:hover		{background:#ed2c49}
+.qna_ok p.ok_btn a.home:hover	{background:#d4243f}
+
+/* faq */
+ul.faq_list			 {border-top:2px solid #555}
+ul.faq_list li		 {border-bottom:1px solid #ddd; padding:0px 0px}
+ul.faq_list li > a   {display:block}
+ul.faq_list .faq_tit {padding:12px 15px; overflow:hidden; display:flex; align-items: center;}
+ul.faq_list span.eng {display:inline-block; width:30px;height:30px; background:#444 ; color:#fff; border-radius:50%; text-align:center;font:500 17px/30px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s}
+ul.faq_list span.tit {margin-left:10px; font:500 16px/27px "Mulish","Noto Sans KR", sans-serif; color:#333; display:inline-block; width:calc(100% - 124px); word-break:keep-all; vertical-align:middle;}
+ul.faq_list .faq_tit span.r_btn			 {display:inline-block; float:right; font:400 14px/27px "Mulish","Noto Sans KR", sans-serif; color:#555; border:1px solid #888; padding:4px 25px 4px 8px; background:url('../_img/ta/cont/faq_arrow.png')no-repeat right 8px top 52% / 11px; letter-spacing:-0.8px; transition:all 0.2s}
+ul.faq_list .faq_tit.on span.r_btn {border:1px solid #444; color:#fff; background:#444 url('../_img/ta/cont/faq_arrow_on.png')no-repeat right 8px top 51% / 11px; }
+ul.faq_list .faq_tit.on span.eng {background:#ee2c49}
+ul.faq_list .faq_con			 {display:none; background:#f6f6f6; padding:20px 15px 20px 15px; border-top:1px solid #ededed;}
+ul.faq_list .faq_con .eng		 {background:#888}
+ul.faq_list .faq_con > p		 {display: inline-block; width:calc(100% - 40px); word-break:keep-all; vertical-align:top; padding:0 10px; box-sizing:border-box; font:300 15px/26px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+
+
+/* 교육체계도 */
+.table_scroll	{overflow:scroll; width:100%; }
+.table_scroll.pctamo	{display:block;}
+.table_scroll.pc_ta		{display:none;}
+.system_right p.guide	{display:block;font: 300 15px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;margin-bottom: 10px;float: right;}
+
+}
+/* ------------------------------------------------------------------ TA 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ MO  ------------------------------------------------------------------ */
+@media only screen and (max-width: 639px) {
+.pc	{display:none;}
+.ta {display:none;}
+.mo {display:block;}
+
+
+/* 카드뉴스 리스트 */
+.card_list ul				{display:flex; flex-wrap:wrap;}
+.card_list ul li				{width:48.5%; margin-left:3%; border-radius:15px; overflow:hidden; margin-bottom:15px; padding-bottom:15px; border-bottom-right-radius:0; transition:all 0.2s ease-in-out}
+.card_list ul li:nth-child(2n+1) {margin-left:0;}
+.card_list ul li a			{display:block;} 
+.card_list ul li a .img_box  {display:block; background:#f5f5f5; position:relative}
+.card_list ul li a .img_box::before {display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%; position:absolute; bottom:0; left:0; opacity:0.3; z-index:10; transition:all 0.3s ease-in-out} 
+.card_list ul li a .img_box img  {height:100%; width:100%}
+
+.card_list ul li a .tit			{color:#222; font:500 15px/16px "Mulish","Noto Sans KR", sans-serif; padding:15px 0px 3px; transition:all 0.3s ease-in-out}
+.card_list ul li a span		{display:block; color:#222; transition:all 0.3s ease-in-out; }
+.card_list ul li a span.cate		{font:500 15px/19px "Mulish","Noto Sans KR", sans-serif; margin-bottom:5px;}
+.card_list ul li a span.t01		{font:500 17px/19px "Mulish","Noto Sans KR", sans-serif;}.card_list ul li:hover		{box-shadow: 5px 3px 18px rgba(0, 0, 0, 0.12);}
+.card_list ul li:hover .tit {padding-left:15px} 
+.card_list ul li:hover .tit, .card_list ul li:hover .tit span	{color:#4c5dc6}
+.card_list ul li:hover .img_box::before {opacity:0.75}
+
+/* 카드뉴스 뷰페이지 */
+div.cardnews_vtop								{margin-top:-5px; padding-bottom:15px; box-sizing:border-box; border-bottom: 2px solid #555; text-align:Center; position:relative;}
+div.cardnews_vtop h4.v_t01					{font:500 18px/24px "Mulish","Noto Sans KR", sans-serif; color:#555; margin-bottom:5px;}
+div.cardnews_vtop p.v_t02					{text-align:center; font:500 14px/22px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+div.cardnews_vtop p.v_t02 span			{font-weight:400; display:inline-block;}
+
+div.cardnews_vcont								{width:100%; margin:15px 0px; text-align:center; overflow:hidden; position:relative;}
+div.cardnews_vcont ul.cardnews_slick						{width:100%; margin:0 auto; padding-bottom:41px}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow								{position:absolute; top:100%; margin-top:-41px; transition: all 0.3s; z-index:10;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev				{left:0%; margin-left:-5px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next				{right:0%; margin-right:35px;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-prev::before	{position:absolute; content:''; width:40px; height:40px; border-radius:50%; background:url('../_img/mo/cont/cardnews_prev_w.png') no-repeat 13px 50%/10px; transition: all 0.3s;}
+div.cardnews_vcont ul.cardnews_slick .slick-arrow.slick-next::before	{position:absolute; content:''; width:40px; height:40px; border-radius:50%; background:url('../_img/mo/cont/cardnews_next_w.png') no-repeat 16px 50%/10px; transition: all 0.3s;}
+
+div.cardnews_vcont p.slideCount										{position:absolute; bottom:70px;  text-align:center; background:rgba(0,0,0,0.8); width:100%; margin:0 auto ; padding:7px 0 10px; font:300 14px/24px "Noto Sans KR", sans-serif; color:#aaa; }
+div.cardnews_vcont p.slideCount span.slideCountItem		{font-weight:400; color:#fff;}
+
+div.cardnews_vcont .btn_area	{text-align:center;}
+
+/* 교육영상 뷰페이지 */
+div.video_vtop						{margin-bottom:50px; overflow:hidden;}
+div.video_vtop div.movie			{position:relative; border-radius:20px; position:relative; box-shadow:2px 3px 7px #bbb; overflow:hidden;}
+div.video_vtop div.movie p			{position:relative;}
+div.video_vtop div.movie img		{width:100%;}
+div.video_vtop div.movie span.play	{content:""; opacity:0.6; position:absolute; width:100px; height:100px; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:50px; z-index:1; background:url('../_img/mo/comn/play.png')no-repeat center center / 55px; overflow:hidden; transition:all 0.3s; }
+div.video_vtop div.movie:hover span.play	{opacity:1;}
+
+div.video_vtop div.detail		{margin-top:20px;}
+div.video_vtop div.detail h3	{font:500 20px/24px "Mulish","Noto Sans KR", sans-serif }
+
+table.video_info					{/* margin:5px 3px 0 3px;  */ table-layout:fixed; width:100%;}
+table.video_info colgroup			{width:100%;}
+table.video_info .vtable_width		{width:85px;}
+table.video_info th					{text-align:left; padding:8px 0; font:500 15px/16px "Mulish","Noto Sans KR", sans-serif; color:#555;}
+table.video_info tr.btn_tr			{}
+table.video_info td					{width:auto; padding:5px 0; font:400 15px/19px "Mulish","Noto Sans KR", sans-serif; color:#555;  }
+table.video_info td a.hash			{display:inline-block; padding:4px 6px; background:#e8ecf8; margin:0 0 3px 0; border-radius:3px; font:300 14px/15px "Mulish","Noto Sans KR", sans-serif; color:#6c6e78}
+table.video_info td a.hash:hover	{background:#d7ddef; color:#494f65}
+
+div.video_vcont {}
+div.video_vcont ul.v_list01							{}
+div.video_vcont ul.v_list01 li						{margin:25px 0 0px 0; position:relative; overflow:hidden;}
+div.video_vcont ul.v_list01 li:nth-child(3n){margin-right:0;}
+div.video_vcont ul.v_list01 li .time				{display:block; min-width:40px; text-align:center; padding:2px 0; border-radius:3px;  background:rgba(0,0,0,0.6); color:#fff;  position:absolute; bottom:3px; left:3px; z-index:10; font:200 12px/13px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li div.movie		{border-radius:10px 10px 0 0; width:33%; float:left; overflow:hidden; position:relative;}
+div.video_vcont ul.v_list01 li div.movie img	{width:100%; position:relative;}
+div.video_vcont ul.v_list01 li div.movie::before			{display:inline-block; content:''; width:100%; height:100%; background:url('../_img/pc/comn/list_black.png')no-repeat 0 100%/100%; position:absolute; bottom:0; left:0; z-index:9; opacity:0.5; transition:all 0.3s ease-in-out} 
+div.video_vcont ul.v_list01 li div.movie:hover::before	{opacity:0.8;}
+div.video_vcont ul.v_list01 li div.movie::after				{content:""; opacity:0.8; position:absolute; width:25px; height:25px; top:50%; left:50%; margin:-12px 0 0 -12px; border-radius:50px; z-index:10; background:url('../_img/mo/comn/play.png')no-repeat center center / 25px; transition:all 0.3s}
+div.video_vcont ul.v_list01 li div.movie:hover::after	{opacity:1;}
+
+div.video_vcont ul.v_list01 .v_cont					{transition:all 0.3s ease-in-out; width:63%; float:right;}
+div.video_vcont ul.v_list01 li .t01 					{width:100%; font:300 15px/16px "Mulish", "Noto Sans KR", sans-serif;}
+div.video_vcont ul.v_list01 li .t02 a				{display:block; width:100%; box-sizing:border-box; font:500 17px/28px "Mulish", "Noto Sans KR", sans-serif; color:#333;}
+div.video_vcont ul.v_list01 li .hash					{margin-top:5px;}
+div.video_vcont ul.v_list01 li .hash p				{display:inline-block; margin-bottom:3px;}
+div.video_vcont ul.v_list01 li .hash p span		{display:inline-block; padding:4px 6px; background:#e8ecf8; border-radius:3px; font:300 14px/15px "Mulish", "Noto Sans KR", sans-serif; color:#6c6e78}
+
+div.video_vcont ul.v_list01#tab02	{overflow:hidden;}
+div.video_vcont ul.v_list01#tab02 li					{width:49%; margin-right:2%; float:left;}
+div.video_vcont ul.v_list01#tab02 li:nth-child(2n){margin-right:0;}
+div.video_vcont ul.v_list01#tab02 li div.movie	{width:100%}
+div.video_vcont ul.v_list01#tab02 li div.movie::after	{display:none;}
+div.video_vcont ul.v_list01#tab02 li .v_cont	{width:100%;}
+div.video_vcont ul.v_list01#tab02 li .t02	{margin-top:10px;}
+
+/* 레이어팝업 */
+div.layer					{display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100000;}
+div.layer .bg				{position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}
+div.layer .pop-layer			{position:absolute; top:50%; left:50%; width:calc(100% - 30px); height:200px; margin:0; background:#fff; z-index: 10;}
+div.layer p.close					{position:absolute; top:-40px; right:0; }
+div.layer p.close a.cbtn		{display:inline-block; font-size:0; width:20px; height:20px;  background:url('../_img/mo/comn/pop_cbtn.png')no-repeat 50% 50%/20px}
+.pop_cont							{width:100%;}
+div.pop-layer iframe 			{min-height:200px}
+
+/* tab01 */
+ul.tab01							{width:100%;flex-wrap:wrap;display:flex;align-items:center;justify-content: flex-start;}
+ul.tab01 li							{width:50%;}
+ul.tab01 li a						{text-align:center; display:inline-block; border:1px solid #ddd; width:100%; padding:15px 0px; box-sizing:border-box; font:400 15px/16px "Mulish","Noto Sans KR", sans-serif; color:#2d2c2c; transition:all 0.2s;}
+ul.tab01 li:nth-child(n+2) a  {border-left:0;}	
+ul.tab01 li.on a					{background:#ee2c49; color:#fff; border-color:#ed2c49 }
+ul.tab01 li.on a:hover		{color:#fff;}
+ul.tab01 li a:hover				{color:#ed2c49; border-color:#ed2c49}
+
+/* 공지사항 리스트 */
+.notice .bbs_list ul li.n_top		{background:#fff6f7}
+.notice .bbs_list ul li.n_top .num  {font-size:0; background:url('../_img/pc/cont/notice_icon.png')no-repeat 50% 50%}
+.notice .bbs_list ul li p.tit a		{padding-top:0; margin:0px 0 8px; }
+.notice  .bbs_list ul li			{padding:18px 5px}
+.notice .pagination					{margin-top:20px}
+
+/* 뉴스스크랩 */
+div.right.news								{box-shadow:none !important}
+.news .news_tit							{font:600 19px/20px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; border-bottom:2px solid #555; padding-bottom: 15px;}
+.news .news_tit span					{color:#fa4a78}
+.news .card_list .news_tit span			{color:#4c5dc6}
+.news .news_tit .more					{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/news_more.png')no-repeat 50% 50% / 17px; height:20px}
+.news .news_tit .more:hover				{background-image:url('../_img/pc/main/news_more_h.png')}
+.news .card_list .news_tit .more		{width: 20px; font-size:0; float: right; background: url('../_img/pc/main/course_more.png')no-repeat 50% 50% / 17px; height:20px}
+.news .card_list .news_tit .more:hover  {background-image:url('../_img/pc/main/course_more_h.png')}
+.news .bbs_list ul						{border-top:none}
+.news .bbs_list ul li p.tit a			{padding-top:0; margin:0px 0 5px;}
+.news  .bbs_list ul li p.date::after	{display:none}
+.news .card_list.list					{margin:50px 0 0px}
+.news .card_list.list ul				{margin-top:20px}
+.news .card_list.list					{margin:50px 0 0px}
+.news .card_list.list ul				{margin-top:30px}
+.news .card_list ul li					{padding-bottom:0}
+.news .card_list.list ul li a			{position:relative; overflow:hidden;}
+.news .card_list ul li a .tit			{position:absolute; bottom:18px; left:18px; z-index:55; color:#023c26;}
+.news .card_list ul li a .img_box::before {opacity:0; bottom:-50px;}
+.news .card_list ul li:hover a .img_box::before  {opacity:0.7; }
+.news .card_list ul li:hover a .tit				{color:#fff}
+
+/* 뉴스스크랩 오늘의 스크랩 */
+.news_list .news_tit						{font:600 22px/29px "Noto Sans KR", sans-serif; position:relative; overflow:hidden; color:#333; margin-bottom:20px}
+.news_list .news_tit.blue span				{color:#333}	
+.news_list .news_tit span				{color:#ee2c49}
+/* .news_list .news_tit::before			{display: inline-block; content: ''; width:4px; height:4px; border:4px solid #ee2c49; border-radius:50%; margin-right:5px; vertical-align:top; margin-top:10px;} */
+.news_list .bbs_list ul li p.tit a			{padding-top:0; margin:0px 0 5px;}
+.news_list .bbs_list ul li p.date::after	{display:none}
+
+/*esg자료 list*/
+.expl_div		{background: #fcfcfc;padding: 30px 25px;margin-bottom: 35px;border-top: 3px solid #ee2c49;border-bottom: 1px solid #ddd;}
+.expl_div p		{font: 300 17px/25px "Mulish","Noto Sans KR", sans-serif;color: #555;}
+.expl_div h4	{font: 600 19px/25px "Mulish","Noto Sans KR", sans-serif;color: #ef2c4a;margin-bottom: 8px;}
+
+
+/*esg자료 view*/
+div.databoard.board_top								{position:relative;}
+div.databoard.board_top	p							{border-bottom:none !important;}
+div.databoard.board_top	ul							{border-top: 2px solid #555 !important;}
+div.databoard.board_top .edview_snsbox				{overflow: hidden;text-align: center;margin-top: 5px;margin-bottom: 5px;}
+div.databoard.board_top .edview_snsbox a			{display: inline-block;overflow: hidden;text-indent: -9999px;float: left; margin-left:4px;height: 30px;width: 31px;}
+div.databoard.board_top .edview_snsbox .kakao		{background: url('../_img/mo/cont/kakao.png')no-repeat 50% 50%/30px;}
+div.databoard.board_top .edview_snsbox .embed		{background: url('../_img/mo/cont/embed.png')no-repeat 50% 50%/30px;}
+div.databoard.board_top .edview_snsbox .facebook	{background:url('../_img/mo/cont/facebook.png') no-repeat 50% 50%/30px;}
+div.databoard.board_top .edview_snsbox .twitter		{background:url('../_img/mo/cont/twitter.png') no-repeat 50% 50%/30px;}
+
+/*슬라이드메뉴 불릿*/
+ul.m_menu > li .ms_menu li								{position: relative;}
+ul.m_menu > li .ms_menu li:before						{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 16px;left: 2px;}
+ul.m_menu > li .ms_menu li:hover::before				{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 16px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:before			{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#888;top: 9px;left: 2px;}
+ul.m_menu > li .ms_menu li:first-child:hover::before	{content:''; position:absolute; width:3px; height:3px; border-radius:100%; background:#000;top: 9px;left: 2px;}
+
+/* 문의완료 */
+.sub_content.ok		{background:#f6f6f6;}
+.qna_ok				{background: #f6f6f6 url('../_img/mo/cont/qna_ok.png')no-repeat 50% 15% / 110px; padding: 130px 0px 30px; text-align:center; border-radius:5px }
+.qna_ok p			{font:400 16px/25px "Mulish","Noto Sans KR", sans-serif; color:#333;}
+.qna_ok p span		{color: #ef2c4a;}
+.qna_ok p.ok_btn a  {text-align:center; min-width:calc(50% - 5px); background:#444; color:#fff; display:inline-block; font:400 16px/50px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s; border-radius:3px; margin-top:40px}
+.qna_ok p.ok_btn a.home			{color:#fff; background:#ed2c49; margin-right:5px}
+.qna_ok p.ok_btn a:hover		{background:#ed2c49}
+.qna_ok p.ok_btn a.home:hover	{background:#d4243f}
+
+/* faq */
+ul.faq_list			 {border-top:2px solid #555}
+ul.faq_list li		 {border-bottom:1px solid #ddd; padding:0px 0px}
+ul.faq_list li > a   {display:block}
+ul.faq_list .faq_tit {padding:14px 8px; overflow:hidden; display:flex; align-items: center;}
+ul.faq_list span.eng {display:inline-block; width:25px;height:25px; background:#444 ; color:#fff; border-radius:50%; text-align:center;font:500 15px/25px "Mulish","Noto Sans KR", sans-serif; transition:all 0.2s;}
+ul.faq_list span.tit {margin-left:8px; font:500 15px/23px "Mulish","Noto Sans KR", sans-serif; color:#333; display:inline-block; width:calc(100% - 40px); word-break:keep-all; vertical-align:middle;}
+ul.faq_list .faq_tit span.r_btn			 {display:inline-block; float:right; font-size:0; background:url('../_img/mo/cont/faq_arrow.png')no-repeat right 8px top 52% / 11px; width:20px}
+ul.faq_list .faq_tit.on span.r_btn {color:#fff; background:url('../_img/mo/cont/faq_arrow_on.png')no-repeat right 8px top 51% / 11px; }
+ul.faq_list .faq_tit.on span.eng {background:#ee2c49}
+ul.faq_list .faq_con			 {display:none; background:#f6f6f6; padding:15px 8px 15px 8px; border-top:1px solid #ededed;}
+ul.faq_list .faq_con .eng		 {background:#888}
+ul.faq_list .faq_con > p		 {display: inline-block; width:calc(100% - 30px); word-break:keep-all; vertical-align:top; padding-left:8px; box-sizing:border-box; font:300 15px/25px "Mulish","Noto Sans KR", sans-serif; color:#555;  padding-right:15px;}
+
+/* 교육체계도 */
+.table_scroll.pctamo	{display:block;}
+.table_scroll.pc_ta		{display:none;}
+.table_scroll			{overflow:scroll; width:100%; }
+.table_scroll p img		{max-width:625px;}
+.system_right p.guide	{display:block;font: 300 15px/25px "Mulish","Noto Sans KR", sans-serif;color: #777;margin-bottom: 10px;float: right;}
+
+}
+
+
+
+/* ------------------------------------------------------------------ MO 끝  ------------------------------------------------------------------ */

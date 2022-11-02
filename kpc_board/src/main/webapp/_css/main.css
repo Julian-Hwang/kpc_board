@@ -1,0 +1,581 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------ PC  ------------------------------------------------------------------ */
+@media only screen and (min-width: 1390px) {
+/* 메인  */
+div.vis_wrap		{margin-top: 121px;width:100%;position:relative;height: 680px;}
+div.visual_pc		{height:445px;}
+div.visual_ta01		{display:none;}
+div.visual_ta02		{display:none;}
+div.visual_mo		{display:none;}
+div.visual > img	{width:100%;}
+div.visual > div	{max-width: 1370px;margin: 0 auto;padding: 130px 0;}
+div.visual > div p	{font:500 25px/29px "Noto Sans KR", sans-serif; color: #4c5dc6;}
+div.visual > div h2	{font:600 55px/80px "Noto Sans KR", sans-serif; color: #1c1f21;}
+
+div.v_down_conts		{max-width: 1370px;margin: 0px auto; display:flex;position: relative;bottom: 100px;}
+div.v_down_conts > div	{min-height:212px; background: #fff;width: 662px;border-radius: 20px 20px 0px 20px;box-shadow: 3px 11px 10px rgba(0,0,0,0.1);padding: 34px 29px 34px;position:relative;}
+div.title				{margin-bottom:24px;display: flex;}
+div.title h3					{font:600 25px/29px "Noto Sans KR", sans-serif; width: 97%;color:#000;}
+div.notice div.title h3::after	{content:'';width:110px;height:1px;position:absolute;left:141px; top:48px;background:#4cbd8b;}
+div.news div.title h3::after	{content:'';width:110px;height:1px;position:absolute;left:228px; top:48px;background:#ef94a2;}
+div.notice div.title p.p_btn		{margin-left: 81%;}
+div.news div.title p.p_btn			{margin-left: 67%;}
+div.notice div.title p.p_btn a		{width: 20px; position: relative; height: 20px; left:0px; top: 4px;background:url('../_img/pc/main/notice_more.png')no-repeat 50% 50%;}
+div.notice div.title p.p_btn a:hover{width: 20px; position: relative; height: 20px; left:0px; top: 4px;background:url('../_img/pc/main/notice_more_h.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a		{width: 20px; position: relative; height: 20px; left:0px; top: 4px;background:url('../_img/pc/main/news_more.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a:hover	{width: 20px; position: relative; height: 20px; left:0px; top: 4px;background:url('../_img/pc/main/news_more_h.png')no-repeat 50% 50%;}
+div.v_down_conts > div > ul			{display: block;}
+div.v_down_conts > div > ul > li	{display: flex; color:#555;font:400 17px/24px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;}
+div.v_down_conts > div > ul > li:last-child	{margin-bottom:0px;}
+div.v_down_conts > div > ul > li a:hover	{color:#ee2c49;}
+div.v_down_conts > div > ul > li p.name		{width:80%;}	
+div.v_down_conts > div > ul > li p.date		{color:#777; font:400 15px/22px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;right: 29px;position: absolute;}
+div.notice > ul > li::before		{content:'';width:4px;height:4px;border-radius:100%;background:#4cbd8b;position:relative;top: 11px;left: -12px;}
+div.news > ul > li::before			{content:'';width:4px;height:4px;border-radius:100%;background:#ef94a2;position:relative;top: 11px;left: -12px;}
+div.v_down_conts > div > ul > li a	{color:#333;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.notice							{margin-right:44px;}
+
+
+div.contents								{box-sizing: border-box;}
+div.contents > div							{max-width: 1370px;margin: 0 auto 60px;}
+div.contents > div h3						{width: 97%;color:#000; font:600 25px/29px "Noto Sans KR", sans-serif;}
+div.contents > div.edu_course div h3::after	{content:'';width:200px;height:1px;position:absolute;background:#3a71d0;margin-top: 14px;margin-left: 20px;}
+div.edu_vids .title h3::after				{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.esg_data .title h3::after				{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.esg_cardnews .title h3::after			{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+
+
+div.edu_course								{height: 405px;background: #f6faff url('../_img/pc/main/edu_course_back.png')no-repeat 100% 100%/1370px;border-radius: 20px 20px 0px 20px;box-shadow: 3px 6px 11px 10px rgba(0,0,0,0.1);}
+div.edu_course div.title					{position:relative;margin-bottom:31px;max-width:1370px;display: flex;padding:3% 5% 0%;}
+div.edu_course div.title p.p_btn			{position:absolute;right:5%;}
+div.edu_course div.title p.p_btn a			{width: 20px;height: 20px;background:url('../_img/pc/main/course_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.edu_course div.title p.p_btn a:hover	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more_h.png')no-repeat 50% 50%;width: 20px;position: absolute;float: right;}
+div.edu_course div.slick					{display: flex;padding: 0% 4%;}
+div.edu_course div.slick_li					{width: 300px; margin-right:15px; cursor:pointer;border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li:last-child		{margin-right: 0;}
+div.edu_course div.slick_li p.p_tts			{background: #fff;padding: 27px;border-radius: 0px 0px 0px 10px; font:400 17px/24px "Noto Sans KR",sans-serif;}
+div.edu_course p.p_tts span					{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;}
+div.edu_course div.slick_li p.edu_hover		{border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li:hover			{cursor:pointer;}
+div.edu_course div.slick_li:hover p			{color:#4c5dc6;}
+div.edu_course div.slick_li:hover p.edu_hover		{background:rgb(0,0,0);}
+div.edu_course div.slick_li:hover p.edu_hover img	{opacity:50%;transition: all 0.3s ease-in-out;}
+div.edu_course div.slick_li img						{width:100%;border-radius: 10px 10px 0 0;}
+
+
+p.p_btn	{float:right;}
+div.title p.p_btn a			{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more.png')no-repeat 50% 50%;width: 20px;position: absolute;float: right; position:relative; top:5px; left:0px;}
+div.title p.p_btn a:hover	{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more_h.png')no-repeat 50% 50%;width: 20px;position: absolute;float: right; position:relative; top:5px; left:0px;}
+
+
+div.edu_vids								{}
+div.edu_vids div.title						{max-width: 1370px !important; margin: 0 auto 22px !important; padding: 0 19px;}
+div.edu_vids ul.slide						{position:relative; margin: 0 auto 60px !important; max-width: 1370px !important;}
+div.edu_vids ul.slide li					{border-radius:20px 20px 0px 20px; overflow: hidden;margin-right:43px;width:310px;height:191px;position: relative;}
+div.edu_vids ul.slide li:last-child			{margin-right:0px;}
+div.edu_vids ul.slide li p.vid_play img		{border-radius: 20px 20px 0px 20px;height: 191px;width: 100%;}
+div.edu_vids ul.slide li p.vid_tt			{z-index:99;padding: 15px;position: absolute;bottom: 0px;left: 0px;color: #fff;font: 400 17px/24px "Noto Sans KR",sans-serif;width: 90%; text-overflow: ellipsis;overflow: hidden;-o-text-overflow: ellipsis; white-space: nowrap;word-wrap: normal !important;}
+div.edu_vids ul.slide li:hover				{cursor:pointer; height:191px; border-radius: 20px 20px 0px 20px;}
+div.edu_vids ul.slide li div				{display:none;position: absolute;bottom:-24px;}
+div.edu_vids .vid_play::before				{display: inline-block;content: '';width: 100%;height: 100%;background: url('../_img/pc/main/vid_thumb_bk.png')no-repeat 0 100%;position: absolute;bottom: 0;left: 0;opacity:1;z-index: 10;transition: all 0.3s ease-in-out;}
+div.edu_vids .vid_play::after				{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center;position: absolute;bottom: 0;right: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 0.6;}
+div.edu_vids ul.slide li:hover .vid_play::after {display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center;position: absolute;bottom: 0;right: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 1;}
+
+
+div.esg_data						{background: url('../_img/pc/main/main_back_img.png')no-repeat 100% 100%; height: 425px;}
+div.esg_data div.title				{padding: 0 19px;margin-bottom:12px !important;max-width:1370px !important; margin:0 auto !important; }
+div.esg_data ul.slide				{max-width:1420px !important; margin:0 auto !important;}
+div.esg_data ul.slide li			{position: relative;margin-right:43px;width:310px;/* box-shadow: 3px 6px 10px 5px rgba(0,0,0,0.1); */border-radius:20px 20px 0 25px;cursor:pointer;}
+div.esg_data ul.slide li:last-child	{margin-right:0px;}
+div.esg_data ul.slide li div		{border-radius: 0 0 0 20px ;background: #fff;padding:24px;font:400 17px/24px "Noto Sans KR",sans-serif; min-height: 50px;}
+div.esg_data ul.slide li a			{color:#000;}
+div.esg_data ul.slide li p.img_p				{width: 100%;position: relative;border-radius:20px 20px 0 20px;display: block;}
+div.esg_data ul.slide li p.img_p img			{border-radius:20px 20px 0 0px;width:100%;}
+div.esg_data ul.slide li:hover div p.tt			{color:#4c5dc6;width: 100%;text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_data ul.slide li div p.tt				{width: 100%;text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_data ul.slide li p.tt_d					{color:#666; font:300 15px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul.slide li:hover					{background:rgb(0,0,0);}
+div.esg_data ul.slide li:hover p.img_p img		{opacity:50%;transition: all 0.3s ease-in-out;}
+span.img_hover												{display: none;position: absolute;width: 100%;height: 216px;z-index: 20;}
+div.esg_data ul.slide li:hover span.img_hover				{display:flex;position:absolute;bottom: 0px;width:100%;height: 216px;position:absolute;}
+div.esg_data ul.slide li:hover span.img_hover a				{width:40px;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn		{background: url('../_img/pc/main/download.png')no-repeat 50% 50%; margin: 0 2% 0 auto;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn:hover	{background: url('../_img/pc/main/download_hover.png')no-repeat 50% 50%;margin: 0 2% 0 auto;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn			{background: url('../_img/pc/main/share.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn:hover	{background: url('../_img/pc/main/share_hover.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+div.esg_data ul.slide div.slick-list	{padding:17px 9px 17px 24px;}
+	
+
+div.esg_cardnews						{max-width: 1410px !important; margin: 0 auto 30px !important;}
+div.esg_cardnews div.title				{margin-bottom:0px !important;padding: 0 19px;}
+div.esg_cardnews ul.slide div.slick-list{padding: 17px 5px 17px 22px;}
+div.esg_cardnews ul.slide li			{width:310px; margin-right:43px;border-radius: 20px 20px 0px 20px; box-shadow: 3px 6px 10px 5px rgb(0 0 0 / 10%); border-radius: 20px 20px 0 25px;}
+div.esg_cardnews ul.slide li p.img_p	{border-radius: 20px 20px 0px 0px;}
+div.esg_cardnews ul.slide li p.img_p img{border-radius: 20px 20px 0px 0px;}
+div.esg_cardnews ul.slide li:last-child	{margin-right:0px;}
+div.esg_cardnews ul.slide li div		{padding: 24px;background: #fff;border-radius: 0px 0px 0px 20px;font:400 17px/24px "Noto Sans KR",sans-serif;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;line-height: 20px;}
+div.esg_cardnews ul.slide li p.img_p	{border-radius: 20px 20px 0 0;width: 100%;}
+div.esg_cardnews ul li a img			{width:100%;border-radius:20px 20px 0 0;}
+div.esg_cardnews ul.slide li:hover		{cursor:pointer;}
+div.esg_cardnews ul.slide li:hover p	{color:#4c5dc6;}
+div.esg_cardnews ul.slide li p			{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+li:hover p.img_p						{background:rgb(0,0,0);}
+li:hover p.img_p img					{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_cardnews ul li img				{width:100%;}
+
+/*	quickmenu */
+	.quick							{transition: all 0.5s ease 0s;position:fixed; top:50%; /* right:-183px; */ right:0px; z-index:12; transform:translateY(-45%); width:183px; box-sizing:border-box; transition:1s}
+	
+	.quick p.close					{position:absolute; top: 33px; left:-45px; z-index:5; display:none}
+	.quick p.on						{display:none;}					
+	.quick p.off					{display:block;}					
+	.quick p.open.off				{display:block;}				
+	.quick p.close.on				{display:block;}
+	.quick p.close a				{display:block;right: 96px; width: 45px; height: 114px; background:#ee2c49 url('../_img/pc/comn/q_open.png')no-repeat 50% 50%;border-radius: 20px 0 0 20px;}
+	
+	.quick p.open					{position:absolute;  top: 33px; left:-87px; z-index:-1;}
+	.quick p.open a					{display:block; width:87px; height:114px; background:#ee2c49 url('../_img/pc/comn/q_close.png')no-repeat 50% 50%;border-radius: 20px 0 0 20px;}
+	
+	.quick ul.list					{z-index: 20; box-shadow:5px 5px 5px 5px rgba(0,0,0,0.1); border-radius: 20px 0 0 20px;width:100%; padding:30px 15px 107px 30px; box-sizing:border-box; background:#fff url('../_img/pc/comn/q_logo.png')no-repeat 50% 94%;}
+	.quick ul.list li				{width:100%; margin:0 0 20px 0; text-align:left;}
+	.quick ul.list li:last-child	{margin:0;}
+	.quick ul.list li a				{font:500 13px/15px "Noto Sans KR", sans-serif; color:#444;display: flex;}
+	.quick ul.list li a p			{margin: 0 0 0 45px;position: absolute;}
+	.quick p.top					{width:100%;}
+	.quick p.top a					{display:inline-block; width:100%; background:#3f276d; padding:3px 0 8px 0; text-align:initial; font:400 15px/18px "Noto Sans KR", sans-serif; color:#fff}
+	.quick p.top a img				{margin:-2px 5px 0 0;}
+
+	.quick ul.list li:nth-child(3) a img{height:29px;}
+	.quick ul.list li:nth-child(4) a img{height:30px;}
+	.quick ul.list li:last-child::after	{content:''; background:#ddd; position:absolute;width: 130px;height: 1px;bottom: 70px;left: 31px;}
+
+
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1389px){
+
+div.vis_wrap		{width:100%;position:relative;height: 790px;}
+div.visual_pc		{display:none;}
+div.visual_ta01		{height:612px;}
+div.visual_ta02		{display:none;}
+div.visual_mo		{display:none;}
+
+div.visual > img	{width:100%;}
+div.visual > div p	{font:500 25px/20px "Noto Sans KR", sans-serif; color: #4c5dc6;margin-bottom: 10px;}
+div.visual > div h2	{font:600 52px/59px "Noto Sans KR", sans-serif; color: #1c1f21;width: 42%;}
+div.v_tt			{padding: 0 3%;position: relative;top: 183px;}
+
+div.v_down_conts				{display:flex;position: relative;bottom: 121px;padding: 0 3%;}
+div.v_down_conts > div			{min-height:212px;background: #fff;width: 49%;border-radius: 20px 20px 0px 20px;box-shadow: 3px 11px 10px rgba(0,0,0,0.1);padding: 34px 29px 34px;position:relative;}
+div.title						{margin-bottom:24px;display: flex;position: relative;}
+div.title h3					{font:600 25px/29px "Noto Sans KR", sans-serif;}
+div.notice div.title h3::after	{content:'';width:110px;height:1px;position:absolute;left:113px; top:18px;background:#4cbd8b;}
+div.news div.title h3::after	{content:'';width:110px;height:1px;position:absolute;left:198px; top:18px;background:#ef94a2;}
+div.notice > div.title p.p_btn			{right: 20px;position: absolute;}
+div.news > div.title p.p_btn			{right: 20px;position: absolute;}
+div.notice div.title p.p_btn a		{width: 20px;position: absolute;height: 20px;background:url('../_img/pc/main/notice_more.png')no-repeat 50% 50%;}
+div.notice div.title p.p_btn a:hover{width: 20px;position: absolute;height: 20px;background:url('../_img/pc/main/notice_more_h.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a		{width: 20px;position: absolute;height: 20px;background:url('../_img/pc/main/news_more.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a:hover	{width: 20px;position: absolute;height: 20px;background:url('../_img/pc/main/news_more_h.png')no-repeat 50% 50%;}
+div.v_down_conts > div > ul			{display: block;}
+div.v_down_conts > div > ul > li	{display: flex; color:#333;font:400 17px/24px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;}
+div.v_down_conts > div > ul > li:last-child	{margin-bottom:0px;}
+div.v_down_conts > div > ul > li a:hover	{color:#ee2c49;}
+div.v_down_conts > div > ul > li p.name		{width:75%;}	
+div.v_down_conts > div > ul > li p.date		{color:#777; font:400 15px/22px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;right: 29px;position: absolute;}
+div.notice > ul > li::before		{content:'';width:4px;height:4px;border-radius:100%;background:#4cbd8b;position:relative;top: 11px;left: -12px;}
+div.news > ul > li::before			{content:'';width:4px;height:4px;border-radius:100%;background:#ef94a2;position:relative;top: 11px;left: -12px;}
+div.v_down_conts > div > ul > li a	{color:#333;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.notice							{margin-right: 1%;}
+
+div.contents					{margin-top: 40px;}
+div.contents > div.edu_course div h3::after	{content:'';width:200px;height:1px;position:absolute;background:#3a71d0;margin-top: 14px;margin-left: 20px;}
+div.contents > div h3::after	{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.esg_data > div h3::after	{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.edu_vids > div h3::after	{content:'';width:200px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+p.p_btn							{position:absolute;right:3%;}
+div.title						{position:relative;}
+div.title p.p_btn a				{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.title p.p_btn a:hover		{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more_h.png')no-repeat 50% 50%;width: 20px;float: right;}
+
+
+
+div.edu_course						{height: 353px;background:url('../_img/pc/main/edu_course_back.png')no-repeat 100% 100%;margin-bottom:50px;}
+div.edu_course div.title			{margin-bottom:10px;display: flex;padding:0 40px;position: relative;}
+div.edu_course div.title h3			{width:255px;}
+div.edu_course div.title p.p_btn	{position: absolute;right: 6%;}
+div.edu_course div.title p.p_btn a	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.edu_course div.title p.p_btn a:hover	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more_h.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.edu_course div.slick					{padding: 0 0 0 3%;}
+div.edu_course div.slick_li	div.slick_list	{padding: 0 0 0 3%;}
+div.edu_course div.slick_li					{width: 280px; margin:0 10px; cursor:pointer;}
+div.edu_course div.slick_li:last-child		{margin-right: 0;}
+div.edu_course div.slick_li p.p_tts			{background: #fff;padding: 27px;border-radius: 0px 0px 0px 10px; font:400 17px/24px "Noto Sans KR",sans-serif;}
+div.edu_course p.p_tts span					{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;}
+div.slick_li:hover p.p_tts span				{color:#4c5dc6;}
+div.edu_course div.slick_li p.edu_hover		{border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li p.edu_hover img	{border-radius: 10px 10px 0px 0px;}
+div.edu_course div.edu_course ul li a img			{width:100%;border-radius:10px 10px 0 0;}
+div.edu_course div.slick_li:hover p.edu_hover		{background:rgb(0,0,0);}
+div.edu_course div.slick_li:hover p.edu_hover img	{opacity:50%;transition: all 0.3s ease-in-out;}
+div.edu_course div.slick_li img						{width:100%;border-radius: 10px 10px 0 0;}
+div.edu_course ul.slick-dots						{bottom:-33px}
+div.edu_course ul.slick-dots li button::before		{font-family: 'slick';font-size: 6px;line-height: 20px;position: absolute;top: -7px;left: -7px;width: 20px;height: 20px;content: '•';text-align: center;opacity: -1.15;color: black;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+div.edu_vids									{margin-bottom:30px;}
+div.edu_vids div.title							{margin-bottom:12px !important;padding: 0 40px;}
+div.edu_vids ul.slide							{padding: 0 0 0 3%;}
+div.edu_vids ul.slide div.slick_list			{padding: 0 0 0 3%;}
+div.edu_vids ul.slide li						{border-radius: 20px 20px 0px 20px;margin-right:15px;width:275px;height:191px;position: relative;}
+div.edu_vids ul.slide li:last-child				{margin-right:0px;}
+div.edu_vids ul li p.vid_play					{width:100%;}
+div.edu_vids ul li p.vid_play img				{border-radius: 20px 20px 0px 20px;height: 191px; width:100%;}
+div.edu_vids ul li p.vid_tt						{z-index:99;padding: 15px; position: absolute;bottom: 0px;left: 0px;color: #fff;font: 400 17px/24px "Noto Sans KR",sans-serif;width: 85%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.edu_vids ul.slide li:hover					{cursor:pointer; height:191px; border-radius: 20px 20px 0px 20px;}
+div.edu_vids ul.slide li div					{display:none;position: absolute;bottom:-24px;}
+div.edu_vids .vid_play::before					{border-radius: 20px 20px 0px 20px;display: inline-block;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/list_black.png')no-repeat 100% 315%;position: absolute;bottom: 0;left: 0;opacity: 0.9;z-index: 10;transition: all 0.3s ease-in-out;}
+div.edu_vids .vid_play::after					{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center;position: absolute;bottom: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 0.6;}
+div.edu_vids ul.slide li:hover .vid_play::after	{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center;position: absolute;bottom: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 1;}
+div.edu_vids ul.slide li:hover div				{display:block;position: absolute;bottom:-24px;}
+
+
+
+div.esg_data						{padding-bottom:35px; background:url('../_img/ta/main/news_back.png')no-repeat 5% 100%/1500px 200px;}
+div.esg_data p.img_p				{width:100%;}
+div.esg_data p.img_p img			{width:100%;}
+div.esg_data div.title				{margin-bottom:20px !important;padding: 0 40px;}
+div.esg_data ul.slide				{padding: 0 0 0 3%;}
+div.esg_data ul.slide div.slick_list{padding: 0 0 0 3%;}
+div.esg_data ul.slide li			{margin-right:15px;width:280px; /* box-shadow: 5px 4px 7px 7px rgba(0,0,0,0.1); */ border-radius:20px 20px 0 25px;cursor:pointer;}
+div.esg_data ul.slide li:last-child	{margin-right:0px;}
+div.esg_data ul.slide li div		{border-radius: 0 0 0 20px ;background: #fff;padding:24px;font:400 17px/24px "Noto Sans KR",sans-serif; min-height:50px}
+div.esg_data ul li div p.tt			{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap; word-wrap: normal !important;}
+div.esg_data ul li a				{color:#000;}
+div.esg_data ul li p.img_p			{border-radius:20px 20px 0 20px;position: relative;}
+div.esg_data ul li p.img_p img		{border-radius:20px 20px 0 0px;width:100%;}
+div.esg_data ul li:hover div p.tt	{color:#4c5dc6;}
+div.esg_data ul li p.tt_d			{color:#666; font:300 15px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul.slide li:hover					{background:rgb(0,0,0);}
+div.esg_data ul.slide li:hover p.img_p img		{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_data ul.slide div.slick-list			{padding:0 0 16px;}
+div.esg_data span.img_hover								{display: none;position: absolute;width: 100%;height: 184px;z-index: 20;}
+div.esg_data ul li:hover span.img_hover					{display:flex;bottom: 0px;width:100%;height: 184px;position:absolute;}
+div.esg_data ul li:hover span.img_hover a				{width:40px;}
+div.esg_data ul li:hover span.img_hover a.pdf_btn		{background: url('../_img/pc/main/download.png')no-repeat 50% 50%; margin: 0 2% 0 auto;}
+div.esg_data ul li:hover span.img_hover a.pdf_btn:hover {background: url('../_img/pc/main/download_hover.png')no-repeat 50% 50%; margin: 0 2% 0 auto;}
+div.esg_data ul li:hover span.img_hover a.sns_btn		{background: url('../_img/pc/main/share.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+div.esg_data ul li:hover span.img_hover a.sns_btn:hover {background: url('../_img/pc/main/share_hover.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+
+
+div.esg_cardnews						{margin-bottom:25px;}
+div.esg_cardnews div.title				{margin-bottom:10px !important;padding: 0 40px;}
+div.esg_cardnews ul.slide				{padding: 0 0 0 3%;}
+div.esg_cardnews ul.slide div.slick-list{padding:0 0 16px;}
+div.esg_cardnews ul.slide li			{width:275px; margin-right:15px;display:grid; box-shadow:4px 4px 4px 4px rgba(0,0,0,0.1); border-radius:20px 20px 0;}
+div.esg_cardnews ul.slide li:last-child	{margin-right:0px;}
+div.esg_cardnews ul.slide li div		{overflow: hidden;padding: 24px;background: #fff;border-radius: 0px 0px 0px 20px;font:400 17px/24px "Noto Sans KR",sans-serif;}
+div.esg_cardnews ul li div p			{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_cardnews ul li p.img_p			{border-radius: 20px 20px 0 0;width: 100%;}
+div.esg_cardnews ul.slide li:hover		{cursor:pointer;}
+div.esg_cardnews ul li a img						{width:100%;border-radius:20px 20px 0 0;}
+div.esg_cardnews ul.slide li:hover					{cursor:pointer;}
+div.esg_cardnews ul.slide li:hover p				{color:#4c5dc6;}
+div.esg_cardnews ul.slide li:hover p.img_p			{background:rgb(0,0,0);}
+div.esg_cardnews ul.slide li:hover p.img_p img		{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_cardnews ul li img							{width:100%;border-radius: 20px 20px 0 0;}
+
+/*퀵메뉴 추가*/
+.quick			{display:none !important;}
+
+}
+
+@media only screen and (min-width: 1373px) and (max-width: 1418px) {
+	
+div.edu_vids ul.slide div.slick-list {padding: 17px 9px 17px 0px;}
+
+}
+
+
+
+
+/* ------------------------------------------------------------------ PC 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ TA  ------------------------------------------------------------------ */
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+
+/* 메인  */
+div.vis_wrap		{width:100%;position:relative;height: 707px;}
+div.visual_pc		{display:none;}
+div.visual_ta01		{display:none;}
+div.visual_ta02		{height:434px;}
+div.visual_mo		{display:none;}
+div.visual > img	{width:100%;}
+div.visual > div	{min-width: 640px;margin: 0 auto;}
+div.visual > div p	{font:500 25px/29px "Noto Sans KR", sans-serif; color: #4c5dc6;}
+div.visual > div h2	{font: 600 44px/51px "Noto Sans KR", sans-serif;color: #1c1f21;width: 47%;}
+div.v_tt			{padding: 0 3%;position: relative;top: 85px;}
+
+div.v_down_conts				{display:flex;position: relative;bottom: 121px;padding: 0 3%;}
+div.v_down_conts > div			{min-height:313px; background: #fff;width: 49%;border-radius: 20px 20px 0px 20px;box-shadow: 3px 11px 10px rgba(0,0,0,0.1);padding: 30px 27px;position:relative;}
+div.title						{margin-bottom:24px;display: flex;}
+div.title h3					{font:600 25px/29px "Noto Sans KR", sans-serif;}
+div.notice div.title h3::after	{content:'';width:35px;height:1px;position:absolute;left:103px; top:16px;background:#4cbd8b;}
+div.news div.title h3::after	{content:'';width:35px;height:1px;position:absolute;left:186px; top:16px;background:#ef94a2;}
+div.notice div.title p.p_btn		{right: 30px;position: absolute;top: 40px;}
+div.news div.title p.p_btn			{right: 30px;position: absolute;top: 40px;}
+div.notice div.title p.p_btn a		{display: block;width: 20px;height: 20px;background:url('../_img/pc/main/notice_more.png')no-repeat 50% 50%;}
+div.notice div.title p.p_btn a:hover{display: block;width: 20px;height: 20px;background:url('../_img/pc/main/notice_more_h.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a		{display: block;width: 20px;height: 20px;background:url('../_img/pc/main/news_more.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a:hover	{display: block;width: 20px;height: 20px;background:url('../_img/pc/main/news_more_h.png')no-repeat 50% 50%;}
+div.v_down_conts > div > ul			{display: block;position: relative;}
+div.v_down_conts > div > ul > li	{display: block; color:#333;font:400 17px/20px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;position: relative;}
+div.v_down_conts > div > ul > li:last-child	{margin-bottom:0px;}
+div.v_down_conts > div > ul > li a:hover	{color:#ee2c49;}
+div.v_down_conts > div > ul > li p.name		{width:100%;}	
+div.v_down_conts > div > ul > li p.date		{color:#999; font:400 15px/22px "Noto Sans KR",sans-serif;margin:0px 0px 10px 0px;}
+div.notice > ul > li::before				{content:'';width:4px;height:4px;border-radius:100%;background:#4cbd8b;position:absolute;top: 11px;left: -12px;}
+div.news > ul > li::before					{content:'';width:4px;height:4px;border-radius:100%;background:#ef94a2;position:absolute;top: 11px;left: -12px;}
+div.v_down_conts > div > ul > li a			{color:#333;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.notice									{margin-right: 1%;}
+
+div.contents > div.edu_course div h3::after	{content:'';width:100px;height:1px;position:absolute;background:#3a71d0;margin-top: 14px;margin-left: 20px;}
+div.contents > div h3::after				{content:'';width:100px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.edu_vids > div h3::after				{content:'';width:100px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.esg_data > div h3::after				{content:'';width:100px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+p.p_btn										{position:absolute !important;right:3% !important; top:6px !important;}
+div.title									{position:relative;}
+div.title p.p_btn a							{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.title p.p_btn a:hover					{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more_h.png')no-repeat 50% 50%;width: 20px;float: right;}
+
+div.edu_course						{height: 326px;background:url('../_img/pc/main/edu_course_back.png')no-repeat 100% 100%;margin:30px 0 45px;}
+div.edu_course div.title			{position: relative;margin-bottom:10px;display: flex;padding:0 3%;}
+div.edu_course div.title h3			{width:255px;}
+div.edu_course div.title p.p_btn	{position: absolute;right: 3%;}
+div.edu_course div.title p.p_btn a	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.edu_course div.title p.p_btn a:hover{width: 20px;height: 20px;background:url('../_img/pc/main/course_more_h.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.edu_course div.slick				{padding: 0 0 0 3%;}
+div.edu_course div.slick_li				{width: 260px; margin-right:15px; cursor:pointer;}
+div.edu_course div.slick_li:last-child	{margin-right: 0;}
+div.edu_course div.slick_li p.p_tts		{background: #fff;padding: 22px;border-radius: 0px 0px 0px 10px; font:400 17px/24px "Noto Sans KR",sans-serif;}
+div.edu_course p.p_tts span				{text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;}
+div.slick_li:hover p.p_tts span				{color:#4c5dc6;}
+div.edu_course div.slick_li p.edu_hover				{border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li:hover p.edu_hover		{background:rgb(0,0,0);}
+div.edu_course div.slick_li:hover p.edu_hover img	{opacity:50%;transition: all 0.3s ease-in-out;}
+div.edu_course div.slick_li img						{width:100%;border-radius: 10px 10px 0 0;}
+
+
+div.edu_vids									{margin-bottom:50px;}
+div.edu_vids div.title							{margin-bottom:29px !important;padding: 0 3%;}
+div.edu_vids ul.slide							{display:flex;position:relative;padding:0 0 0 2%;}
+div.edu_vids ul.slide li						{margin-right:15px;width:310px;height:191px;position: relative;}
+div.edu_vids ul li:last-child					{margin-right:0px;}
+div.edu_vids ul li p.vid_play					{width:100%;}
+div.edu_vids ul li p.vid_play img				{border-radius: 20px 20px 0px 20px;height: 191px; width:100%;}
+div.edu_vids ul li p.vid_tt						{z-index:99; position: absolute;bottom: 0px;left: 0px;color: #fff;font: 400 17px/24px "Noto Sans KR",sans-serif;padding: 15px;width: 88%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.edu_vids ul.slide li:hover					{cursor:pointer; height:191px; border-radius: 20px 20px 0px 20px;}
+div.edu_vids ul li div							{display:none;position: absolute;bottom:-24px;}
+div.edu_vids .vid_play::before					{border-radius: 20px 20px 0px 20px;display: inline-block;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/list_black.png')no-repeat 0 100%;position: absolute;bottom: 0;left: 0;opacity: 0.8;z-index: 10;transition: all 0.3s ease-in-out;}
+div.edu_vids .vid_play::after					{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center/55px;position: absolute;bottom: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 0.6;}
+div.edu_vids ul.slide li:hover .vid_play::after {display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center/55px;position: absolute;bottom: 0;z-index: 15;transition: all 0.3s ease-in-out;opacity: 1;}
+div.edu_vids ul.slide li:hover div				{display:block;position: absolute;bottom:-24px;}
+
+
+div.esg_data					{background:url('../_img/ta/main/news_back.png')no-repeat 5% 100%/1500px 200px; padding-bottom:50px;}
+div.esg_data div.title			{margin-bottom:14px !important;padding: 0 3%;}
+div.esg_data ul.slide			{display:flex;padding: 0 0 0 2%;}
+div.esg_data ul.slide li			{margin-right:15px;width:280px;/* box-shadow: 3px 3px 6px 5px rgba(0,0,0,0.1); */border-radius:20px 20px 0 20px;}
+div.esg_data ul.slide li:last-child	{margin-right:0px;}
+div.esg_data ul li div			{border-radius: 0px 0 0 10px;background: #fff;padding:24px;font:400 17px/24px "Noto Sans KR",sans-serif; min-height:50px;}
+div.esg_data ul li div p.tt		{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_data ul li a			{color:#000;}
+div.esg_data ul li:hover a p.tt {color:#4c5dc6;}
+div.esg_data ul li p.tt_d		{color:#666; font:300 15px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul li p.img_p		{border-radius:10px 10px 0 20px;position: relative;}
+div.esg_data ul li p.img_p img	{border-radius:10px 10px 0 0px;width:100%;}
+div.esg_data ul.slide li:hover div p.tt			{color:#4c5dc6;width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis; overflow: hidden;white-space: nowrap; word-wrap: normal !important;}
+div.esg_data ul.slide li div p.tt				{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis; overflow: hidden;white-space: nowrap; word-wrap: normal !important;}
+div.esg_data ul li p.tt_d						{color:#666; font:300 15px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul.slide li:hover					{background:rgb(0,0,0);}
+div.esg_data ul.slide li:hover p.img_p img		{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_data ul.slide div.slick-list			{padding: 11px 0;}
+span.img_hover												{display: none;position: absolute;width: 100%;z-index: 20;}
+div.esg_data ul.slide li:hover span.img_hover				{bottom: 48px;display:flex;position:absolute;width:100%;height: 75px;}
+div.esg_data ul.slide li:hover span.img_hover a				{width:40px;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn		{background: url('../_img/pc/main/download.png')no-repeat 50% 50%; margin: 0 2% 0 auto;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn:hover {background: url('../_img/pc/main/download_hover.png')no-repeat 50% 50%; margin: 0 2% 0 auto;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn		{background: url('../_img/pc/main/share.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn:hover {background: url('../_img/pc/main/share_hover.png')no-repeat 50% 50%;margin: 0 auto 0 12%;}
+
+
+
+div.esg_cardnews						{padding-bottom:50px;margin-top: 50px;}
+div.esg_cardnews div.title				{margin-bottom:20px !important;padding: 0 3%;}
+div.esg_cardnews ul						{display:flex;padding: 0 0 0 2%;}
+div.esg_cardnews ul.slide li			{width:236px; margin-right:15px; box-shadow: 3px 3px 6px 5px rgba(0,0,0,0.1); border-radius: 20px 20px 0;}
+div.esg_cardnews ul.slide li:last-child	{margin-right:0px;}
+div.esg_cardnews ul li div				{padding: 24px;background: #fff;border-radius: 0px 0px 0px 20px;font:400 17px/24px "Noto Sans KR",sans-serif;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;line-height: 20px;}
+div.esg_cardnews ul li div p			{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_cardnews ul li p.img_p			{border-radius: 20px 20px 0 0;width: 100%;}
+div.esg_cardnews ul li a				{color:#000;}
+div.esg_cardnews ul li a img			{width:100%;border-radius:20px 20px 0 0;}
+div.esg_cardnews ul li img				{width:100%;}
+div.esg_cardnews ul li p.img_p			{border-radius: 20px 20px 0 0;width: 100%;}
+div.esg_cardnews ul.slide li:hover		{cursor:pointer;}
+div.esg_cardnews ul.slide li:hover p	{color:#4c5dc6;}
+div.esg_cardnews ul.slide div.slick-list{padding: 11px 0;}
+li:hover p.img_p						{background:rgb(0,0,0);}
+li:hover p.img_p img					{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_cardnews ul li img				{width:100%;border-radius: 20px 20px 0 0;}
+
+
+/*퀵메뉴 추가*/
+.quick			{display:none !important;}
+
+
+}
+
+/* ------------------------------------------------------------------ TA 끝  ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ MO  ------------------------------------------------------------------ */
+@media only screen and (max-width: 640px) {
+
+div.vis_wrap		{width:100%;position:relative;height:815px;}
+div.visual_pc		{display:none;}
+div.visual_ta01		{display:none;}
+div.visual_ta02		{display:none;}
+div.visual_mo		{height:435px;}
+div.visual > img	{width:100%;}
+div.visual > div p	{font:500 17px/29px "Noto Sans KR", sans-serif; color: #4c5dc6;}
+div.visual > div h2	{font:600 30px/34px "Noto Sans KR", sans-serif; color: #1c1f21;width: 74%;}
+div.v_tt			{padding: 0 23% 0 3%;position: relative;top: 40px;}
+
+div.v_down_conts				{display:block;position: relative;bottom: 160px;padding: 0 3%;}
+div.v_down_conts > div			{min-height: 190px;background: #fff;border-radius: 15px 15px 0px 15px;box-shadow: 3px 1px 4px 5px rgba(0,0,0,0.1);padding: 25px;position:relative;}
+div.title						{position: relative;margin-bottom:13px;display: flex;}
+div.title h3					{font:600 20px/29px "Noto Sans KR", sans-serif;}
+div.notice div.title h3::after	{content:'';width:60px;height:1px;position:absolute;left:90px; top:14px;background:#4cbd8b;}
+div.news div.title h3::after	{content:'';width:60px;height:1px;position:absolute;left:160px; top:14px;background:#ef94a2;}
+div.notice div.title p.p_btn		{position: absolute;right: 0;}
+div.news div.title p.p_btn			{position: absolute;right: 0;}
+div.notice							{margin-bottom:20px;}
+div.news							{box-shadow: 1px 1px 8px 6px rgba(0,0,0,0.1) !important;}
+div.notice div.title p.p_btn a		{width: 20px;float: right;height: 20px;top: 39px;background:url('../_img/pc/main/notice_more.png')no-repeat 50% 50%;}
+div.notice div.title p.p_btn a:hover{width: 20px;float: right;height: 20px;top: 39px;background:url('../_img/pc/main/notice_more_h.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a		{width: 20px;float: right;height: 20px;top: 39px;background:url('../_img/pc/main/news_more.png')no-repeat 50% 50%;}
+div.news div.title p.p_btn a:hover	{width: 20px;float: right;height: 20px;top: 39px;background:url('../_img/pc/main/news_more_h.png')no-repeat 50% 50%;}
+div.v_down_conts > div > ul			{display: block;}
+div.v_down_conts > div > ul > li	{display: flex; color:#333;font:400 15px/24px "Noto Sans KR",sans-serif;margin:0px 0px 7px 7px;}
+div.v_down_conts > div > ul > li:last-child	{margin-bottom:0px;}
+div.v_down_conts > div > ul > li a:hover	{color:#ee2c49;}
+div.v_down_conts > div > ul > li p.name		{width:80%;}	
+div.v_down_conts > div > ul > li p.date		{color:#999; font:400 13px/22px "Noto Sans KR",sans-serif;margin:0px 0px 10px 14px;right: 29px;position: absolute;}
+div.notice > ul > li::before				{content:'';width:3px;height:3px;border-radius:100%;background:#4cbd8b;position:relative;top: 11px;left: -6px;}
+div.news > ul > li::before					{content:'';width:3px;height:3px;border-radius:100%;background:#ef94a2;position:relative;top: 11px;left: -6px;}
+div.v_down_conts > div > ul > li a			{color:#333;width: 85%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+
+div.contents > div.edu_course div h3::after	{content:'';width:55px;height:1px;position:absolute;background:#3a71d0;margin-top: 14px;margin-left: 20px;}
+div.contents > div h3::after				{content:'';width:55px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.esg_data > div h3::after				{content:'';width:55px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+div.edu_vids > div h3::after				{content:'';width:55px;height:1px;position:absolute;background:#bdbdbd;margin-top: 14px;margin-left: 20px;}
+p.p_btn										{position:absolute;right:3%;}
+div.title									{position:relative;}
+div.title p.p_btn a							{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more.png')no-repeat 50% 50%;width: 20px;float: right;}
+div.title p.p_btn a:hover					{width: 20px;height: 20px;background:url('../_img/pc/main/conts_more_h.png')no-repeat 50% 50%;width: 20px;float: right;}
+
+
+div.edu_course						{height: 320px;background:url('../_img/pc/main/edu_course_back.png')no-repeat 100% 100%;margin:15px 0 50px 0;}
+div.edu_course div.title			{margin-bottom:0px;display: flex;padding:0 4%;}
+div.edu_course div.title h3			{width:255px;}
+div.edu_course div.title p.p_btn	{position: absolute;right: 10%;}
+div.edu_course div.title p.p_btn a	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more.png')no-repeat 50% 50%;width: 20px;position: absolute;float: right;}
+div.edu_course div.title p.p_btn a:hover	{width: 20px;height: 20px;background:url('../_img/pc/main/course_more_h.png')no-repeat 50% 50%;width: 20px;position: absolute;float: right;}
+div.edu_course div.slick div.slick-list		{padding: 0 0 0 3%;}
+div.edu_course div.slick_li					{margin:0 9px; cursor:pointer; width:180px;}
+div.edu_course div.slick_li:last-child		{margin-right: 0;}
+div.edu_course div.slick_li p.p_tts			{height: 40px;background: #fff;padding: 14px 10px;border-radius: 0px 0px 0px 10px; font:400 17px/19px "Noto Sans KR",sans-serif;}
+div.edu_course div.slick_li p.p_tts span	{font: 400 15px/25px "Noto Sans KR", sans-serif;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;line-height: 21px;}
+div.edu_course div.slick_li:hover p.p_tts span		{color:#4c5dc6;}
+div.edu_course div.slick_li p.edu_hover				{height: 150px;border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li p.edu_hover img			{border-radius: 10px 10px 0px 0px;}
+div.edu_course div.slick_li:hover p.edu_hover		{background:rgb(0,0,0);}
+div.edu_course div.slick_li:hover p.edu_hover img	{opacity:50%;transition: all 0.3s ease-in-out;}
+div.edu_course div.slick_li img						{width:100%;border-radius: 10px 10px 0 0;height: inherit;}
+
+
+div.edu_vids								{margin-bottom:28px;}
+div.edu_vids div.title						{margin-bottom:0px !important;padding: 0 3%;}
+div.edu_vids ul.slide						{padding:0 0 0 3%; }
+div.edu_vids ul.slide li					{margin:0 5px; width:187px;position: relative;height: 125px;}
+div.edu_vids ul.slide li:last-child			{margin-right:0px;}
+div.edu_vids ul.slide li p.vid_play			{width:100%;height: 100%;}
+div.edu_vids ul.slide li p.vid_play img		{border-radius: 10px 10px 0px 10px; width:100%;height: 100%;}
+div.edu_vids ul.slide li p.vid_tt			{z-index: 10;position: absolute;bottom: 0px;left: 0px;color: #fff;font: 400 15px/16px "Noto Sans KR",sans-serif;width: 81%;overflow: hidden;text-overflow: ellipsis;padding: 20px 16px 16px;white-space: nowrap;word-wrap: normal !important;}
+div.edu_vids ul.slide li:hover				{cursor:pointer; border-radius: 10px 10px 0px 10px;}
+div.edu_vids ul.slide li div				{display:none;position: absolute;bottom:-24px;}
+div.edu_vids .vid_play::before				{border-radius: 10px 10px 0px 10px;display: inline-block;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/list_black.png')no-repeat 0 100%;position: absolute;bottom: 0;left: 0;opacity: 0.6;z-index: 10;transition: all 0.3s ease-in-out;}
+div.edu_vids ul.slide li p.vid_play::after	{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center/35px;position: absolute;bottom: 5px;z-index: 15;transition: all 0.3s ease-in-out;opacity: 0.6;}
+div.edu_vids ul li:hover p.vid_play::after	{display: flex;content: '';width: 100%;height: 100%;background: url('../_img/pc/comn/play.png')no-repeat center center/35px;position: absolute;bottom: 5px;z-index: 15;transition: all 0.3s ease-in-out;opacity: 1;}
+div.edu_vids ul li:hover div				{display:block;position: absolute;bottom:-24px;}
+div.edu_vids ul li:hover div p.vid_tt		{display:block;z-index: 10;position: relative;bottom: 44px;left: 24px;color: #fff;font: 400 17px/24px "Noto Sans KR",sans-serif;width: 262px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.edu_vids ul li:hover div img			{background: url('../_img/pc/main/vid_hover_thumb.png')no-repeat 50% 50%;position:relative;width:310px; height:191px;}
+div.edu_vids ul.slick-dots li	{width: 4px !important;display: inline-block !important;}
+
+
+div.esg_data							{margin-top:30px; background:url('../_img/ta/main/news_back.png')no-repeat 5% 100%/1500px 144px; padding-bottom:25px;}
+div.esg_data div.title					{margin-bottom:0px !important;padding: 0 3%;}
+div.esg_data ul.slide					{padding:0 0 0 4%}
+div.esg_data ul.slide li				{margin-right:15px; /* box-shadow: 3px 2px 6px 5px rgba(0,0,0,0.1); */ border-radius:10px 10px 0 10px;width: 182px;}
+div.esg_data ul.slide li:last-child		{margin-right:0px;}
+div.esg_data ul.slide li div			{border-radius: 0px 0 0 10px;background: #fff;padding:15px 12px;font:400 15px/16px "Noto Sans KR",sans-serif; min-height:40px;}
+/* div.esg_data ul.slide li div p.tt	{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;overflow: hidden;line-height: 21px;} */
+div.esg_data ul.slide li a				{color:#000;}
+div.esg_data ul.slide li:hover a p.tt	{color:#4c5dc6;}
+div.esg_data ul.slide div.slick-list	{padding: 0 3%;}
+div.esg_data ul.slide li p.tt_d			{color:#666; font:300 14px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul.slide li p.img_p		{border-radius:10px 10px 0 20px;position: relative;height:150px;}
+div.esg_data ul.slide li p.img_p img	{border-radius:10px 10px 0 0px;width:100%;height: inherit;}
+div.esg_data ul.slide li:hover div p.tt {color:#4c5dc6;}
+div.esg_data ul.slide li div p.tt		{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis; overflow: hidden;white-space: nowrap; word-wrap: normal !important;}
+div.esg_data ul.slide li p.tt_d			{color:#666; font:300 15px/24px "Noto Sans KR",sans-serif;width: 100%;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;}
+div.esg_data ul.slide li:hover					{background:rgb(0,0,0);}
+div.esg_data ul.slide li:hover p.img_p img		{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_data ul.slide div.slick-list			{padding: 0 0 10px;}
+div.esg_data span.img_hover									{display: none;position: absolute;width: 100%;z-index: 20;}
+div.esg_data ul.slide li:hover span.img_hover				{display:flex;position:absolute;bottom: 0px;width:100%;position:absolute;}
+div.esg_data ul.slide li:hover span.img_hover a				{width:50%;padding-top:55%;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn		{background: url('../_img/pc/main/download.png')no-repeat 50% 50%/30px; width:100%;height:40px;}
+div.esg_data ul.slide li:hover span.img_hover a.pdf_btn:hover {background: url('../_img/pc/main/download_hover.png')no-repeat 50% 50%/30px; width:188px;height:40px;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn		{background: url('../_img/pc/main/share.png')no-repeat 50% 50%/30px;width:100%;height:40px;}
+div.esg_data ul.slide li:hover span.img_hover a.sns_btn:hover {background: url('../_img/pc/main/share_hover.png')no-repeat 50% 50%/30px;width:100%;height:40px;}
+
+
+div.esg_cardnews							{padding-bottom:20px; margin-top: 20px;}
+div.esg_cardnews div.title					{margin-bottom:0px !important;padding: 0 3%;}
+div.esg_cardnews ul.slide					{padding: 0 0 0 4%;}
+div.esg_cardnews ul.slide li				{margin: 0 7px;width: 180px; box-shadow: 3px 2px 6px 5px rgba(0,0,0,0.1); border-radius: 20px 20px 0;}
+div.esg_cardnews ul.slide li:last-child		{margin-right:0px;}
+div.esg_cardnews ul.slide div.slick-list	{padding: 0 0 10px;}
+div.esg_cardnews ul.slide li div			{padding: 20px 10px;background: #fff;border-radius: 0px 0px 0px 10px;font:400 15px/24px "Noto Sans KR",sans-serif;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;white-space: normal;line-height: 20px;}
+div.esg_cardnews ul.slide li div p			{width: 100%;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;}
+div.esg_cardnews ul.slide li p.img_p		{border-radius: 10px 10px 0 0;width: 100%;}
+div.esg_cardnews ul.slide li a img			{width:100%;border-radius:10px 10px 0 0;}
+div.esg_cardnews ul.slide li img			{width:100%;}
+div.esg_cardnews ul.slide li p.img_p		{height: 181px;border-radius: 10px 10px 0 0;width: 100%;}
+div.esg_cardnews ul.slide li:hover				{cursor:pointer;}
+div.esg_cardnews ul.slide li:hover p			{color:#4c5dc6;}
+div.esg_cardnews ul.slide li:hover p.img_p		{background:rgb(0,0,0);}
+div.esg_cardnews ul.slide li:hover p.img_p img	{opacity:50%;transition: all 0.3s ease-in-out;}
+div.esg_cardnews ul.slide li img				{width:100%;border-radius: 10px 10px 0 0;height: inherit;}
+div.esg_cardnews ul.slick-dots					{bottom:-30px !important;}
+div.esg_cardnews ul.slick-dots li				{position: relative;display: inline-block !important;width: 4px;height: 4px !important;margin: 0 10px;    margin-right: 10px;padding: 0;cursor: pointer;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important;border-radius: 100% !important;background: #3a71d0;}
+div.esg_cardnews ul.slick-dots li button::before		{font-family: 'slick';font-size: 6px;line-height: 20px;position: absolute;top: -8px;left: -8px;width: 20px;height: 20px;content: '•';text-align: center;opacity: .25;color: #fff;}
+
+
+/*퀵메뉴 추가*/
+.quick			{display:none !important;}
+
+
+}
+
+/* ------------------------------------------------------------------ MO 끝  ------------------------------------------------------------------ */
